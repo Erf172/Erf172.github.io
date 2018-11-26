@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>“某咸鱼的鱼缸”</title>
   
-  
+  <subtitle>“日常生(翻)活(车)的记录史”</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>“这不是lD”</name>
     
   </author>
   
@@ -18,9 +18,9 @@
   
   <entry>
     <title>test</title>
-    <link href="http://yoursite.com/2018/11/26/test/"/>
-    <id>http://yoursite.com/2018/11/26/test/</id>
-    <published>2018-11-26T11:37:43.000Z</published>
+    <link href="http://yoursite.com/2018/11/27/test/"/>
+    <id>http://yoursite.com/2018/11/27/test/</id>
+    <published>2018-11-26T19:37:43.000Z</published>
     <updated>2018-11-26T11:37:43.372Z</updated>
     
     <summary type="html">
