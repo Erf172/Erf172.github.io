@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>“某咸鱼的鱼缸”</title>
+  <title>某咸鱼的鱼缸</title>
   
-  <subtitle>“日常生(翻)活(车)的记录史”</subtitle>
+  <subtitle>日常生(翻)活(车)的记录史</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>“这不是lD”</name>
+    <name>这不是lD</name>
     
   </author>
   
