@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-28T04:54:25.098Z</updated>
+  <updated>2018-11-28T05:24:05.028Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="http://yoursite.com/2018/11/25/hello-world/"/>
     <id>http://yoursite.com/2018/11/25/hello-world/</id>
     <published>2018-11-25T08:52:48.673Z</published>
-    <updated>2018-11-28T04:54:25.098Z</updated>
+    <updated>2018-11-28T05:24:05.028Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="你好，欢迎来到我的小站"><a href="#你好，欢迎来到我的小站" class="headerlink" title="你好，欢迎来到我的小站"></a>你好，欢迎来到我的小站</h3><p>在这里我将会不定期更新一些教程，一些翻车时刻，还有一些杂七杂八的东西</p><p>请使用IE，360极速浏览器访问的同学或使用较低操作系统版本的同学移步Chrome或Firefox。</p><p>部分素材来自互联网，如有侵权请与<a href="mailto:fzx172@126.com" target="_blank" rel="noopener">fzx172@126.com</a>联系删除！</p><a id="more"></a><p>下面便是填坑时间了，慢慢填坑中。。。。。。</p><p><img src="https://img.vim-cn.com/8e/fe167c13c56601ecdd22fac31f2513a9d24d19.png" alt="hello_bash"></p><p>本站使用<a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">Material X</a>作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="你好，欢迎来到我的小站"><a href="#你好，欢迎来到我的小站" class="headerlink" title="你好，欢迎来到我的小站"></a>你好，欢迎来到我的小站</h3><p>在这里我将会不定期更新一些教程，一些翻车时刻，还有一些杂七杂八的东西</p><p>请使用IE，360极速浏览器访问的同学或使用较低操作系统版本的同学移步<a href="https://www.google.cn/chrome/" target="_blank" rel="noopener">Chrome</a>或<a href="http://www.firefox.com.cn/" target="_blank" rel="noopener">Firefox</a>。</p><p>部分素材来自互联网，如有侵权请与<a href="mailto:fzx172@126.com" target="_blank" rel="noopener">fzx172@126.com</a>联系删除！</p><a id="more"></a><p>下面便是填坑时间了，慢慢填坑中。。。。。。</p><p><img src="https://img.vim-cn.com/8e/fe167c13c56601ecdd22fac31f2513a9d24d19.png" alt="hello_bash"></p><p>本站使用<a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">Material X</a>作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>]]></content>
     
     <summary type="html">
     
       &lt;h3 id=&quot;你好，欢迎来到我的小站&quot;&gt;&lt;a href=&quot;#你好，欢迎来到我的小站&quot; class=&quot;headerlink&quot; title=&quot;你好，欢迎来到我的小站&quot;&gt;&lt;/a&gt;你好，欢迎来到我的小站&lt;/h3&gt;&lt;p&gt;在这里我将会不定期更新一些教程，一些翻车时刻，还有一些杂七杂八的东西&lt;/p&gt;
-&lt;p&gt;请使用IE，360极速浏览器访问的同学或使用较低操作系统版本的同学移步Chrome或Firefox。&lt;/p&gt;
+&lt;p&gt;请使用IE，360极速浏览器访问的同学或使用较低操作系统版本的同学移步&lt;a href=&quot;https://www.google.cn/chrome/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Chrome&lt;/a&gt;或&lt;a href=&quot;http://www.firefox.com.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Firefox&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;部分素材来自互联网，如有侵权请与&lt;a href=&quot;mailto:fzx172@126.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;fzx172@126.com&lt;/a&gt;联系删除！&lt;/p&gt;
     
     </summary>
