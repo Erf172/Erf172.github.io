@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-28T05:24:05.028Z</updated>
+  <updated>2018-11-28T14:35:12.113Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>删除优盘病毒の不完全教程</title>
+    <link href="http://yoursite.com/2018/11/29/how-to-remove-virus-from-udisk/"/>
+    <id>http://yoursite.com/2018/11/29/how-to-remove-virus-from-udisk/</id>
+    <published>2018-11-28T20:41:53.000Z</published>
+    <updated>2018-11-28T14:35:12.113Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>今天去打印店打印东西。回来后发现自己的优盘<strong>又中病毒了</strong>。。。。（等等，我为什么说又。。。）<br>既然中毒了，那么就得清理一下。。。。。</p></blockquote><a id="more"></a><h2 id="将资源管理器设置成显示所有文件"><a href="#将资源管理器设置成显示所有文件" class="headerlink" title="将资源管理器设置成显示所有文件"></a>将资源管理器设置成显示所有文件</h2><ol><li>打开我的电脑&gt;&gt;查看&gt;&gt;选项</li></ol><p><img src="https://img.vim-cn.com/ff/8106eb2eb568546b83cd5766347538932a0d83.png" alt="我的电脑"></p><ol start="2"><li>在打开的文件夹选项中取消“隐藏受保护的系统文件(推荐)”并选择“显示所有文件和文件夹”</li></ol><p><img src="https://img.vim-cn.com/74/45e5f54584c40446e67ed096c6f4106d6ddb7d.png" alt="文件夹选项"></p><h2 id="删除病毒"><a href="#删除病毒" class="headerlink" title="删除病毒"></a>删除病毒</h2><ol><li><strong>右击</strong>打开被感染的优盘，<strong>一定要右击</strong>，防止中病毒</li></ol><p><img src="https://img.vim-cn.com/93/1417f6e3b09a9ec3f09fcdc68c727c9ac33df8.png" alt="右击"></p><ol start="2"><li>将快捷方式删除掉，还有那个病毒.exe </li></ol><p><img src="https://img.vim-cn.com/b3/92f35d209a8942dd31ea8a9c905304bf53ec70.png" alt="删除"></p><h2 id="将文件夹及文件设置成可见"><a href="#将文件夹及文件设置成可见" class="headerlink" title="将文件夹及文件设置成可见"></a>将文件夹及文件设置成可见</h2><ol><li>在打开的盘界面中按住shift键右击，选择在“此处打开命令窗口/powershell”</li></ol><p><img src="https://img.vim-cn.com/bf/8239e5d35a001f5e4a0492137062432ac7ad9d.png" alt="powershell"></p><ol start="2"><li>输入以下命令</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">attrib * -s -h -r -a /D</span><br></pre></td></tr></table></figure><p><img src="https://img.vim-cn.com/c3/5e655bd9dc7e7cb9439877ed461f40b573e0a0.png" alt="bash"></p><p>至此，优盘的病毒就会清理干净了。</p><p><img src="https://img.vim-cn.com/12/724a3b4e86a5d74230cadc62310266c8e40ada.png" alt="done"></p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol><li><p>优盘<strong>不要直接打开，不要直接打开，不要直接打开。</strong></p></li><li><p>优盘<strong>一定要点击右键&gt;&gt;打开</strong></p></li><li><p>如果电脑不小心中毒，<strong>最好重装系统</strong>，360什么的杀不净的。</p></li></ol><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>一直想要出一个怎么清理优盘病毒的教程，毕竟学校是这种东西的高发区。。。但是我总是遇不到。。。</p><p>其实这两天想要填一下坑的，谁知道半路杀出一个程咬金。不过也好把这个教程出了。。</p><p>还有，Markdown写博客真的不习惯。。。。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;今天去打印店打印东西。回来后发现自己的优盘&lt;strong&gt;又中病毒了&lt;/strong&gt;。。。。（等等，我为什么说又。。。）&lt;br&gt;既然中毒了，那么就得清理一下。。。。。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Guide" scheme="http://yoursite.com/categories/Guide/"/>
+    
+    
+      <category term="优盘" scheme="http://yoursite.com/tags/%E4%BC%98%E7%9B%98/"/>
+    
+      <category term="删除病毒" scheme="http://yoursite.com/tags/%E5%88%A0%E9%99%A4%E7%97%85%E6%AF%92/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

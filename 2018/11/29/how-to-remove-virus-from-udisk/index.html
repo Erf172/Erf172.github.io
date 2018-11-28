@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Archives: 2018/11 | 某咸鱼的鱼缸</title>
+  <title>删除优盘病毒の不完全教程 | 某咸鱼的鱼缸</title>
   
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -111,28 +111,18 @@
     <div class="l_body">
     <div class='container clearfix'>
         <div class='l_main'>
-            
-	
-    <script>
-        window.subData= { title:'year : 2018.11'}
-    </script>
-
-
-<section class="post-list">
-    
-        <div class="post-wrapper">
-            <article class="post reveal ">
+            <article id="post-how-to-remove-virus-from-udisk" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
     <section class="meta">
-        <h2 class="title">
-            <a href="/2018/11/29/how-to-remove-virus-from-udisk/">
-                
-                    删除优盘病毒の不完全教程
-                
-            </a>
-        </h2>
+        
+            <h1 class="title">删除优盘病毒の不完全教程</h1>
+        
         <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-28
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+            2018-11-28
         </time>
+        <div class="browse"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+        </div>
         
     
     <div class="cats">
@@ -144,86 +134,154 @@
     </section>
 
     <section class="article typo">
-        <blockquote>
+
+        <div class="article-entry" itemprop="articleBody">
+            <blockquote>
 <p>今天去打印店打印东西。回来后发现自己的优盘<strong>又中病毒了</strong>。。。。（等等，我为什么说又。。。）<br>既然中毒了，那么就得清理一下。。。。。</p>
 </blockquote>
-        
-            <div class="readmore">
-                <a href="/2018/11/29/how-to-remove-virus-from-udisk/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/优盘/"><i class="fas fa-tag fa-fw"></i>&nbsp;优盘</a>
-                
-                    <a href="/tags/删除病毒/"><i class="fas fa-tag fa-fw"></i>&nbsp;删除病毒</a>
-                
-            </div>
-        
-    </section>
-</article>
+<a id="more"></a>
+<h2 id="将资源管理器设置成显示所有文件"><a href="#将资源管理器设置成显示所有文件" class="headerlink" title="将资源管理器设置成显示所有文件"></a>将资源管理器设置成显示所有文件</h2><ol>
+<li>打开我的电脑&gt;&gt;查看&gt;&gt;选项</li>
+</ol>
+<p><img src="https://img.vim-cn.com/ff/8106eb2eb568546b83cd5766347538932a0d83.png" alt="我的电脑"></p>
+<ol start="2">
+<li>在打开的文件夹选项中取消“隐藏受保护的系统文件(推荐)”并选择“显示所有文件和文件夹”</li>
+</ol>
+<p><img src="https://img.vim-cn.com/74/45e5f54584c40446e67ed096c6f4106d6ddb7d.png" alt="文件夹选项"></p>
+<h2 id="删除病毒"><a href="#删除病毒" class="headerlink" title="删除病毒"></a>删除病毒</h2><ol>
+<li><strong>右击</strong>打开被感染的优盘，<strong>一定要右击</strong>，防止中病毒</li>
+</ol>
+<p><img src="https://img.vim-cn.com/93/1417f6e3b09a9ec3f09fcdc68c727c9ac33df8.png" alt="右击"></p>
+<ol start="2">
+<li>将快捷方式删除掉，还有那个病毒.exe </li>
+</ol>
+<p><img src="https://img.vim-cn.com/b3/92f35d209a8942dd31ea8a9c905304bf53ec70.png" alt="删除"></p>
+<h2 id="将文件夹及文件设置成可见"><a href="#将文件夹及文件设置成可见" class="headerlink" title="将文件夹及文件设置成可见"></a>将文件夹及文件设置成可见</h2><ol>
+<li>在打开的盘界面中按住shift键右击，选择在“此处打开命令窗口/powershell”</li>
+</ol>
+<p><img src="https://img.vim-cn.com/bf/8239e5d35a001f5e4a0492137062432ac7ad9d.png" alt="powershell"></p>
+<ol start="2">
+<li>输入以下命令</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">attrib * -s -h -r -a /D</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.vim-cn.com/c3/5e655bd9dc7e7cb9439877ed461f40b573e0a0.png" alt="bash"></p>
+<p>至此，优盘的病毒就会清理干净了。</p>
+<p><img src="https://img.vim-cn.com/12/724a3b4e86a5d74230cadc62310266c8e40ada.png" alt="done"></p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li><p>优盘<strong>不要直接打开，不要直接打开，不要直接打开。</strong></p>
+</li>
+<li><p>优盘<strong>一定要点击右键&gt;&gt;打开</strong></p>
+</li>
+<li><p>如果电脑不小心中毒，<strong>最好重装系统</strong>，360什么的杀不净的。</p>
+</li>
+</ol>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>一直想要出一个怎么清理优盘病毒的教程，毕竟学校是这种东西的高发区。。。但是我总是遇不到。。。</p>
+<p>其实这两天想要填一下坑的，谁知道半路杀出一个程咬金。不过也好把这个教程出了。。</p>
+<p>还有，Markdown写博客真的不习惯。。。。</p>
 
         </div>
-    
-        <div class="post-wrapper">
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2018/11/25/hello-world/">
+
+        <section class="meta">
+            <time class="time" itemprop="dateUpdated" datetime="2018-11-28T22:35:12+08:00" content="2018-11-28">
+                <i class="fas fa-pen fa-fw" aria-hidden="true"></i>
+                本文最后更新于：2018-11-28
+            </time>
+            
                 
-                    Hello World
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-25
-        </time>
+                <div class="tags">
+                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+                    <a class="tag" href="/tags/优盘/">优盘</a>, <a class="tag" href="/tags/删除病毒/">删除病毒</a>
+                </div>
+            
+        </section>
+
         
-    
-    <div class="cats">
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Others/">Others</a>
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一篇&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2018/11/25/hello-world/" rel="prev" title="Hello World">
+                                    
+                                        Hello World
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+                                    <a class="tag" href="/tags/置顶/">置顶</a>, <a class="tag" href="/tags/欢迎/">欢迎</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+    <article class="post white-box comments">
+        <section class="article typo">
+
+            
+                
+
+    <div class="recommended_posts">
+        <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;你可能感兴趣的文章</h4>
+        <ul>
+            
+                <li><a href="http://yoursite.com/2018/11/25/hello-world/">Hello World</a></li>
+            
+        </ul>
     </div>
 
 
-    </section>
+            
 
-    <section class="article typo">
-        <h3 id="你好，欢迎来到我的小站"><a href="#你好，欢迎来到我的小站" class="headerlink" title="你好，欢迎来到我的小站"></a>你好，欢迎来到我的小站</h3><p>在这里我将会不定期更新一些教程，一些翻车时刻，还有一些杂七杂八的东西</p>
-<p>请使用IE，360极速浏览器访问的同学或使用较低操作系统版本的同学移步<a href="https://www.google.cn/chrome/" target="_blank" rel="noopener">Chrome</a>或<a href="http://www.firefox.com.cn/" target="_blank" rel="noopener">Firefox</a>。</p>
-<p>部分素材来自互联网，如有侵权请与<a href="mailto:fzx172@126.com" target="_blank" rel="noopener">fzx172@126.com</a>联系删除！</p>
-        
-            <div class="readmore">
-                <a href="/2018/11/25/hello-world/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
+            
 
-        
-            <div class="full-width auto-padding tags">
                 
-                    <a href="/tags/置顶/"><i class="fas fa-tag fa-fw"></i>&nbsp;置顶</a>
+
                 
-                    <a href="/tags/欢迎/"><i class="fas fa-tag fa-fw"></i>&nbsp;欢迎</a>
+
                 
-            </div>
-        
-    </section>
-</article>
+                    
+                        <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;Valine评论</h4>
+                        <div class="subtitle">
+                          <h6><b>文明评论，请勿灌水。</b>为了便于区分和接收回复提醒，请您在留言时填写一下<b>昵称</b>和<b>邮箱</b>。
+                          不定期清理没有昵称和灌水的评论。</h6>
+                        <div>
+                        <section id="comments">
+                            <div id="valine_container" class="valine_thread">
+                                <i class="fas fa-spinner fa-spin fa-fw"></i>
+                            </div>
+                        </section>
+                        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                    
+                
+            
 
-        </div>
-    
-</section>
+        </div></div></section>
+    </article>
 
 
-
+<script>
+    window.subData = {
+        title: '删除优盘病毒の不完全教程',
+        tools: true
+    }
+</script>
 
 
         </div>
@@ -315,6 +373,16 @@
     
     
         
+    <section class="m_widget toc-wrapper">
+        <header class="header pure">
+            <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;目录</div>
+            <div class="wrapper"><a class="s-toc rightBtn" title="固定到顶部" target="_blank" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+        </header>
+        <div class="content pure">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#将资源管理器设置成显示所有文件"><span class="toc-text">将资源管理器设置成显示所有文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除病毒"><span class="toc-text">删除病毒</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将文件夹及文件设置成可见"><span class="toc-text">将文件夹及文件设置成可见</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意事项"><span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
+        </div>
+    </section>
+
 
     
     
@@ -391,6 +459,35 @@
 <script src="/js/search.js"></script>
 <script src="/js/app.js"></script>
 
+
+    
+    
+    
+        
+            <script>
+            var GUEST_INFO = ['nick','mail','link'];
+            var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+                return GUEST_INFO.indexOf(item) > -1
+            });
+            var notify = 'false' == true;
+            var verify = 'false' == true;
+            var valine = new Valine();
+            valine.init({
+                el: '#valine_container',
+                notify: notify,
+                verify: verify,
+                guest_info: guest_info,
+                appId: "zIUVhjTMMhMS9rM7KQODSSBm-gzGzoHsz",
+                appKey: "EMTrLkd8dDSOCWjqHU68wwbu",
+                placeholder: "快来评论吧~",
+                pageSize:'10',
+                avatar:'mp',
+                lang:'zh-cn',
+                highlight:''
+            })
+            </script>
+        
+    
 
 
     <script>setLoadingBarProgress(100);</script>
