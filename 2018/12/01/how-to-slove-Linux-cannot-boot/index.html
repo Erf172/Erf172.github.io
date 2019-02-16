@@ -6,28 +6,48 @@
   
   <title>Linux不能正常安装或启动の部分解决方法 | 某咸鱼的鱼缸</title>
   
+  
+  <meta name="description" content="你看不到我">
+  
+
+  <link rel="alternate" href="/atom.xml" title="某咸鱼的鱼缸">
+
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" href="https://img.vim-cn.com/8c/e48d1bd6c4812911ac6a4aaf110366fc903368.jpg">
-  <link rel="alternate" href="/atom.xml" title="某咸鱼的鱼缸">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  <!-- link -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
 
-  <link rel="shortcut icon" href="https://img.vim-cn.com/8c/e48d1bd6c4812911ac6a4aaf110366fc903368.jpg">
-  <link rel="icon" href="https://img.vim-cn.com/8c/e48d1bd6c4812911ac6a4aaf110366fc903368.jpg">
   
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
+
   
-  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="//cdn.bootcss.com/node-waves/0.7.5/waves.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.vim-cn.com/8c/e48d1bd6c4812911ac6a4aaf110366fc903368.jpg">
+  
+
+
+  
   <link rel="stylesheet" href="/style.css">
+  
+
+  
+
+
+
   <script>
     function setLoadingBarProgress(num) {
       document.getElementById('loading-bar').style.width=num+"%";
     }
   </script>
+
+  
+  
 </head>
-</html>
+
 <body>
     <div id="loading-bar-wrapper">
   <div id="loading-bar" class="pure"></div>
@@ -37,32 +57,35 @@
     <header class="l_header pure">
 	<div class="wrapper">
 		<div class="nav-main container container--flex">
-			<a class="logo flat-box" href="/">某咸鱼的鱼缸</a>
-				<div class="menu">
-					<ul class="h-list">
-            
-    					
-    						<li>
-    							<a class="nav flat-box" href="/">
-    								<i class="fas fa-home fa-fw"></i>&nbsp;主页
-  								</a>
-  							</li>
-        			
-    						<li>
-    							<a class="nav flat-box" href="https://github.com/Erf172">
-    								<i class="fas fa-flask fa-fw"></i>&nbsp;项目
-  								</a>
-  							</li>
-        			
-        		
-					</ul>
-					<div class="underline"></div>
-				</div>
+      <a class="logo flat-box" href="/">
+        
+          某咸鱼的鱼缸
+        
+      </a>
+			<div class="menu">
+				<ul class="h-list">
+          
+  					
+  						<li>
+								<a id="home" class="nav flat-box" href="/">
+									<i class="fas fa-home fa-fw"></i>&nbsp;主页
+								</a>
+							</li>
+      			
+  						<li>
+								<a id="https:github.comErf172" class="nav flat-box" href="https://github.com/Erf172">
+									<i class="fas fa-flask fa-fw"></i>&nbsp;项目
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
 
 			
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="Search">
+						<input type="text" class="input u-search-input" placeholder="搜索">
 						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
 					</form>
 				</div>
@@ -78,26 +101,26 @@
 		<div class="nav-sub container container--flex">
 			<a class="logo flat-box"></a>
 			<ul class="switcher h-list">
-				<li class="s-comment"><a class="fas fa-comments fa-fw" href="javascript:void(0)"></a></li>
-				<li class="s-top"><a class="fas fa-arrow-up fa-fw" href="javascript:void(0)"></a></li>
-				<li class="s-toc"><a class="fas fa-list fa-fw" href="javascript:void(0)"></a></li>
+				<li class="s-comment"><a class="flat-btn fas fa-comments fa-fw" href="javascript:void(0)"></a></li>
+				<li class="s-toc"><a class="flat-btn fas fa-list fa-fw" href="javascript:void(0)"></a></li>
 			</ul>
 		</div>
 	</div>
 </header>
 	<aside class="menu-phone">
-		<nav>
+    <header>
+		<nav class="menu">
       <ul>
           
               
                   <li>
-										<a class="nav  flat-box" href="/">
+										<a id="home" class="nav flat-box" href="/">
 											<i class="fas fa-home fa-fw"></i>&nbsp;主页
 										</a>
                   </li>
               
                   <li>
-										<a class="nav  flat-box" href="https://github.com/Erf172">
+										<a id="https:github.comErf172" class="nav flat-box" href="https://github.com/Erf172">
 											<i class="fas fa-flask fa-fw"></i>&nbsp;项目
 										</a>
                   </li>
@@ -105,38 +128,56 @@
        
       </ul>
 		</nav>
+    </header>
 	</aside>
 
     <script>setLoadingBarProgress(40);</script>
     <div class="l_body">
     <div class='container clearfix'>
         <div class='l_main'>
-            <article id="post-how-to-slove-Linux-cannot-boot" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
-    <section class="meta">
-        
-            <h1 class="title">Linux不能正常安装或启动の部分解决方法</h1>
-        
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-            2018-12-01
-        </time>
-        <div class="browse"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-          <span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-        </div>
-        
+            <article id="post" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+  
+<section class="meta">
+  
+  <div class="meta" id="header-meta">
     
-    <div class="cats">
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Guide/">Guide</a>
+      
+          <h1 class="title">Linux不能正常安装或启动の部分解决方法</h1>
+      
+    
+
+    
+      <time class="metatag time">
+        <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-12-01
+      </time>
+    
+
+    
+      
+    
+    <div class="metatag cats">
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;<a class="categories" href="/categories/Guide/">Guide</a>
     </div>
 
 
-    </section>
+    
+
+    
+      
+        <div class="metatag browse busuanzi"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+          &nbsp;<span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+        </div>
+      
+    
+
+    
+
+  </div>
+</section>
 
     <section class="article typo">
-
-        <div class="article-entry" itemprop="articleBody">
-            <blockquote>
+      <div class="article-entry" itemprop="articleBody">
+        <blockquote>
 <p>前段时间安装Linux。结果安装过程各种各种报错接踵而来。。。<br>查了半天资料，问题也解决的差不多了。特此记录一下下。</p>
 </blockquote>
 <a id="more"></a>
@@ -193,28 +234,84 @@
 <p>第二篇文章终于写完了，差不多就这样吧。下篇文章再见！</p>
 <p>(写点什么好呢。。。。)</p>
 
-        </div>
-
-        <section class="meta">
-            <time class="time" itemprop="dateUpdated" datetime="2018-12-01T12:42:03+08:00" content="2018-12-01">
-                <i class="fas fa-pen fa-fw" aria-hidden="true"></i>
-                本文最后更新于：2018-12-01
-            </time>
+      </div>
+        
+          <section class="meta" id="footer-meta">
+            
+              <time class="metatag time" itemprop="dateUpdated" datetime="2018-12-01T12:42:03+08:00" content="2018-12-01"><i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
+                &nbsp;2018-12-01
+              </time>
+            
             
                 
-                <div class="tags">
-                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
-                    <a class="tag" href="/tags/系统安装/">系统安装</a>, <a class="tag" href="/tags/Linux/">Linux</a>
-                </div>
+                <div class="metatag tags"><a class="tag" href="/tags/Linux/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;Linux</a></div> <div class="metatag tags"><a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;系统安装</a></div>
             
-        </section>
+            
+              
+  <div class="metatag share -mob-share-list">
+    <i class="left fas fa-share-alt fa-fw" aria-hidden="true"></i>
+    <div class="-mob-share-list share-body">
+      
+        
+          <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer" href="http://connect.qq.com/widget/shareqq/index.html?url=/2018/12/01/how-to-slove-Linux-cannot-boot/&title=Linux不能正常安装或启动の部分解决方法 | 某咸鱼的鱼缸&summary=
+前段时间安装Linux。结果安装过程各种各种报错接踵而来。。。查了半天资料，问题也解决的差不多了。特此记录一下下。
+">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+            
+          </a>
+        
+      
+        
+          <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=/2018/12/01/how-to-slove-Linux-cannot-boot/&title=Linux不能正常安装或启动の部分解决方法 | 某咸鱼的鱼缸&summary=
+前段时间安装Linux。结果安装过程各种各种报错接踵而来。。。查了半天资料，问题也解决的差不多了。特此记录一下下。
+">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+            
+          </a>
+        
+      
+        
+          <a class="qrcode" rel="external nofollow noopener noreferrer" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMElEQVR42u3aS07EMBAFQO5/6WGLBAnvuTOIOJXVCHDiykiN+/PxEV+vL9f5T75/ntzz4gsDA+O2jNfplTzgaFV7/6PP52sxMDCewzja3Pmtc+TRs9YCNwYGBkb7+DZMT9gYGBgYF9zubYkxBgYGxiTJPL9PfgQ8X3VZLo6BgXFDRh4c//7zW/obGBgYt2K8yis50iW/TV5TsSsMDIytGZPBiGQT7d+M9oOBgbEpYy2lbBuc7ebywlzRa8XAwLg5I3nk2uYmg2VFERADA2NrxlqLMS/lrxXvrnqJGBgYezCuKoGttTZz6nloxsDA2JvRLkhC4Tz45iMai24MDIzbMvJxq7VDYdvmXGxhYmBgbM3IA+ikSZAE37qghoGBsTWjLWxNEtE8QNcBHQMDY2vG+7oKbZBtX+7hd4KBgbEpIy+u5W2DlrS29pfvBAMDYztGO/rQHv7ydula4MbAwNibkR8B54noPJhG/Q0MDIztGHmhP29tTpLhJMQXh0IMDIwtGMXJMQ7HxZBE2dqMhi0wMDAewJgkn2upbPvzH56OgYHxGMYk8K0Ns7Zt0cNVGBgYmzLWDnN5Ya5Nd88Lar98DxgYGJsy2pS1Xdw2RNf+AWBgYDyBsRZkr3pDSdIbhXUMDIwHMPKmZtuenIyLFa8JAwMDY2mEYlJEa0ddMTAwMNZGuNoWZpsMX3w0xMDA+PeMvCWZH+nacY3JSAcGBsbejEmJv01WR5uYNzIxMDDux/gEIRosujvJVkYAAAAASUVORK5CYII=">
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+          
+          </a>
+        
+      
+        
+          <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer" href="http://service.weibo.com/share/share.php?url=/2018/12/01/how-to-slove-Linux-cannot-boot/&title=Linux不能正常安装或启动の部分解决方法 | 某咸鱼的鱼缸&summary=
+前段时间安装Linux。结果安装过程各种各种报错接踵而来。。。查了半天资料，问题也解决的差不多了。特此记录一下下。
+">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+            
+          </a>
+        
+      
+        
+          <a class="qrcode" rel="external nofollow noopener noreferrer" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMElEQVR42u3aS07EMBAFQO5/6WGLBAnvuTOIOJXVCHDiykiN+/PxEV+vL9f5T75/ntzz4gsDA+O2jNfplTzgaFV7/6PP52sxMDCewzja3Pmtc+TRs9YCNwYGBkb7+DZMT9gYGBgYF9zubYkxBgYGxiTJPL9PfgQ8X3VZLo6BgXFDRh4c//7zW/obGBgYt2K8yis50iW/TV5TsSsMDIytGZPBiGQT7d+M9oOBgbEpYy2lbBuc7ebywlzRa8XAwLg5I3nk2uYmg2VFERADA2NrxlqLMS/lrxXvrnqJGBgYezCuKoGttTZz6nloxsDA2JvRLkhC4Tz45iMai24MDIzbMvJxq7VDYdvmXGxhYmBgbM3IA+ikSZAE37qghoGBsTWjLWxNEtE8QNcBHQMDY2vG+7oKbZBtX+7hd4KBgbEpIy+u5W2DlrS29pfvBAMDYztGO/rQHv7ydula4MbAwNibkR8B54noPJhG/Q0MDIztGHmhP29tTpLhJMQXh0IMDIwtGMXJMQ7HxZBE2dqMhi0wMDAewJgkn2upbPvzH56OgYHxGMYk8K0Ns7Zt0cNVGBgYmzLWDnN5Ya5Nd88Lar98DxgYGJsy2pS1Xdw2RNf+AWBgYDyBsRZkr3pDSdIbhXUMDIwHMPKmZtuenIyLFa8JAwMDY2mEYlJEa0ddMTAwMNZGuNoWZpsMX3w0xMDA+PeMvCWZH+nacY3JSAcGBsbejEmJv01WR5uYNzIxMDDux/gEIRosujvJVkYAAAAASUVORK5CYII=">
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
+          
+          </a>
+        
+      
+    </div>
+  </div>
+
+
+            
+          </section>
+        
 
         
             <div class="prev-next">
                 
                     <section class="prev">
                         <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一篇</h6>
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                             <h4>
                                 <a href="/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/" rel="prev" title="联想小新锐7000の黑苹果折腾记(一)">
                                   
@@ -225,8 +322,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
-                                    <a class="tag" href="/tags/MacOS/">MacOS</a>, <a class="tag" href="/tags/系统安装/">系统安装</a>
+                                    <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a> <a class="tag" href="/tags/MacOS/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>MacOS</a>
                                 </h6>
                             
                         </span>
@@ -235,7 +331,7 @@
                 
                     <section class="next">
                         <span class="art-item-right" aria-hidden="true">
-                            <h6>下一篇&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
                                 <a href="/2018/11/29/how-to-remove-virus-from-udisk/" rel="prev" title="删除优盘病毒の不完全教程">
                                     
@@ -246,8 +342,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
-                                    <a class="tag" href="/tags/优盘/">优盘</a>, <a class="tag" href="/tags/删除病毒/">删除病毒</a>
+                                    <a class="tag" href="/tags/优盘/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>优盘</a> <a class="tag" href="/tags/删除病毒/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>删除病毒</a>
                                 </h6>
                             
                         </span>
@@ -260,18 +355,22 @@
 
 </article>
 
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
 <br>
 
 <!-- 显示推荐文章和评论 -->
 
-    <article class="post white-box comments">
-        <section class="article typo">
 
-            
-                
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      
+        
 
     <div class="recommended_posts">
-        <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;你可能感兴趣的文章</h4>
+        <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;相关文章</h4>
         <ul>
             
                 <li><a href="/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/">联想小新锐7000の黑苹果折腾记(一)</a></li>
@@ -284,34 +383,25 @@
     </div>
 
 
-            
+      
+      
+      
+        <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+        
+        
+        
+          
+            <section id="comments">
+              <div id="valine_container" class="valine_thread">
+                <i class="fas fa-spinner fa-spin fa-fw"></i>
+              </div>
+            </section>
+          
+        
+      
+    </section>
+  </article>
 
-            
-
-                
-
-                
-
-                
-                    
-                        <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;Valine评论</h4>
-                        <div class="subtitle">
-                          <h6><b>文明评论，请勿灌水。</b>为了便于区分和接收回复提醒，请您在留言时填写一下<b>昵称</b>和<b>邮箱</b>。
-                          不定期清理没有昵称和灌水的评论。</h6>
-                        <div>
-                        <section id="comments">
-                            <div id="valine_container" class="valine_thread">
-                                <i class="fas fa-spinner fa-spin fa-fw"></i>
-                            </div>
-                        </section>
-                        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-                        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-                    
-                
-            
-
-        </div></div></section>
-    </article>
 
 
 <script>
@@ -325,21 +415,27 @@
         </div>
         <aside class='l_side'>
             
+  
+  
     
-        
-  <section class="m_widget author">
+      
+      
+        <section class="author">
+  <div class="content pure">
     
-      <div class="header">
+      <div class="avatar">
         <img class="avatar" src="https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg">
       </div>
     
     
-      <div class="content">
+      <div class="text">
         
           <h2>某咸鱼的鱼缸</h2>
         
         
           <p>日常生(翻)活(车)の记录史</p>
+
+        
         
       </div>
     
@@ -347,186 +443,281 @@
       <div class="social-wrapper">
         
           
-            <a href="mailto:fzx172@126.com" class="social flat-box" target="_blank" rel="external"><i class="social fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="mailto:fzx172@126.com" class="social flat-btn" target="_blank" rel="external"><i class="social fas fa-envelope" aria-hidden="true"></i></a>
           
         
           
-            <a href="https://github.com/Erf172" class="social flat-box" target="_blank" rel="external"><i class="social fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://github.com/Erf172" class="social flat-btn" target="_blank" rel="external"><i class="social fab fa-github" aria-hidden="true"></i></a>
           
         
           
-            <a href="https://music.163.com/#/user/home?id=547706795" class="social flat-box" target="_blank" rel="external"><i class="social fas fa-music" aria-hidden="true"></i></a>
+            <a href="https://music.163.com/#/user/home?id=547706795" class="social flat-btn" target="_blank" rel="external"><i class="social fas fa-music" aria-hidden="true"></i></a>
           
         
       </div>
     
+  </div>
+</section>
+
+      
+    
+  
+    
+      
+      
+        <section class="plain">
+  
+<header class="pure">
+  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
+  
+    <a class="rightBtn" target="_blank" rel="external nofollow noopener noreferrer" href="https://xaoxuu.com/wiki/material-x/" title="https://xaoxuu.com/wiki/material-x/">
+    <i class="fas fa-question-circle fa-fw"></i></a>
+  
+</header>
+
+  <div class="content pure">
+    <p>终于搞定了23333……<br>开始填坑…<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>
+
+  </div>
+</section>
+
+      
+    
+  
+    
+      
+      
+        
+  <section class="category">
+    
+<header class="pure">
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;所有分类</div>
+  
+</header>
+
+    <div class="content pure">
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class="name">Guide</div><div class="badge">(3)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Others/" href="/categories/Others/"><div class="name">Others</div><div class="badge">(1)</div></a></li>
+        
+      </ul>
+    </div>
   </section>
 
 
+      
     
+  
     
+      
+      
         
-  <section class="m_widget announcement">
-    <header class="header pure">
-        <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;公告</div>
-    </header>
+  <section class="tagcloud">
+    
+<header class="pure">
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+</header>
+
     <div class="content pure">
-      终于搞定了23333......<br>开始填坑...<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。
+      <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 14px; color: #999">MacOS</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
 
+      
     
+  
     
-        <section class="m_widget categories">
-    <header class="header pure">
-        <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;分类</div>
-    </header>
+      
+      
+        
+
+
+  <section class="music">
+    
+<header class="pure">
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn" target="_blank" rel="external nofollow noopener noreferrer" href="https://music.163.com/#/user/home?id=547706795" title="https://music.163.com/#/user/home?id=547706795">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
     <div class="content pure">
-        
-            <ul class="entry">
-                
-                    <li><a class="flat-box" href="/categories/Guide/"><div class="name">Guide</div><div class="badge">3</div></a></li>
-                
-                    <li><a class="flat-box" href="/categories/Others/"><div class="name">Others</div><div class="badge">1</div></a></li>
-                
-            </ul>
-        
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer" data-theme="#1BCDFC" data-mode="circulation" data-server="netease" data-type="playlist" data-id="2048970456" data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
     </div>
-</section>
+  </section>
 
+
+      
     
+  
     
+      
+      
         
-    <section class="m_widget tagcloud">
-        <header class="header pure">
-            <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;标签</div>
-        </header>
-        <div class="content pure">
-            <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 14px; color: #999">MacOS</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
-        </div>
-    </section>
-
-
+  <section class="toc-wrapper">
     
-    
-        
-    <section class="m_widget toc-wrapper">
-        <header class="header pure">
-            <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;目录</div>
-            <div class="wrapper"><a class="s-toc rightBtn" title="固定到顶部" target="_blank" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
-        </header>
-        <div class="content pure">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#适用情况"><span class="toc-text">适用情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方法A————禁用nouveau"><span class="toc-text">解决方法A————禁用nouveau</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装过程禁用"><span class="toc-text">安装过程禁用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进入启动过程后修改启动文件"><span class="toc-text">进入启动过程后修改启动文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方法B————安装较低版本内核"><span class="toc-text">解决方法B————安装较低版本内核</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#进入Bios设置，禁用独立显卡、无线网卡"><span class="toc-text">进入Bios设置，禁用独立显卡、无线网卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#按照正常安装方式进行安装"><span class="toc-text">按照正常安装方式进行安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进入系统桌面后，手动安装Linux-4-9-x版本的内核并重启"><span class="toc-text">进入系统桌面后，手动安装Linux 4.9.x版本的内核并重启</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
-        </div>
-    </section>
+<header class="pure">
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章目录</div>
+  
+    <div class="wrapper"><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
 
-
-    
-    
-        <section class="m_widget music">
-    <header class="header pure">
-        <div><i class="fas fa-headphones-alt fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;音乐</div>
-        <a class="rightBtn" title="打开博主的网易云音乐主页" target="_blank" rel="external nofollow noopener noreferrer" href="https://music.163.com/#/playlist?id=2048970456"><i class="fas fa-external-link-square-alt fa-fw"></i></a>
-    </header>
     <div class="content pure">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="450" src="//music.163.com/outchain/player?type=0&id=2048970456&auto=0&height=450"></iframe>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#适用情况"><span class="toc-text">适用情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方法A————禁用nouveau"><span class="toc-text">解决方法A————禁用nouveau</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装过程禁用"><span class="toc-text">安装过程禁用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进入启动过程后修改启动文件"><span class="toc-text">进入启动过程后修改启动文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方法B————安装较低版本内核"><span class="toc-text">解决方法B————安装较低版本内核</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#进入Bios设置，禁用独立显卡、无线网卡"><span class="toc-text">进入Bios设置，禁用独立显卡、无线网卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#按照正常安装方式进行安装"><span class="toc-text">按照正常安装方式进行安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进入系统桌面后，手动安装Linux-4-9-x版本的内核并重启"><span class="toc-text">进入系统桌面后，手动安装Linux 4.9.x版本的内核并重启</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
     </div>
-</section>
+  </section>
 
+
+      
     
-    
+  
 
 
         </aside>
         <script>setLoadingBarProgress(60);</script>
     </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
     </div>
     <footer id="footer" class="clearfix">
-    
-        <div class="social-wrapper">
-          
-              
-                  <a href="mailto:fzx172@126.com" class="social fas fa-envelope flat-box" target="_blank" rel="external"></a>
-              
-          
-              
-                  <a href="https://github.com/Erf172" class="social fab fa-github flat-box" target="_blank" rel="external"></a>
-              
-          
-              
-                  <a href="https://music.163.com/#/user/home?id=547706795" class="social fas fa-music flat-box" target="_blank" rel="external"></a>
-              
-          
-        </div>
-    
-    <br>
-    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
-    <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，
-		总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="mailto:fzx172@126.com" class="social fas fa-envelope flat-btn" target="_blank" rel="external"></a>
+        
+      
+        
+          <a href="https://github.com/Erf172" class="social fab fa-github flat-btn" target="_blank" rel="external"></a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=547706795" class="social fas fa-music flat-btn" target="_blank" rel="external"></a>
+        
+      
     </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+  </div>
 </footer>
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
 
     <script>setLoadingBarProgress(80);</script>
-    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/node-waves/0.7.5/waves.min.js"></script>
-<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
-<!-- 访问统计 -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
 
 
-<script src="/js/jquery.fitvids.js"></script>
-
-    <script>
-        var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-        var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-        var ALGOLIA_API_KEY = "";
-        var ALGOLIA_APP_ID = "";
-        var ALGOLIA_INDEX_NAME = "";
-        var AZURE_SERVICE_NAME = "";
-        var AZURE_INDEX_NAME = "";
-        var AZURE_QUERY_KEY = "";
-        var BAIDU_API_ID = "";
-        var SEARCH_SERVICE = "hexo" || "hexo";
-        var ROOT = "/"||"/";
-        if(!ROOT.endsWith('/'))ROOT += '/';
+  
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        const $reveal = $('.reveal');
+    		if ($reveal.length === 0) return;
+    		const sr = ScrollReveal({ distance: 0 });
+    		sr.reveal('.reveal');
+      });
     </script>
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        Waves.attach('.flat-btn', ['waves-button']);
+        Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+        Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+        Waves.attach('.flat-box', ['waves-block']);
+        Waves.attach('.float-box', ['waves-block', 'waves-float']);
+        Waves.attach('.waves-image');
+        Waves.init();
+      });
+    </script>
+  
+  
+    <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+  
+  
+  
 
+
+  
+  
+  
+    
+      
+      
+      
+        
+          <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+          
+            
+              <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1/js/volantis.min.js"></script>
+            
+          
+          <script>
+          var GUEST_INFO = ['nick','mail','link'];
+          var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          var notify = 'false' == true;
+          var verify = 'false' == true;
+          var valine = new Valine();
+          valine.init({
+            el: '#valine_container',
+            notify: notify,
+            verify: verify,
+            guest_info: guest_info,
+            
+            appId: "zIUVhjTMMhMS9rM7KQODSSBm-gzGzoHsz",
+            appKey: "EMTrLkd8dDSOCWjqHU68wwbu",
+            placeholder: "快来评论吧~",
+            pageSize:'10',
+            avatar:'mp',
+            lang:'zh-cn',
+            highlight:''
+          })
+          </script>
+        
+      
+    
+  
+  
+    <script src="/js/app.js"></script>
 <script src="/js/search.js"></script>
-<script src="/js/app.js"></script>
+  
 
 
-    
-    
-    
-        
-            <script>
-            var GUEST_INFO = ['nick','mail','link'];
-            var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-                return GUEST_INFO.indexOf(item) > -1
-            });
-            var notify = 'false' == true;
-            var verify = 'false' == true;
-            var valine = new Valine();
-            valine.init({
-                el: '#valine_container',
-                notify: notify,
-                verify: verify,
-                guest_info: guest_info,
-                appId: "zIUVhjTMMhMS9rM7KQODSSBm-gzGzoHsz",
-                appKey: "EMTrLkd8dDSOCWjqHU68wwbu",
-                placeholder: "快来评论吧~",
-                pageSize:'10',
-                avatar:'mp',
-                lang:'zh-cn',
-                highlight:''
-            })
-            </script>
-        
-    
+
+
 
 
     <script>setLoadingBarProgress(100);</script>
 </body>
+</html>
