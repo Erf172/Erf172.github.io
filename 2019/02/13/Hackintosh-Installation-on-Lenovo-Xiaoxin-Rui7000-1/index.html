@@ -221,8 +221,7 @@
 </table>
 <h3 id="系统截图"><a href="#系统截图" class="headerlink" title="系统截图"></a>系统截图</h3><p><img src="https://img.vim-cn.com/6a/9ffd8b467320a6a6d5be385263b456cafd1888.png" alt="SysScreen"><br><img src="https://img.vim-cn.com/49/5369b1e3bfd366b259dcd7aaa3d1ebdc77ade5.png" alt="SysScreen"><br><img src="https://img.vim-cn.com/ca/f827ce420e148d75a905f8fd8c293272f9688f.png" alt="SysScreen"><br><img src="https://img.vim-cn.com/0e/5ad521869b78531f3f094a10c3d8f747d4b703.png" alt="SysScreen"><br><img src="https://img.vim-cn.com/2d/52e5b23fd51d3d54d48c641c18d31aae6bb9c7.png" alt="SysScreen"></p>
 <h3 id="已知问题"><a href="#已知问题" class="headerlink" title="已知问题"></a>已知问题</h3><ol>
-<li>亮度快捷按键调节不可用   </li>
-<li>HDMI (应该是修复了，但是暂时手头上无显示器所以不太清楚)   </li>
+<li>亮度快捷按键调节不可用     </li>
 <li>亮度的最后一档相当于黑屏   </li>
 <li>FaceTime &amp; IMessage 不可用 (可以自己手动洗白)   </li>
 </ol>
@@ -294,9 +293,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskutil list</span><br></pre></td></tr></table></figure>
 <p><img src="https://img.vim-cn.com/79/551cad538f4baf12fc9aa84512caccbe38dda6.png" alt="Mount_Udisk_1">   </p>
 <ol start="3">
-<li>找到你优盘的EFI分区的 IDENTIFIER 并输入以下命令   </li>
+<li>找到你优盘的EFI分区的 IDENTIFIER ，例如，我的是disk2s1，则输入以下命令   </li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount _你优盘EFI分区的IDENTIFIER_</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount disk2s1</span><br></pre></td></tr></table></figure>
 <p><img src="https://img.vim-cn.com/b9/848eb21a9dd36f0c4669f2a4d372b4f5825c29.png" alt="Mount_Udisk_2">   </p>
 <ol start="4">
 <li>将EFI 里的文件复制到桌面备用并删除优盘EFI分区的文件   </li>
@@ -390,8 +389,8 @@
         
           <section class="meta" id="footer-meta">
             
-              <time class="metatag time" itemprop="dateUpdated" datetime="2019-02-16T14:51:59+08:00" content="2019-02-16"><i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
-                &nbsp;2019-02-16
+              <time class="metatag time" itemprop="dateUpdated" datetime="2019-03-02T21:39:08+08:00" content="2019-03-02"><i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
+                &nbsp;2019-03-02
               </time>
             
             
@@ -461,6 +460,25 @@
         
             <div class="prev-next">
                 
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                            <h4>
+                                <a href="/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/" rel="prev" title="联想小新锐7000の黑苹果折腾记(二)">
+                                  
+                                      联想小新锐7000の黑苹果折腾记(二)
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a> <a class="tag" href="/tags/MacOS/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>MacOS</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
                 
                     <section class="next">
                         <span class="art-item-right" aria-hidden="true">
@@ -505,6 +523,8 @@
     <div class="recommended_posts">
         <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;相关文章</h4>
         <ul>
+            
+                <li><a href="/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/">联想小新锐7000の黑苹果折腾记(二)</a></li>
             
                 <li><a href="/2018/12/01/how-to-slove-Linux-cannot-boot/">Linux不能正常安装或启动の部分解决方法</a></li>
             
@@ -631,7 +651,7 @@
     <div class="content pure">
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class="name">Guide</div><div class="badge">(3)</div></a></li>
+          <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class="name">Guide</div><div class="badge">(4)</div></a></li>
         
           <li><a class="flat-box" title="/categories/Others/" href="/categories/Others/"><div class="name">Others</div><div class="badge">(1)</div></a></li>
         
@@ -655,7 +675,7 @@
 </header>
 
     <div class="content pure">
-      <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 14px; color: #999">MacOS</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
+      <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 19px; color: #777">MacOS</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
