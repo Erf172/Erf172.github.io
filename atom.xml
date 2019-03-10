@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-03-10T06:52:33.455Z</updated>
+  <updated>2019-03-08T03:27:47.688Z</updated>
   <id>/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="/2019/03/10/test/"/>
-    <id>/2019/03/10/test/</id>
-    <published>2019-03-10T14:52:33.000Z</published>
-    <updated>2019-03-10T06:52:33.455Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>联想小新锐7000の黑苹果折腾记(二)</title>
@@ -87,7 +73,7 @@
     <link href="/2018/12/01/how-to-slove-Linux-cannot-boot/"/>
     <id>/2018/12/01/how-to-slove-Linux-cannot-boot/</id>
     <published>2018-12-01T11:25:19.000Z</published>
-    <updated>2018-12-01T04:42:03.908Z</updated>
+    <updated>2019-03-10T06:54:01.102Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>前段时间安装Linux。结果安装过程各种各种报错接踵而来。。。<br>查了半天资料，问题也解决的差不多了。特此记录一下下。</p></blockquote><a id="more"></a><h2 id="适用情况"><a href="#适用情况" class="headerlink" title="适用情况"></a>适用情况</h2><p>这篇文章适用于以下问题的解决方案</p><blockquote><ol><li>无法进入安装界面，疯狂刷“pci bus error“等类似的错误信息</li><li>安装完成后，启动时无法进入桌面。</li><li>进入桌面后重启/注销卡住，无法正常重启/注销</li><li>更新了内核或一些软件后出现以上的问题</li></ol></blockquote><p><strong>以下的解决方法均以Manjaro 18.0为例。不同Linux发行版的操作方式大同小异</strong></p><h2 id="解决方法A————禁用nouveau"><a href="#解决方法A————禁用nouveau" class="headerlink" title="解决方法A————禁用nouveau"></a>解决方法A————禁用nouveau</h2><p>报错的原因有一部分是因为Linux自带的nouveau驱动存在问题，所以才会导致安装出现上述问题。所以，我们只要将其自带的驱动禁用掉即可解决</p><h3 id="安装过程禁用"><a href="#安装过程禁用" class="headerlink" title="安装过程禁用"></a>安装过程禁用</h3><ol><li>在优盘引导安装的界面中，<strong>不要直接进行安装</strong>。移动到BOOT：xxx 后，按一下e键进入grub的编辑模式</li></ol><p><img src="https://img.vim-cn.com/46/678b75cb6f8aaafad0eca3356e8cd1cf80174c.png" alt="编辑模式" title="移到Boot下按E进入编辑模式"> </p><ol start="2"><li><p>在grub的编辑模式中，找到Linux的那一行，在最后面添加一下信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">modprobe.blacklist=nouveau</span><br></pre></td></tr></table></figure></li></ol><p><img src="https://img.vim-cn.com/1a/05b9c334e2ec3398e97c7bbe16cdb3235daa20.png" alt="添加信息" title="添加信息"></p><ol start="3"><li>添加完成后，按下Ctrl+X或者F10 进行安装。便可以进行正常的安装</li></ol><p><img src="https://img.vim-cn.com/28/bf78ddae8dcab17bc6afd55722ff0f53b62480.png" alt="可以安装了" title="可以正常安装"></p><ol start="4"><li><p>第一次启动安装后可以按照以上操作步骤进行操作即可进入桌面</p><p>（或者如果是因为更新造成的问题，可以在grub引导界面中选择低版本的内核启动）</p></li></ol><h3 id="进入启动过程后修改启动文件"><a href="#进入启动过程后修改启动文件" class="headerlink" title="进入启动过程后修改启动文件"></a>进入启动过程后修改启动文件</h3><ol><li>打开终端，修改 /etc/default/grub</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/default/grub</span><br></pre></td></tr></table></figure><p><img src="https://img.vim-cn.com/fd/e6ce5005877d949ac833f1889b5402231952e8.png" alt="bash_grub" title="修改grub文件"></p><ol start="2"><li>在 GRUB_CMDLINE_LINUX_DEFAULT 行中添加以下内容并保存</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">modprobe.blacklist=nouveau</span><br></pre></td></tr></table></figure><p><img src="https://img.vim-cn.com/6a/42fdd5650e185d9d3776e932017db58f36bbd7.png" alt="grub修改" title="修改文件"> </p><ol start="3"><li>修改完成后更新grub引导</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-grub</span><br></pre></td></tr></table></figure><p><img src="https://img.vim-cn.com/f0/ecab2cbe7d74fae7ff7927a0f96e85b639d8d3.png" alt="更新grub" title="更新grub"></p><p>至此系统便可以正常使用了</p><h2 id="解决方法B————安装较低版本内核"><a href="#解决方法B————安装较低版本内核" class="headerlink" title="解决方法B————安装较低版本内核"></a>解决方法B————安装较低版本内核</h2><p>如果上面的方法不好使，可以使用一下的方法进行解决</p><h3 id="进入Bios设置，禁用独立显卡、无线网卡"><a href="#进入Bios设置，禁用独立显卡、无线网卡" class="headerlink" title="进入Bios设置，禁用独立显卡、无线网卡"></a>进入Bios设置，禁用独立显卡、无线网卡</h3><h3 id="按照正常安装方式进行安装"><a href="#按照正常安装方式进行安装" class="headerlink" title="按照正常安装方式进行安装"></a>按照正常安装方式进行安装</h3><h3 id="进入系统桌面后，手动安装Linux-4-9-x版本的内核并重启"><a href="#进入系统桌面后，手动安装Linux-4-9-x版本的内核并重启" class="headerlink" title="进入系统桌面后，手动安装Linux 4.9.x版本的内核并重启"></a>进入系统桌面后，手动安装Linux 4.9.x版本的内核并重启</h3><p>至此系统便也可以正常使用了</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>上面的解决方法，个人感觉第一种方法解决的比较彻底。第二中我也用过一段时间（4.9的内核苟了大半年。。。），感觉只可以临时解决问题，并不是长久之计。</p><p>（不是所有的电脑都能完美的安装Linux，现在这句话我是信的233333）</p><p>第二篇文章终于写完了，差不多就这样吧。下篇文章再见！</p><p>(写点什么好呢。。。。)</p>]]></content>
     
