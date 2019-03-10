@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-03-08T03:27:47.688Z</updated>
+  <updated>2019-03-10T06:52:33.455Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="/2019/03/10/test/"/>
+    <id>/2019/03/10/test/</id>
+    <published>2019-03-10T14:52:33.000Z</published>
+    <updated>2019-03-10T06:52:33.455Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>联想小新锐7000の黑苹果折腾记(二)</title>
