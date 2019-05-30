@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>J1900小主机の折腾记(一) | 某咸鱼的鱼缸</title>
+  
+  
+  <meta name="description" content="你看不到我">
+  
+
+  <link rel="alternate" href="/atom.xml" title="某咸鱼的鱼缸">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  <!-- link -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+
+  
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.vim-cn.com/8c/e48d1bd6c4812911ac6a4aaf110366fc903368.jpg">
+  
+
+
+  
+  <link rel="stylesheet" href="/style.css">
+  
+
+  
+
+
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
+</div>
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class="wrapper">
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href="/">
+        
+          某咸鱼的鱼缸
+        
+      </a>
+			<div class="menu">
+				<ul class="h-list">
+          
+  					
+  						<li>
+								<a id="home" class="nav flat-box" href="/">
+									<i class="fas fa-home fa-fw"></i>&nbsp;主页
+								</a>
+							</li>
+      			
+  						<li>
+								<a id="https:github.comErf172" class="nav flat-box" href="https://github.com/Erf172">
+									<i class="fas fa-flask fa-fw"></i>&nbsp;项目
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索">
+						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class="switcher h-list">
+				
+					<li class="s-search"><a class="fas fa-search fa-fw" href="javascript:void(0)"></a></li>
+				
+				<li class="s-menu"><a class="fas fa-bars fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
+
+		<div class="nav-sub container container--flex">
+			<a class="logo flat-box"></a>
+			<ul class="switcher h-list">
+				<li class="s-comment"><a class="flat-btn fas fa-comments fa-fw" href="javascript:void(0)"></a></li>
+				<li class="s-toc"><a class="flat-btn fas fa-list fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu">
+      <ul>
+          
+              
+                  <li>
+										<a id="home" class="nav flat-box" href="/">
+											<i class="fas fa-home fa-fw"></i>&nbsp;主页
+										</a>
+                  </li>
+              
+                  <li>
+										<a id="https:github.comErf172" class="nav flat-box" href="https://github.com/Erf172">
+											<i class="fas fa-flask fa-fw"></i>&nbsp;项目
+										</a>
+                  </li>
+              
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            <article id="post" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+  
+<section class="meta">
+  
+  <div class="meta" id="header-meta">
+    
+      
+          <h1 class="title">J1900小主机の折腾记(一)</h1>
+      
+    
+
+    
+      <time class="metatag time">
+        <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-04-11
+      </time>
+    
+
+    
+      
+
+    
+
+    
+      
+        <div class="metatag browse busuanzi"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+          &nbsp;<span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+        </div>
+      
+    
+
+    
+
+  </div>
+</section>
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <blockquote>
+<p>在咸鱼上发现了一块只卖100元的J1900主板，在思考了一分钟后将它买了下来。<del>虽然成色有点伊拉克，但是100元要什么自行车</del><br>买回来后折腾了一段时间，算是可以勉勉强强的使用了，特此记录一下，用以怀念我失去的头发</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="小主机配置"><a href="#小主机配置" class="headerlink" title="小主机配置"></a>小主机配置</h3><table>
+<thead>
+<tr>
+<th>部件</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>Intel(R) Celeron(R) CPU J1900 @ 1.99GHz</td>
+</tr>
+<tr>
+<td>主板</td>
+<td>Soyo SY-J1900</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>4g DDR3 1333Mhz</td>
+</tr>
+<tr>
+<td>存储</td>
+<td>SAMSUNG PM961 128G Nvme <br> Seagate 320GB 7200RPM HDD <br> 8GB SATA SSD</td>
+</tr>
+</tbody>
+</table>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
+<li>一台显示器</li>
+<li>一块8G 以上的优盘</li>
+<li>一个可以正常使用apt进行安装软件的网络<del>校园网说多了都是泪</del></li>
+</ol>
+<h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><h3 id="Proxmox的安装"><a href="#Proxmox的安装" class="headerlink" title="Proxmox的安装"></a>Proxmox的安装</h3><blockquote>
+<p>一开始我是准备直接使用Proxmox提供的镜像文件将系统安装到8G的SATA 固态上，结果硬盘空间不够…</p>
+<p><img src="https://img.vim-cn.com/4d/5923fc422c327b953170a317d4669ab63919a8.png" alt="screen"><br>只能采用Plan B，先安装一个Debian，然后在Debian上安装Proxmox所需要的组件了<del>常翻车已经报警</del></p>
+</blockquote>
+<h4 id="Debian的下载以及安装"><a href="#Debian的下载以及安装" class="headerlink" title="Debian的下载以及安装"></a>Debian的下载以及安装</h4><h5 id="制作启动优盘"><a href="#制作启动优盘" class="headerlink" title="制作启动优盘"></a>制作启动优盘</h5><ol>
+<li><p>下载<a href="https://mirrors.tuna.tsinghua.edu.cn/debian-cd/current/amd64/iso-cd/debian-9.9.0-amd64-xfce-CD-1.iso" target="_blank" rel="noopener">Debian</a>镜像</p>
+</li>
+<li><p>使用<a href="https://etcher.io/" target="_blank" rel="noopener">etcher</a>将镜像写入优盘写入优盘</p>
+</li>
+</ol>
+<h5 id="插入优盘，进入主板的BIOS，将U盘设置成第一启动设备"><a href="#插入优盘，进入主板的BIOS，将U盘设置成第一启动设备" class="headerlink" title="插入优盘，进入主板的BIOS，将U盘设置成第一启动设备"></a>插入优盘，进入主板的BIOS，将U盘设置成第一启动设备</h5><h5 id="安装Debian"><a href="#安装Debian" class="headerlink" title="安装Debian"></a>安装Debian</h5><ol>
+<li>在系统启动的界面中选择<code>Graphical Install</code></li>
+</ol>
+<p><img src="https://img.vim-cn.com/1b/37c318f72fa3e9263067666d6bfcd57a3c3246.png" alt="GraIns"></p>
+<ol start="2">
+<li><p>语言设置、地区设置、键盘设置中保持默认即可~~为了最大的兼容性</p>
+</li>
+<li><p><code>hostname</code>中设置一个名称，保持默认也可</p>
+</li>
+</ol>
+<p><img src="https://img.vim-cn.com/21/ac1043175e11eb49a8f9f96f88457ee23306e8.png" alt="hostname"></p>
+<ol start="4">
+<li><p><code>domain name</code>设置一个域名，随便填写就可以</p>
+<p><img src="https://img.vim-cn.com/27/112ed3d709b38694cc2c8f7b95b30165cda8f6.png" alt="domain"></p>
+</li>
+<li><p>分别设置root账户的密码，新建一个账户并设置密码</p>
+</li>
+<li><p>时区保持默认即可</p>
+</li>
+<li><p>磁盘分区中，选择<code>Guided-use entire disk</code>,选择你所要安装的系统磁盘，如果分区ok的话，选择<code>Finish  partitioning and write changes to disk</code>后确认即可</p>
+</li>
+</ol>
+<p><img src="https://img.vim-cn.com/c6/50b2121bd77259968405398ef163a2abf22b8f.png" alt="gra"></p>
+<p><img src="https://img.vim-cn.com/e4/89dc8ce654961b5bde247a1a67d5d92414c27b.png" alt="disk"></p>
+<ol start="8">
+<li><p>在<code>Use a network mirror</code>点击yes，选择一个国内的镜像原即可，<code>http proxy</code>保持默认即可</p>
+</li>
+<li><p>在<code>participate in the package usage survey</code>中选择no</p>
+</li>
+</ol>
+<ol start="10">
+<li>在<code>Software selection</code>中，仅勾选<code>SSH server</code>、<code>standard system utilities</code>即可</li>
+</ol>
+<p><img src="https://img.vim-cn.com/a4/30f298d584c1d23e41b6e34e7aa76f08bec041.png" alt="sshserver"></p>
+<ol start="11">
+<li>将grub安装至系统磁盘中</li>
+</ol>
+<p><img src="https://img.vim-cn.com/1c/dec696eca7f643aab38c930a208945df578d44.png" alt="grub2"></p>
+<p><img src="https://img.vim-cn.com/af/7e6ef652ce3595f3a1dbeaae2a8096a97a3242.png" alt="grub"></p>
+<ol start="12">
+<li>安装完成后拔掉优盘后重启即可</li>
+</ol>
+<blockquote>
+<p>注意：如果拔掉显示器后系统无法启动，可以按下图用75欧姆电阻分别连接<code>5-10</code>、<code>4-9</code>、<code>3-8</code>针脚即可<del>实测100欧姆电阻也可以</del><br><img src="https://img.vim-cn.com/1c/c882544cd7ed6a599b46ffaf73a795d7243dcd.jpg" alt="vga"></p>
+</blockquote>
+<h4 id="Debian的初步配置以及Proxmox组件的安装"><a href="#Debian的初步配置以及Proxmox组件的安装" class="headerlink" title="Debian的初步配置以及Proxmox组件的安装"></a>Debian的初步配置以及Proxmox组件的安装</h4><h5 id="apt的初步配置-删除CDROM镜像源"><a href="#apt的初步配置-删除CDROM镜像源" class="headerlink" title="apt的初步配置(删除CDROM镜像源)"></a>apt的初步配置(删除CDROM镜像源)</h5><ol>
+<li>使用root账户登录Debian，并执行以下命令</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dhclient</span><br><span class="line">vi /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>将CDROM开头的镜像源删除并保存</li>
+</ol>
+<p><img src="https://img.vim-cn.com/7a/290f676624327d4a7d3655cf07d495e4bc18c3.png" alt="cdrom"></p>
+<ol start="3">
+<li>更新软件源即可</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get upgrade</span><br></pre></td></tr></table></figure>
+<h5 id="安装网络组件并查看网址"><a href="#安装网络组件并查看网址" class="headerlink" title="安装网络组件并查看网址"></a>安装网络组件并查看网址</h5><blockquote>
+<p>这里可以登录路由器的后台来查看主机的地址，此处采用另一种方法</p>
+</blockquote>
+<ol>
+<li>执行以下命令即可</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install net-tools</span><br><span class="line">ifconfig</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.vim-cn.com/f4/26b369716fcc30c99a28a3fbaa022beb5c70cf.png" alt="ifconfig"></p>
+<ol start="2">
+<li>将ip地址记好，下面就可以使用ssh来远程操作了</li>
+</ol>
+<p><strong>注意：由于Debian系统的限制，在这里使用新建的用户进行登录后再切换为root账户</strong></p>
+<p><img src="https://img.vim-cn.com/50/90438db837f383bebf528863541518452504da.png" alt="ssh"></p>
+<h5 id="Proxmox组件的安装"><a href="#Proxmox组件的安装" class="headerlink" title="Proxmox组件的安装"></a>Proxmox组件的安装</h5><blockquote>
+<p>这里参考了<a href="https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Stretch" target="_blank" rel="noopener">Proxmox官方网站的安装教程</a></p>
+</blockquote>
+<ol>
+<li><p>使用ssh远程连接至主机</p>
+</li>
+<li><p>修改hosts文件，添加本机地址</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/hosts</span><br><span class="line"><span class="comment">#将127.0.1.1替换替换成主机地址保存即可</span></span><br><span class="line">hostname --ip-address</span><br><span class="line"><span class="comment">#如果此时返回的是主机的ip地址，即为正常工作</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img.vim-cn.com/8c/d7e606e988a6587baa70f2552e2e6bf9f32d15.png" alt="hosts"></p>
+<p><img src="https://img.vim-cn.com/9b/2d6bb7bb60a76fa2658780a2f5c4bb5c7a5fc5.png" alt="ip"></p>
+<ol start="3">
+<li>安装Proxmox</li>
+</ol>
+<p>执行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"deb http://download.proxmox.com/debian/pve stretch pve-no-subscription"</span> &gt; /etc/apt/sources.list.d/pve-install-repo.list</span><br><span class="line">wget http://download.proxmox.com/debian/proxmox-ve-release-5.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg</span><br><span class="line">apt update &amp;&amp; apt dist-upgrade</span><br><span class="line">apt install proxmox-ve postfix open-iscsi -y</span><br><span class="line">apt remove os-prober</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.vim-cn.com/64/6d614f8b0b956d85c752d16f9be22bc4ec2d80.png" alt="install_1"></p>
+<p><img src="https://img.vim-cn.com/0e/ad37d31b5c9d4cb254d6fd5007614ab1b742c3.png" alt="install_2"></p>
+<p><img src="https://img.vim-cn.com/67/fc698a96a64d5440a1d08d79f2a109c10a686e.png" alt="install_3"></p>
+<p><img src="https://img.vim-cn.com/2d/b6dca142982f8a23e2201e698af074319f23cb.png" alt="install_4"></p>
+<ol start="4">
+<li>等待安装完成后，使用电脑端浏览器访问<code>https://youripaddress:8006</code></li>
+</ol>
+<blockquote>
+<p>Google Chrome等浏览器可能会提示证书问题，无视直接访问即可<br><img src="https://img.vim-cn.com/ef/e720b91949866413466609cc2210df2bf7f41f.png" alt="googlechrome"></p>
+</blockquote>
+<ol start="5">
+<li>使用root账户登录后，即可进入下一步的设置</li>
+</ol>
+<p><img src="https://img.vim-cn.com/06/826695b5a71c3bbd7df7f08c4996dff5147af9.png" alt="loginsuccess"></p>
+<h5 id="虚拟网卡的创建"><a href="#虚拟网卡的创建" class="headerlink" title="虚拟网卡的创建"></a>虚拟网卡的创建</h5><ol>
+<li><p>使用root账户登录后台</p>
+</li>
+<li><p>点击当前主机节点，依次选择<code>网络设备&gt;创建&gt;Linux Bridge</code></p>
+</li>
+<li><p>将虚拟网卡的桥接端口修改为物理网卡接口名称</p>
+</li>
+<li><p>将IP地址修改为当前主机网址</p>
+</li>
+</ol>
+<p><img src="https://img.vim-cn.com/d8/87746498510e1bdfc75ece3678137f175da0c3.png" alt="ip"></p>
+<ol start="5">
+<li>保存并重启主机即可</li>
+</ol>
+<h3 id="LVM逻辑卷的搭建以及系统的安装"><a href="#LVM逻辑卷的搭建以及系统的安装" class="headerlink" title="LVM逻辑卷的搭建以及系统的安装"></a>LVM逻辑卷的搭建以及系统的安装</h3><h4 id="LVM逻辑卷创建"><a href="#LVM逻辑卷创建" class="headerlink" title="LVM逻辑卷创建"></a>LVM逻辑卷创建</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fdisk -l    <span class="comment">#查看当前硬盘挂载状态</span></span><br><span class="line"><span class="comment">##可以看到，这里有两块名称为`sdb`、`sdc`的硬盘，我们需要先将这两个硬盘创建PV卷</span></span><br><span class="line">pvcreate /dev/sdb /dev/sdc     <span class="comment">#创建PV卷</span></span><br><span class="line">vgcreate myvg /dev/sdb /dev/sdc  <span class="comment">#创建一个卷组</span></span><br><span class="line">lvcreate -L 4G -n ISO myvg      <span class="comment">#创建一个逻辑卷用来存放ISO镜像</span></span><br><span class="line">mkfs -t ext4 /dev/myvg/ISO      <span class="comment">#格式化ISO卷</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img.vim-cn.com/f3/02026a83f397920e81a60d73ffbf239b9a2f65.png" alt="ISO"></p>
+<h4 id="将逻辑卷挂载至Proxmox中"><a href="#将逻辑卷挂载至Proxmox中" class="headerlink" title="将逻辑卷挂载至Proxmox中"></a>将逻辑卷挂载至Proxmox中</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /media/</span><br><span class="line">mkdir ISO</span><br><span class="line">mount /dev/myvg/ISO ISO</span><br><span class="line">pvesm add lvm myvg --vgname myvg --content images </span><br><span class="line">pvesm add dir ISO --path /media/ISO --content ISO</span><br></pre></td></tr></table></figure>
+<p>此时打开后台网页管理界面，就可以发现创建的逻辑卷已经挂载上</p>
+<p><img src="https://img.vim-cn.com/9d/95ec994278763d1fd6619dd0b3204a63be817f.png" alt="lvm"></p>
+<h4 id="创建虚拟机并安装"><a href="#创建虚拟机并安装" class="headerlink" title="创建虚拟机并安装"></a>创建虚拟机并安装</h4><ol>
+<li>点击ISO存储节点，依次点击内容&gt;上传，将下载好的系统镜像上传</li>
+</ol>
+<p><img src="https://img.vim-cn.com/77/240020ad1eefc4a01bf6df1628a9f0fd1940ce.png" alt="uploadiso"></p>
+<ol start="2">
+<li><p>点击新建虚拟机，根据情况设置即可</p>
+</li>
+<li><p>新建完成后启动虚拟机，按照正常步骤安装系统即可</p>
+</li>
+</ol>
+<p><img src="https://img.vim-cn.com/bb/b06c9b1844f47d568b1ac029bfd66fa4deee3b.png" alt="centos"></p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>在这折腾了半天后，终于算是勉强能够使用了。为了准备前段时间的考试就一直鸽到了现在。 下一步的操作应该就是整一个软路由，<del>当然，现在已经弄完了</del>毕竟夏天到了，我那个小米路由3有点顶不住了。。。。</p>
+
+      </div>
+        
+          <section class="meta" id="footer-meta">
+            
+              <time class="metatag time" itemprop="dateUpdated" datetime="2019-05-30T19:17:56+08:00" content="2019-05-30"><i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
+                &nbsp;2019-05-30
+              </time>
+            
+            
+                
+                <div class="metatag tags"><a class="tag" href="/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;Server</a></div>
+            
+            
+              
+  <div class="metatag share -mob-share-list">
+    <i class="left fas fa-share-alt fa-fw" aria-hidden="true"></i>
+    <div class="-mob-share-list share-body">
+      
+        
+          <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer" href="http://connect.qq.com/widget/shareqq/index.html?url=/2019/04/12/J1900-Little-Server-Installation-1/&title=J1900小主机の折腾记(一) | 某咸鱼的鱼缸&summary=
+在咸鱼上发现了一块只卖100元的J1900主板，在思考了一分钟后将它买了下来。虽然成色有点伊拉克，但是100元要什么自行车买回来后折腾了一段时间，算是可以勉勉强强的使用了，特此记录一下，用以怀念我失去的头发
+">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+            
+          </a>
+        
+      
+        
+          <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=/2019/04/12/J1900-Little-Server-Installation-1/&title=J1900小主机の折腾记(一) | 某咸鱼的鱼缸&summary=
+在咸鱼上发现了一块只卖100元的J1900主板，在思考了一分钟后将它买了下来。虽然成色有点伊拉克，但是100元要什么自行车买回来后折腾了一段时间，算是可以勉勉强强的使用了，特此记录一下，用以怀念我失去的头发
+">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+            
+          </a>
+        
+      
+        
+          <a class="qrcode" rel="external nofollow noopener noreferrer" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJklEQVR42u3aW26DMBAF0O5/0+0C2pB7x6QS9vFXhAj48DHyPL6+4vU9Wr+fcH3l+voNCwMD47GMZCvtPb83lCPb92JgYJzDuA587T3J7+vIWQdlDAwMjBchMgnBbejEwMDAuDfgzpLS66dhYGBgrCSxSaUrL8/NUt8bcnEMDIwHMvKq+////kh/AwMD41GMWUtylr6+Cq83NEoxMDC2ZrQJan5wzK+0Ke7L/2JgYGzNaEv/bcmsPd3lSXL0YgwMjC0YbXMx32Iemtsj4x9Pw8DA2JqRFPfzzbVtgHy70SESAwNjU8ZsPGtlhCIn1ekrBgbGdozZsFc7KpEz2lEMDAyMkxl3vTJJU/Mm6JtOLAYGxqaMNmi2I1yzdkJSgKtfhoGB8VhGne+OzmMr7YeiUoiBgXEYIw9/7TDrR3JPDAyMYxh5o7E99rXU/HNgYGCcw5iNas2akZ8YKcPAwNibMUtZ8wJcHtDz0Y2X+8TAwDiAsdIkqAtk5QeqRy4wMDCOYaw0BpLVjmK8uR8DA+MYRr6VBDDb6LCFgIGBcQxj1np802Isj5LD0h4GBsamjO9yLX2t8jMV6TQGBsbWjFmYW4ElxbiWioGBcQJjZWxrlgbn/cci4GJgYBzAWDnGte3PqCXZhm8MDAyM0RhEsrlZq2DYPcDAwDiGkYfLdtgiL+HdEHAxMDAeyFgZ3loJoLeNaGBgYGzNaM9d7Yvv2uJK6ouBgfFYxg8HhtsZX0jMMwAAAABJRU5ErkJggg==">
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+          
+          </a>
+        
+      
+        
+          <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer" href="http://service.weibo.com/share/share.php?url=/2019/04/12/J1900-Little-Server-Installation-1/&title=J1900小主机の折腾记(一) | 某咸鱼的鱼缸&summary=
+在咸鱼上发现了一块只卖100元的J1900主板，在思考了一分钟后将它买了下来。虽然成色有点伊拉克，但是100元要什么自行车买回来后折腾了一段时间，算是可以勉勉强强的使用了，特此记录一下，用以怀念我失去的头发
+">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+            
+          </a>
+        
+      
+        
+          <a class="qrcode" rel="external nofollow noopener noreferrer" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJklEQVR42u3aW26DMBAF0O5/0+0C2pB7x6QS9vFXhAj48DHyPL6+4vU9Wr+fcH3l+voNCwMD47GMZCvtPb83lCPb92JgYJzDuA587T3J7+vIWQdlDAwMjBchMgnBbejEwMDAuDfgzpLS66dhYGBgrCSxSaUrL8/NUt8bcnEMDIwHMvKq+////kh/AwMD41GMWUtylr6+Cq83NEoxMDC2ZrQJan5wzK+0Ke7L/2JgYGzNaEv/bcmsPd3lSXL0YgwMjC0YbXMx32Iemtsj4x9Pw8DA2JqRFPfzzbVtgHy70SESAwNjU8ZsPGtlhCIn1ekrBgbGdozZsFc7KpEz2lEMDAyMkxl3vTJJU/Mm6JtOLAYGxqaMNmi2I1yzdkJSgKtfhoGB8VhGne+OzmMr7YeiUoiBgXEYIw9/7TDrR3JPDAyMYxh5o7E99rXU/HNgYGCcw5iNas2akZ8YKcPAwNibMUtZ8wJcHtDz0Y2X+8TAwDiAsdIkqAtk5QeqRy4wMDCOYaw0BpLVjmK8uR8DA+MYRr6VBDDb6LCFgIGBcQxj1np802Isj5LD0h4GBsamjO9yLX2t8jMV6TQGBsbWjFmYW4ElxbiWioGBcQJjZWxrlgbn/cci4GJgYBzAWDnGte3PqCXZhm8MDAyM0RhEsrlZq2DYPcDAwDiGkYfLdtgiL+HdEHAxMDAeyFgZ3loJoLeNaGBgYGzNaM9d7Yvv2uJK6ouBgfFYxg8HhtsZX0jMMwAAAABJRU5ErkJggg==">
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
+          
+          </a>
+        
+      
+    </div>
+  </div>
+
+
+            
+          </section>
+        
+
+        
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2019/03/23/Some-Security-Settings-on-Blog/" rel="prev" title="一些个人博客の安全设置">
+                                    
+                                        一些个人博客の安全设置
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Server</a> <a class="tag" href="/tags/Blog/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Blog</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      
+        
+
+    <div class="recommended_posts">
+        <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;相关文章</h4>
+        <ul>
+            
+                <li><a href="/2019/03/23/Some-Security-Settings-on-Blog/">一些个人博客の安全设置</a></li>
+            
+                <li><a href="/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/">联想小新锐7000の黑苹果折腾记(二)</a></li>
+            
+                <li><a href="/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/">联想小新锐7000の黑苹果折腾记(一)</a></li>
+            
+                <li><a href="/2018/12/01/how-to-slove-Linux-cannot-boot/">Linux不能正常安装或启动の部分解决方法</a></li>
+            
+        </ul>
+    </div>
+
+
+      
+      
+      
+        <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+        
+        
+        
+          
+            <section id="comments">
+              <div id="valine_container" class="valine_thread">
+                <i class="fas fa-spinner fa-spin fa-fw"></i>
+              </div>
+            </section>
+          
+        
+      
+    </section>
+  </article>
+
+
+
+<script>
+    window.subData = {
+        title: 'J1900小主机の折腾记(一)',
+        tools: true
+    }
+</script>
+
+
+        </div>
+        <aside class='l_side'>
+            
+  
+  
+    
+      
+      
+        <section class="author">
+  <div class="content pure">
+    
+      <div class="avatar">
+        <img class="avatar" src="https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg">
+      </div>
+    
+    
+      <div class="text">
+        
+          <h2>某咸鱼的鱼缸</h2>
+        
+        
+          <p>日常生(翻)活(车)の记录史</p>
+
+        
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:fzx172@126.com" class="social flat-btn" target="_blank" rel="external"><i class="social fas fa-envelope" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://github.com/Erf172" class="social flat-btn" target="_blank" rel="external"><i class="social fab fa-github" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=547706795" class="social flat-btn" target="_blank" rel="external"><i class="social fas fa-music" aria-hidden="true"></i></a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+      
+    
+  
+    
+      
+      
+        <section class="plain">
+  
+<header class="pure">
+  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
+  
+    <a class="rightBtn" target="_blank" rel="external nofollow noopener noreferrer" href="https://xaoxuu.com/wiki/material-x/" title="https://xaoxuu.com/wiki/material-x/">
+    <i class="fas fa-question-circle fa-fw"></i></a>
+  
+</header>
+
+  <div class="content pure">
+    <p>终于搞定了23333……<br>开始填坑…<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>
+
+  </div>
+</section>
+
+      
+    
+  
+    
+      
+      
+        
+  <section class="category">
+    
+<header class="pure">
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;所有分类</div>
+  
+</header>
+
+    <div class="content pure">
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class="name">Guide</div><div class="badge">(4)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Others/" href="/categories/Others/"><div class="name">Others</div><div class="badge">(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+      
+    
+  
+    
+      
+      
+        
+  <section class="tagcloud">
+    
+<header class="pure">
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+</header>
+
+    <div class="content pure">
+      <a href="/tags/Blog/" style="font-size: 14px; color: #999">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 19px; color: #777">MacOS</a> <a href="/tags/Server/" style="font-size: 19px; color: #777">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
+    </div>
+  </section>
+
+
+      
+    
+  
+    
+      
+      
+        
+
+
+  <section class="music">
+    
+<header class="pure">
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn" target="_blank" rel="external nofollow noopener noreferrer" href="https://music.163.com/#/user/home?id=547706795" title="https://music.163.com/#/user/home?id=547706795">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
+    <div class="content pure">
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer" data-theme="#1BCDFC" data-mode="circulation" data-server="netease" data-type="playlist" data-id="2048970456" data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
+
+      
+    
+  
+    
+      
+      
+        
+  <section class="toc-wrapper">
+    
+<header class="pure">
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章目录</div>
+  
+    <div class="wrapper"><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class="content pure">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#小主机配置"><span class="toc-text">小主机配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准备工作"><span class="toc-text">准备工作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装过程"><span class="toc-text">安装过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Proxmox的安装"><span class="toc-text">Proxmox的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Debian的下载以及安装"><span class="toc-text">Debian的下载以及安装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#制作启动优盘"><span class="toc-text">制作启动优盘</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#插入优盘，进入主板的BIOS，将U盘设置成第一启动设备"><span class="toc-text">插入优盘，进入主板的BIOS，将U盘设置成第一启动设备</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#安装Debian"><span class="toc-text">安装Debian</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Debian的初步配置以及Proxmox组件的安装"><span class="toc-text">Debian的初步配置以及Proxmox组件的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#apt的初步配置-删除CDROM镜像源"><span class="toc-text">apt的初步配置(删除CDROM镜像源)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#安装网络组件并查看网址"><span class="toc-text">安装网络组件并查看网址</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Proxmox组件的安装"><span class="toc-text">Proxmox组件的安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#虚拟网卡的创建"><span class="toc-text">虚拟网卡的创建</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LVM逻辑卷的搭建以及系统的安装"><span class="toc-text">LVM逻辑卷的搭建以及系统的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#LVM逻辑卷创建"><span class="toc-text">LVM逻辑卷创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#将逻辑卷挂载至Proxmox中"><span class="toc-text">将逻辑卷挂载至Proxmox中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建虚拟机并安装"><span class="toc-text">创建虚拟机并安装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
+    </div>
+  </section>
+
+
+      
+    
+  
+
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+    <footer id="footer" class="clearfix">
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="mailto:fzx172@126.com" class="social fas fa-envelope flat-btn" target="_blank" rel="external"></a>
+        
+      
+        
+          <a href="https://github.com/Erf172" class="social fab fa-github flat-btn" target="_blank" rel="external"></a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=547706795" class="social fas fa-music flat-btn" target="_blank" rel="external"></a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+  </div>
+</footer>
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        const $reveal = $('.reveal');
+    		if ($reveal.length === 0) return;
+    		const sr = ScrollReveal({ distance: 0 });
+    		sr.reveal('.reveal');
+      });
+    </script>
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        Waves.attach('.flat-btn', ['waves-button']);
+        Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+        Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+        Waves.attach('.flat-box', ['waves-block']);
+        Waves.attach('.float-box', ['waves-block', 'waves-float']);
+        Waves.attach('.waves-image');
+        Waves.init();
+      });
+    </script>
+  
+  
+    <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+  
+  
+  
+
+
+  
+  
+  
+    
+      
+      
+      
+        
+          <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+          
+            
+              <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1/js/volantis.min.js"></script>
+            
+          
+          <script>
+          var GUEST_INFO = ['nick','mail','link'];
+          var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          var notify = 'false' == true;
+          var verify = 'false' == true;
+          var valine = new Valine();
+          valine.init({
+            el: '#valine_container',
+            notify: notify,
+            verify: verify,
+            guest_info: guest_info,
+            
+            appId: "zIUVhjTMMhMS9rM7KQODSSBm-gzGzoHsz",
+            appKey: "EMTrLkd8dDSOCWjqHU68wwbu",
+            placeholder: "快来评论吧~",
+            pageSize:'10',
+            avatar:'mp',
+            lang:'zh-cn',
+            highlight:''
+          })
+          </script>
+        
+      
+    
+  
+  
+    <script src="/js/app.js"></script>
+<script src="/js/search.js"></script>
+  
+
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":100,"height":200},"mobile":{"show":false},"log":false});</script></body>
+</html>
