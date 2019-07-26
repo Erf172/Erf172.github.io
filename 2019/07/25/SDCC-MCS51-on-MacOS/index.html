@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>删除优盘病毒の不完全教程 | 某咸鱼的鱼缸</title>
+  <title>macOS下51单片机开发环境的搭建 | 某咸鱼的鱼缸</title>
   
   
   <meta name="description" content="你看不到我">
@@ -168,8 +168,8 @@
         
   
     <h1 class="title">
-      <a href="/2018/11/29/how-to-remove-virus-from-udisk/">
-        删除优盘病毒の不完全教程
+      <a href="/2019/07/25/SDCC-MCS51-on-MacOS/">
+        macOS下51单片机开发环境的搭建
       </a>
     </h1>
   
@@ -198,7 +198,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2018-11-28</p>
+    <p>2019-07-25</p>
   </a>
 </div>
 
@@ -237,7 +237,7 @@
         <a class="notlink">
           <i class="fas fa-chart-area" aria-hidden="true" ></i>
           <p>
-            <span class="post-count">357</span>
+            <span class="post-count">694</span>
           </p>
         </a>
 </div>
@@ -259,47 +259,60 @@
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
           <blockquote>
-<p>今天去打印店打印东西。回来后发现自己的优盘<strong>又中病毒了</strong>。。。。（等等，我为什么说又。。。）<br>既然中毒了，那么就得清理一下。。。。。</p>
+<p>学习了一段时间的单片机，虽然Windows下搞单片机是最好不过的方案，但总是感觉Windows下搞比较别扭<del>总是忍不住打开steam</del><br>在翻了无数次车之后，终于在macos下跑起来了，特此记录一下下吧。。。。</p>
 </blockquote>
 <a id="more"></a>
-<h2 id="将资源管理器设置成显示所有文件"><a href="#将资源管理器设置成显示所有文件" class="headerlink" title="将资源管理器设置成显示所有文件"></a>将资源管理器设置成显示所有文件</h2><ol>
-<li>打开我的电脑&gt;&gt;查看&gt;&gt;选项</li>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>众所周知，在Windows下搞单片机是最好的选择，从编写代码，到仿真，到烧录，几乎使用软件就可以一键搞定，一条龙服务。在macOS或者linux上。。。。。<br><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=6784oJECJEUGaib8_M1Pnp_5kFIScKoCHh9-zlL1LAJmm-wiCrGc1QIscFvUPFz10TrLioqgTBpPO8Tt0VOlX_vm0Hziz9qWOl1iOSlDqD22we36rRHKl8AY7zOppH7Dy4eTzk0q78q7xQE81w&amp;file_name=/1564062406306.jpeg" alt="ll"><br>凡事就是图一个折腾。于是乎，Let’s Go！</p>
+<h4 id="要进行的工作"><a href="#要进行的工作" class="headerlink" title="要进行的工作"></a>要进行的工作</h4><ol>
+<li>安装sdcc   </li>
+<li>安装Visual Studio Code   </li>
+<li>安装stcgal   </li>
+<li>安装ttl下载器的驱动</li>
 </ol>
-<p><img src="https://img.vim-cn.com/ff/8106eb2eb568546b83cd5766347538932a0d83.png" alt="我的电脑"></p>
+<h2 id="正式步骤"><a href="#正式步骤" class="headerlink" title="正式步骤"></a>正式步骤</h2><h3 id="安装sdcc"><a href="#安装sdcc" class="headerlink" title="安装sdcc"></a>安装sdcc</h3><p><a href="http://sdcc.sourceforge.net/" target="_blank" rel="noopener">sdcc (Small Device C Compiler) </a> 是一个应用于单片机的一个交叉编译器，其官网上的解释是这样的</p>
+<blockquote>
+<p>SDCC is a retargettable, optimizing Standard C (ANSI C89, ISO C99, ISO C11) compiler suite that targets the Intel MCS51 based microprocessors (8031, 8032, 8051, 8052, etc.), Maxim (formerly Dallas) DS80C390 variants, Freescale (formerly Motorola) HC08 based (hc08, s08), Zilog Z80 based MCUs (z80, z180, gbz80, Rabbit 2000/3000, Rabbit 3000A, TLCS-90), Padauk (pdk14, pdk15) and STMicroelectronics STM8. Work is in progress on supporting the Padauk (pdk13), Microchip PIC16 and PIC18 targets. It can be retargeted for other microprocessors.</p>
+</blockquote>
+<p>sdcc 的安装方法也很简单，使用brew一键安装就ok 了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install sdcc</span><br></pre></td></tr></table></figure>
+<p>编译时，只需要使用<code>sdcc sourcefile.c</code>即可完成编译   </p>
+<h3 id="安装Visual-Studio-Code"><a href="#安装Visual-Studio-Code" class="headerlink" title="安装Visual Studio Code"></a>安装Visual Studio Code</h3><p>安装完了编译环境，自然也需要一个代码编辑器。在这里，我选用了<code>Visual Studio Code</code>来作为编辑器</p>
+<ol>
+<li>进入<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">官网</a>，下载并安装   </li>
+</ol>
+<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=a8bct-6J20tEft5b01PBGgXutELBUbdiiFZ64FEI8jLFG6aKJuXxlK9rc4BbPUl8T8rdvA3t206mjc5450xvRnIT9du0D6hIYhsakCER2CUQFzn29PZbQ4-1h8l6puDliMsRgF7Cw3NPqIzZqpAkFwzLAyhl&amp;file_name=/QQ20190725-205707.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=a8bct-6J20tEft5b01PBGgXutELBUbdiiFZ64FEI8jLFG6aKJuXxlK9rc4BbPUl8T8rdvA3t206mjc5450xvRnIT9du0D6hIYhsakCER2CUQFzn29PZbQ4-1h8l6puDliMsRgF7Cw3NPqIzZqpAkFwzLAyhl&amp;file_name=/QQ20190725-205707.png"></p>
 <ol start="2">
-<li>在打开的文件夹选项中取消“隐藏受保护的系统文件(推荐)”并选择“显示所有文件和文件夹”</li>
+<li>安装完成之后添加<code>C/C++</code>扩展</li>
 </ol>
-<p><img src="https://img.vim-cn.com/74/45e5f54584c40446e67ed096c6f4106d6ddb7d.png" alt="文件夹选项"></p>
-<h2 id="删除病毒"><a href="#删除病毒" class="headerlink" title="删除病毒"></a>删除病毒</h2><ol>
-<li><strong>右击</strong>打开被感染的优盘，<strong>一定要右击</strong>，防止中病毒</li>
+<ol start="3">
+<li>按下<code>Shift+Command+P</code>,选择<code>C/C++:编辑配置</code>,在<code>includePath</code>添加sdcc的头文件地址</li>
 </ol>
-<p><img src="https://img.vim-cn.com/93/1417f6e3b09a9ec3f09fcdc68c727c9ac33df8.png" alt="右击"></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"configurations"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"name"</span>: <span class="string">"Mac"</span>,</span><br><span class="line">            <span class="attr">"includePath"</span>: [</span><br><span class="line">                <span class="string">"$&#123;workspaceFolder&#125; /**"</span>,</span><br><span class="line">                <span class="string">"$&#123;workspaceFolder&#125; /include"</span>,</span><br><span class="line">                <span class="string">"/usr/local/Cellar/sdcc/3.9.0/share/sdcc/include/mcs51"</span>,</span><br><span class="line">                <span class="string">"/usr/local/Cellar/sdcc/3.9.0/share/sdcc/include/**"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"defines"</span>: [],</span><br><span class="line">            <span class="attr">"macFrameworkPath"</span>: [</span><br><span class="line">                <span class="string">"/Users/fzx172/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"compilerPath"</span>: <span class="string">"/usr/bin/clang"</span>,</span><br><span class="line">            <span class="attr">"cStandard"</span>: <span class="string">"c11"</span>,</span><br><span class="line">            <span class="attr">"cppStandard"</span>: <span class="string">"c++17"</span>,</span><br><span class="line">            <span class="attr">"intelliSenseMode"</span>: <span class="string">"clang-x64"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"version"</span>: <span class="number">4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=c0874AMQVJ_io4VP-CdM9rzO6gGggUgRvzGL8oVqaEZwlN0P4ovpmPk_qxQrus0Q86dYb3SSIFTSO2bFaKvIy5lOpc7f_kH35lGJTSkNyzJ275T7wNH9aBn4oJHr-KjV8y1n7aqyqfz9ld45_M1zMJF-Ql_H&amp;file_name=/QQ20190726-081616.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=c0874AMQVJ_io4VP-CdM9rzO6gGggUgRvzGL8oVqaEZwlN0P4ovpmPk_qxQrus0Q86dYb3SSIFTSO2bFaKvIy5lOpc7f_kH35lGJTSkNyzJ275T7wNH9aBn4oJHr-KjV8y1n7aqyqfz9ld45_M1zMJF-Ql_H&amp;file_name=/QQ20190726-081616.png"></p>
+<h3 id="安装Stcgal"><a href="#安装Stcgal" class="headerlink" title="安装Stcgal"></a>安装Stcgal</h3><p>编辑器和编译器都解决了，下面应该解决下载程序</p>
+<ol>
+<li>安装Python3   </li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew insall python3</span><br></pre></td></tr></table></figure>
 <ol start="2">
-<li>将快捷方式删除掉，还有那个病毒.exe </li>
+<li>修改python3为系统默认版本</li>
 </ol>
-<p><img src="https://img.vim-cn.com/b3/92f35d209a8942dd31ea8a9c905304bf53ec70.png" alt="删除"></p>
-<h2 id="将文件夹及文件设置成可见"><a href="#将文件夹及文件设置成可见" class="headerlink" title="将文件夹及文件设置成可见"></a>将文件夹及文件设置成可见</h2><ol>
-<li>在打开的盘界面中按住shift键右击，选择在“此处打开命令窗口/powershell”</li>
+<p>打开<code>.bash_profile</code>，添加以下内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># python_switch</span></span><br><span class="line"><span class="keyword">function</span> python2_switch &#123;</span><br><span class="line">    sudo unlink /usr/bin/python</span><br><span class="line">    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python /usr/bin/python</span><br><span class="line">    chmod a+x /usr/bin/python</span><br><span class="line">    <span class="built_in">echo</span> -e <span class="string">"Python2已部署"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> python3_switch &#123;</span><br><span class="line">    sudo unlink /usr/bin/python</span><br><span class="line">    sudo ln -s /Library/Frameworks/Python.framework/Versions/3.7/bin/python3 /usr/bin/python</span><br><span class="line">    chmod a+x /usr/bin/python</span><br><span class="line">    <span class="built_in">echo</span> -e <span class="string">"Python3已部署"</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=dee8ZMj6Uv-5k7V4TpMJLiZaMhZOk80B90ug26dzQGmcLFZnWnt03TtmdHThg3pZ7qqAyU6S_Qyg67EfiDLbHI2TLH1Wj_Jqt1my31a2u68WSO_fRWWB_I2_vHi6tvJtRtiUPEWpM2fRO_W_2PMHjsX5zRrg&amp;file_name=/QQ20190726-083455.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=dee8ZMj6Uv-5k7V4TpMJLiZaMhZOk80B90ug26dzQGmcLFZnWnt03TtmdHThg3pZ7qqAyU6S_Qyg67EfiDLbHI2TLH1Wj_Jqt1my31a2u68WSO_fRWWB_I2_vHi6tvJtRtiUPEWpM2fRO_W_2PMHjsX5zRrg&amp;file_name=/QQ20190726-083455.png"></p>
+<p>保存后执行<code>source ~/.bash_profile</code>，即可快速进行python版本切换</p>
+<ol start="3">
+<li>安装stcgal</li>
 </ol>
-<p><img src="https://img.vim-cn.com/bf/8239e5d35a001f5e4a0492137062432ac7ad9d.png" alt="powershell"></p>
-<ol start="2">
-<li>输入以下命令</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">attrib * -s -h -r -a /D</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.vim-cn.com/c3/5e655bd9dc7e7cb9439877ed461f40b573e0a0.png" alt="bash"></p>
-<p>至此，优盘的病毒就会清理干净了。</p>
-<p><img src="https://img.vim-cn.com/12/724a3b4e86a5d74230cadc62310266c8e40ada.png" alt="done"></p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
-<li><p>优盘<strong>不要直接打开，不要直接打开，不要直接打开。</strong></p>
-</li>
-<li><p>优盘<strong>一定要点击右键&gt;&gt;打开</strong></p>
-</li>
-<li><p>如果电脑不小心中毒，<strong>最好重装系统</strong>，360什么的杀不净的。</p>
-</li>
-</ol>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>一直想要出一个怎么清理优盘病毒的教程，毕竟学校是这种东西的高发区。。。但是我总是遇不到。。。</p>
-<p>其实这两天想要填一下坑的，谁知道半路杀出一个程咬金。不过也好把这个教程出了。。</p>
-<p>继续填坑去了</p>
+<p>执行<code>pip install stcgal</code>即可安装</p>
+<h3 id="安装ttl下载器的驱动"><a href="#安装ttl下载器的驱动" class="headerlink" title="安装ttl下载器的驱动"></a>安装ttl下载器的驱动</h3><p><a href="http://www.prolific.com.tw/us/showproduct.aspx?p_id=229&amp;pcid=41" target="_blank" rel="noopener">PL2303</a>   </p>
+<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=29a6Q9t1uQQlHM0ZXbDGP4qozgXPrvlP3KwTFVmUoJ-HreaYrguilkEEGEPnTBPIg1NBpdWeC2rL35vkDU1b0ZsTWpKI1IexrYs-ygdhs8Ee7Sq3zVRujF9Q2Q1UiHraV7hk0Y_1_SyM8Kaz6eiCb0wzILM6&amp;file_name=/QQ20190725-212733.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=29a6Q9t1uQQlHM0ZXbDGP4qozgXPrvlP3KwTFVmUoJ-HreaYrguilkEEGEPnTBPIg1NBpdWeC2rL35vkDU1b0ZsTWpKI1IexrYs-ygdhs8Ee7Sq3zVRujF9Q2Q1UiHraV7hk0Y_1_SyM8Kaz6eiCb0wzILM6&amp;file_name=/QQ20190725-212733.png"></p>
+<p><a href="http://www.wch.cn/download/CH341SER_MAC_ZIP.html" target="_blank" rel="noopener">CH340</a></p>
+<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=08af0yXzI5J7f2Lh4h6bR6DGGBmeDZT67NJiSJFX3-848sEOK6i2jIk_1xKXRaaPM_MHfqroYM0EMUDgzZ7G9zX71rnLNmC-ltE7Md4TkuA2ioiAUmVJ2D-TzyKNJlQ1yA2jCWdVYd8QMYpG5eVWJx2JNO5t&amp;file_name=/QQ20190725-215326.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=08af0yXzI5J7f2Lh4h6bR6DGGBmeDZT67NJiSJFX3-848sEOK6i2jIk_1xKXRaaPM_MHfqroYM0EMUDgzZ7G9zX71rnLNmC-ltE7Md4TkuA2ioiAUmVJ2D-TzyKNJlQ1yA2jCWdVYd8QMYpG5eVWJx2JNO5t&amp;file_name=/QQ20190725-215326.png"></p>
+<p>到此，macOS的51开发环境便搭建完毕</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>折腾了半天，终于将环境折腾好了，感觉一切都好，就是头发少   </p>
+<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=0997f_DQPE9FeLzMfupFTFj8eCn_-fmOaY8sU5ggPl_UiIkifGM8EDwuY6eO1WNP0oqyBoXd7e0QIL3UYYn9TZ0o1dg79aOHyDTSpfpHIyvR834Jf32LP42AbVGV0i-6GmmhKA3kBw5kBIS9KUd9GQOOhc7AA8nLhxOy44bNfA&amp;file_name=/0902C8FE5E204783AAEA2A04A28B43B0.jpg" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=0997f_DQPE9FeLzMfupFTFj8eCn_-fmOaY8sU5ggPl_UiIkifGM8EDwuY6eO1WNP0oqyBoXd7e0QIL3UYYn9TZ0o1dg79aOHyDTSpfpHIyvR834Jf32LP42AbVGV0i-6GmmhKA3kBw5kBIS9KUd9GQOOhc7AA8nLhxOy44bNfA&amp;file_name=/0902C8FE5E204783AAEA2A04A28B43B0.jpg"></p>
+<p>我爱单片机，单片机是我快乐</p>
 
         </div>
         
@@ -311,10 +324,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2018-11-29T17:23:06+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-07-26T08:47:20+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2018年11月29日</p>
+    <p>最后更新于 2019年7月26日</p>
   </a>
 </div>
 
@@ -323,7 +336,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/优盘/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>优盘</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/删除病毒/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>删除病毒</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Macos/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Macos</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>单片机</p></a></div>
 
 
         
@@ -336,8 +349,8 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=/2018/11/29/how-to-remove-virus-from-udisk/&title=删除优盘病毒の不完全教程 | 某咸鱼的鱼缸&summary=
-今天去打印店打印东西。回来后发现自己的优盘又中病毒了。。。。（等等，我为什么说又。。。）既然中毒了，那么就得清理一下。。。。。
+          href="http://connect.qq.com/widget/shareqq/index.html?url=/2019/07/25/SDCC-MCS51-on-MacOS/&title=macOS下51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
+学习了一段时间的单片机，虽然Windows下搞单片机是最好不过的方案，但总是感觉Windows下搞比较别扭总是忍不住打开steam在翻了无数次车之后，终于在macos下跑起来了，特此记录一下下吧。。。。
 "
           
           >
@@ -350,8 +363,8 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=/2018/11/29/how-to-remove-virus-from-udisk/&title=删除优盘病毒の不完全教程 | 某咸鱼的鱼缸&summary=
-今天去打印店打印东西。回来后发现自己的优盘又中病毒了。。。。（等等，我为什么说又。。。）既然中毒了，那么就得清理一下。。。。。
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=/2019/07/25/SDCC-MCS51-on-MacOS/&title=macOS下51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
+学习了一段时间的单片机，虽然Windows下搞单片机是最好不过的方案，但总是感觉Windows下搞比较别扭总是忍不住打开steam在翻了无数次车之后，终于在macos下跑起来了，特此记录一下下吧。。。。
 "
           
           >
@@ -364,8 +377,8 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=/2018/11/29/how-to-remove-virus-from-udisk/&title=删除优盘病毒の不完全教程 | 某咸鱼的鱼缸&summary=
-今天去打印店打印东西。回来后发现自己的优盘又中病毒了。。。。（等等，我为什么说又。。。）既然中毒了，那么就得清理一下。。。。。
+          href="http://service.weibo.com/share/share.php?url=/2019/07/25/SDCC-MCS51-on-MacOS/&title=macOS下51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
+学习了一段时间的单片机，虽然Windows下搞单片机是最好不过的方案，但总是感觉Windows下搞比较别扭总是忍不住打开steam在翻了无数次车之后，终于在macos下跑起来了，特此记录一下下吧。。。。
 "
           
           >
@@ -390,40 +403,21 @@
         
             <div class="prev-next">
                 
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                            <h4>
-                                <a href="/2018/12/01/how-to-slove-Linux-cannot-boot/" rel="prev" title="Linux不能正常安装或启动の部分解决方法">
-                                  
-                                      Linux不能正常安装或启动の部分解决方法
-                                  
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a> <a class="tag" href="/tags/Linux/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Linux</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
                 
                     <section class="next">
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2018/11/25/hello-world/" rel="prev" title="Hello World">
+                                <a href="/2019/05/31/J1900-PVE-RouterOS-Installation/" rel="prev" title="J1900软路由折腾记">
                                     
-                                        Hello World
+                                        J1900软路由折腾记
                                     
                                 </a>
                             </h4>
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/置顶/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>置顶</a> <a class="tag" href="/tags/欢迎/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>欢迎</a>
+                                    <a class="tag" href="/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Server</a> <a class="tag" href="/tags/Router/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Router</a>
                                 </h6>
                             
                         </span>
@@ -468,7 +462,7 @@
 
   <script>
     window.subData = {
-      title: '删除优盘病毒の不完全教程',
+      title: 'macOS下51单片机开发环境的搭建',
       tools: true
     }
   </script>
@@ -551,7 +545,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#将资源管理器设置成显示所有文件"><span class="toc-text">将资源管理器设置成显示所有文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除病毒"><span class="toc-text">删除病毒</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将文件夹及文件设置成可见"><span class="toc-text">将文件夹及文件设置成可见</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意事项"><span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#要进行的工作"><span class="toc-text">要进行的工作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正式步骤"><span class="toc-text">正式步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装sdcc"><span class="toc-text">安装sdcc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Visual-Studio-Code"><span class="toc-text">安装Visual Studio Code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Stcgal"><span class="toc-text">安装Stcgal</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装ttl下载器的驱动"><span class="toc-text">安装ttl下载器的驱动</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
     </div>
   </section>
 
