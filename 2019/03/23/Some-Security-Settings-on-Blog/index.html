@@ -11,7 +11,7 @@
   
 
   
-  <link rel="alternate" href="/atom.xml" title="某咸鱼的鱼缸">
+  <link rel="alternate" href="/blog/atom.xml" title="某咸鱼的鱼缸">
   
 
   <meta name="HandheldFriendly" content="True">
@@ -33,7 +33,7 @@
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/blog/style.css">
   
 
   <script>
@@ -125,7 +125,7 @@
 
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-      <a class="logo flat-box" href='/' >
+      <a class="logo flat-box" href='/blog/' >
         
           某咸鱼的鱼缸
         
@@ -195,7 +195,7 @@
         
   
     <h1 class="title">
-      <a href="/2019/03/23/Some-Security-Settings-on-Blog/">
+      <a href="/blog/2019/03/23/Some-Security-Settings-on-Blog/">
         一些个人博客の安全设置
       </a>
     </h1>
@@ -210,7 +210,7 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
+    <a href="/blog/" rel="nofollow">
       
         <i class="fas fa-user" aria-hidden="true"></i>
       
@@ -235,7 +235,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/Guide/' rel="nofollow">
+    <a href='/blog/categories/Guide/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>Guide</p>
     </a>
@@ -342,7 +342,7 @@
 </ol>
 <p>在root账户下执行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
-<p>修改 PasswordAuthorization 项为NO并去掉前方#号<br>修改 GPGAuthorization 以及 RSAAuthorization为yes (默认是开启状态)</p>
+<p>修改 PasswordAuthentication 项为NO并去掉前方#号</p>
 <p><img src="https://img.vim-cn.com/ff/bcc687627531221b4128f306c897a04d6c706b.png" alt="22"></p>
 <p>保存并退出，重启ssh服务</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
@@ -368,7 +368,7 @@
 <ol start="3">
 <li>重新启动ssh服务</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/erc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
 <ol start="4">
 <li>重新断开连接，会发现使用ssh无法使用22端口登录，需要改为当前设定端口<del>我号要没了</del></li>
 </ol>
@@ -412,10 +412,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-07-26T08:48:04+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-20T20:32:32+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年7月26日</p>
+    <p>最后更新于 2019年9月20日</p>
   </a>
 </div>
 
@@ -424,7 +424,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Server</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Blog/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Blog</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/Server/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Server</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/Blog/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Blog</p></a></div>
 
 
         
@@ -495,7 +495,7 @@
                         <span class="art-item-left">
                             <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                             <h4>
-                                <a href="/2019/04/12/J1900-Little-Server-Installation-1/" rel="prev" title="J1900小主机の折腾记(一)">
+                                <a href="/blog/2019/04/12/J1900-Little-Server-Installation-1/" rel="prev" title="J1900小主机の折腾记(一)">
                                   
                                       J1900小主机の折腾记(一)
                                   
@@ -504,7 +504,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Server</a>
+                                    <a class="tag" href="/blog/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Server</a>
                                 </h6>
                             
                         </span>
@@ -515,7 +515,7 @@
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/" rel="prev" title="联想小新锐7000の黑苹果折腾记(二)">
+                                <a href="/blog/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/" rel="prev" title="联想小新锐7000の黑苹果折腾记(二)">
                                     
                                         联想小新锐7000の黑苹果折腾记(二)
                                     
@@ -524,7 +524,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a>
+                                    <a class="tag" href="/blog/tags/MacOS/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>MacOS</a> <a class="tag" href="/blog/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a>
                                 </h6>
                             
                         </span>
@@ -691,7 +691,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/Blog/" style="font-size: 14px; color: #999">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 19px; color: #777">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 19px; color: #777">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
+      <a href="/blog/tags/Blog/" style="font-size: 14px; color: #999">Blog</a> <a href="/blog/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/blog/tags/MacOS/" style="font-size: 19px; color: #777">MacOS</a> <a href="/blog/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/blog/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/blog/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/blog/tags/写bug/" style="font-size: 19px; color: #777">写bug</a> <a href="/blog/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/blog/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/blog/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/blog/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/blog/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
@@ -713,11 +713,11 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(7)</div></a></li>
+          <li><a class="flat-box" title="/blog/categories/Guide/" href="/blog/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(7)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/MCS-51/" href="/categories/MCS-51/"><div class='name'>MCS-51</div><div class='badge'>(3)</div></a></li>
+          <li><a class="flat-box" title="/blog/categories/MCS-51/" href="/blog/categories/MCS-51/"><div class='name'>MCS-51</div><div class='badge'>(3)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/Others/" href="/categories/Others/"><div class='name'>Others</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/blog/categories/Others/" href="/blog/categories/Others/"><div class='name'>Others</div><div class='badge'>(1)</div></a></li>
         
       </ul>
     </div>
@@ -904,7 +904,7 @@
     var AZURE_QUERY_KEY = "";
     var BAIDU_API_ID = "";
     var SEARCH_SERVICE = "hexo" || "hexo";
-    var ROOT = "/"||"/";
+    var ROOT = "/blog/"||"/";
     if(!ROOT.endsWith('/'))ROOT += '/';
   </script>
 
@@ -977,7 +977,7 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="/js/volantis.js"></script>
+      <script src="/blog/js/volantis.js"></script>
     
   
   <script>
@@ -1006,10 +1006,10 @@
 
 
 
-  <script src="/js/app.js"></script>
+  <script src="/blog/js/app.js"></script>
 
 
-  <script src="/js/search.js"></script>
+  <script src="/blog/js/search.js"></script>
 
 
 
@@ -1126,5 +1126,5 @@
   <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+<script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/blog/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>
