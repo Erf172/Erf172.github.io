@@ -318,13 +318,11 @@
 <li><p>打开Aria WebUI，在服务器设置中端口填写<code>443</code>,local填写在nginx中填写的local名，即可正常连接</p>
 </li>
 </ol>
-<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=8490roYsu5STaTDGNNT8dOrBiS6z_zoELjJr8QpQiT4a7-xlWMIWd6-1YL08dyLrbW3VkNevppRW2pHh13EeschC87hOnK8nb34dMPkiqDDoGaZiXKLLU-sGA_S9gECYV2xxyQ5exSy1P3FOE7_hkDUu9yKSjIzdrA&amp;file_name=/QQ20191011-174011.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=8490roYsu5STaTDGNNT8dOrBiS6z_zoELjJr8QpQiT4a7-xlWMIWd6-1YL08dyLrbW3VkNevppRW2pHh13EeschC87hOnK8nb34dMPkiqDDoGaZiXKLLU-sGA_S9gECYV2xxyQ5exSy1P3FOE7_hkDUu9yKSjIzdrA&amp;file_name=/QQ20191011-174011.png"></p>
 <ol start="4">
 <li>修改aria.conf 仅允许本机访问rpc</li>
 </ol>
 <p>修改aria.conf ，将<code>rpc-allow-origin-all</code> 和<code>rpc-listen-all</code>修改为false</p>
 <p>重新启动aria2服务</p>
-<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=1c76DIodvVkqb2s9VCLhdUD1NPwmTRxfqe72AcJi-gH2sAO_zuIi-UTf2uZ7NgR8WS5CgziPJJuJejnFNuZLEzKnoIYWONnKTUSHsl4fk7y5AXWQHZnFZea-o6d9raCyyHMT6NlCU5qP-o3J4hFG34-E0zHgvQP_tQ&amp;file_name=/QQ20191011-174554.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=1c76DIodvVkqb2s9VCLhdUD1NPwmTRxfqe72AcJi-gH2sAO_zuIi-UTf2uZ7NgR8WS5CgziPJJuJejnFNuZLEzKnoIYWONnKTUSHsl4fk7y5AXWQHZnFZea-o6d9raCyyHMT6NlCU5qP-o3J4hFG34-E0zHgvQP_tQ&amp;file_name=/QQ20191011-174554.png"></p>
 <h3 id="启用防火墙，仅开放使用端口"><a href="#启用防火墙，仅开放使用端口" class="headerlink" title="启用防火墙，仅开放使用端口"></a>启用防火墙，仅开放使用端口</h3><p>由于我的服务器使用的系统为<code>Ubuntu 16.04.6 LTS</code>,所以我使用系统自带的<code>ufw</code>来配置防火墙</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用root权限操作</span></span><br><span class="line">ufw allow 443               <span class="comment"># 开放https</span></span><br><span class="line">ufw allow 80                <span class="comment"># 开放http</span></span><br><span class="line">ufw allow 7777              <span class="comment"># 开放ssh</span></span><br><span class="line">ufw allow 51413:51999/tcp   <span class="comment"># Aria2 </span></span><br><span class="line">ufw allow 51413:51999/udp</span><br><span class="line">ufw default deny            <span class="comment"># 设置默认拒绝</span></span><br><span class="line">ufw <span class="built_in">enable</span>                  <span class="comment"># 启动ufw</span></span><br></pre></td></tr></table></figure>
 <h3 id="创建一个新的账户用于登录系统-禁止root账户ssh登录"><a href="#创建一个新的账户用于登录系统-禁止root账户ssh登录" class="headerlink" title="创建一个新的账户用于登录系统,禁止root账户ssh登录"></a>创建一个新的账户用于登录系统,禁止root账户ssh登录</h3><ol>
@@ -337,7 +335,6 @@
 </ol>
 <p>将<code>PasswordAuthentication</code>和<code>PermitRootLogin</code>修改为<code>no</code></p>
 <p>保存后执行<code>/etc/init.d/ssh restart</code>应用设置</p>
-<p><img src="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=6e5adFULZOhOltTqP9WtT9pbfgV7igmRxNc4jYGpP0vPbxwTynN6TwgT-kOlqwuE3O6M65G-MF9myOUS2ct0GMStDo9A9VpTU_kWXQqsX_MX75xRqqyFLb6ZF1av8D0PcXLpj5sIx_7k5nhLiIA3SlwwyzpPg3_Btw&amp;file_name=/QQ20191011-194110.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=6e5adFULZOhOltTqP9WtT9pbfgV7igmRxNc4jYGpP0vPbxwTynN6TwgT-kOlqwuE3O6M65G-MF9myOUS2ct0GMStDo9A9VpTU_kWXQqsX_MX75xRqqyFLb6ZF1av8D0PcXLpj5sIx_7k5nhLiIA3SlwwyzpPg3_Btw&amp;file_name=/QQ20191011-194110.png"></p>
 <h3 id="写一个自动备份的脚本备份服务器"><a href="#写一个自动备份的脚本备份服务器" class="headerlink" title="写一个自动备份的脚本备份服务器"></a>写一个自动备份的脚本备份服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin</span></span><br><span class="line"><span class="comment">#export PATH</span></span><br><span class="line"></span><br><span class="line">filesystem=`df |awk <span class="string">' $1 ~ /\/dev/ &amp;&amp; $NF  ~ /^\/$/   &#123;print $1 &#125;'</span>`</span><br><span class="line"></span><br><span class="line">used_cap=$(df |awk <span class="string">' $1 ~ /\/dev/ &amp;&amp; $NF  ~ /^\/$/   &#123;print  strtonum($5)&#125;'</span> )</span><br><span class="line"></span><br><span class="line">bak_date=`date +<span class="string">"%Y-%m-%d"</span>`</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [  <span class="variable">$used_cap</span> -ge 40  ]; <span class="keyword">then</span> </span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"NO Available Speace left !"</span> </span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">mkdir /root/backup</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"backup started ! please wait....</span></span><br><span class="line"><span class="string">current time :   `date`"</span> </span><br><span class="line"></span><br><span class="line">tar cpvf /root/backup/backup_<span class="variable">$&#123;bak_date&#125;</span>.tar --exclude=/proc --exclude=/lost+found --exclude=/mnt --exclude=/sys --exclude=/media --exclude=/root/backup --exclude=/tmp --exclude=/home/wwwlog --exclude=/home/wwwroot/Downloads /</span><br><span class="line"></span><br><span class="line">lzma -e -z -v -7 --threads=2 /root/backup/backup_<span class="variable">$&#123;bak_date&#125;</span>.tar </span><br><span class="line"></span><br><span class="line">openssl rc4 -k yourpassword -salt -<span class="keyword">in</span> /root/backup/backup_<span class="variable">$&#123;bak_date&#125;</span>.tar.lzma -out /root/backup/backup_<span class="variable">$&#123;bak_date&#125;</span>.tar.lzma.rc4</span><br></pre></td></tr></table></figure>
 <p>备份完的文件可以复制回本地当做备份使用，如果系统出现问题，可以重新安装完系统后还原即可</p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>折腾完了，估计应该不会boom了吧…………</p>
@@ -354,10 +351,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-11T20:24:44+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-20T11:13:25+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年10月11日</p>
+    <p>最后更新于 2019年10月20日</p>
   </a>
 </div>
 
@@ -707,7 +704,7 @@
 </header>
 
   <div class='content pure'>
-    <p><img src="https://kod.erf172.tk/index.php?user/publicLink&fid=2982l0c2cIw3YmG-LU_L2bp0vrrqSEEcLjM3pjRY8HiYd2FkxonY6Yx_htFXIKzpFoybp0CFaFEulqkEyWVrZunc1kz77x2ITto-oMqeygTF66H-zTK98Ovv_IQP5XjxyNY&file_name=/Alipay.png" width="260" height="280"></p>
+    <p><img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280"></p>
 
   </div>
 </section>
@@ -726,7 +723,7 @@
 </header>
 
   <div class='content pure'>
-    <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> </p>
+    <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
   </div>
 </section>
 
