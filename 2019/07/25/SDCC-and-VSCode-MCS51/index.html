@@ -264,7 +264,7 @@
         <a class="notlink">
           <i class="fas fa-chart-area" aria-hidden="true" ></i>
           <p>
-            <span class="post-count">1.2k</span>
+            <span class="post-count">1.1k</span>
           </p>
         </a>
 </div>
@@ -302,44 +302,7 @@
 </blockquote>
 <p><del>为什么不放中文，因为英语水平太差</del></p>
 <p><strong>需要注意的是，sdcc与Keil的语法是有一些不相同的地方的</strong>，下面是一些不相同的地方供以参考</p>
-<table>
-<thead>
-<tr>
-<th>SDCC</th>
-<th>Keil</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>sbit   </strong>at 0x94 a</td>
-<td>sbit a=P1^4</td>
-</tr>
-<tr>
-<td>0x80</td>
-<td>P0^0</td>
-</tr>
-<tr>
-<td>0x90</td>
-<td>P1^0</td>
-</tr>
-<tr>
-<td>0xA0</td>
-<td>P2^0</td>
-</tr>
-<tr>
-<td>0xB0</td>
-<td>P3^0</td>
-</tr>
-<tr>
-<td>P1_1</td>
-<td>P1^1</td>
-</tr>
-<tr>
-<td>__interrupt</td>
-<td>interrupt</td>
-</tr>
-</tbody>
-</table>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">SDCC                    Keil </span><br><span class="line"></span><br><span class="line">__sbit __at <span class="number">0x94</span> a      sbit a=P1^<span class="number">4</span></span><br><span class="line"><span class="number">0x80</span>                    P0^<span class="number">0</span></span><br><span class="line"><span class="number">0x90</span>                    P1^<span class="number">0</span></span><br><span class="line"><span class="number">0xA0</span>                    P2^<span class="number">0</span></span><br><span class="line"><span class="number">0xB0</span>                    P3^<span class="number">0</span></span><br><span class="line">P1_1                    P1^<span class="number">1</span></span><br><span class="line">__interrupt             interrupt</span><br></pre></td></tr></table></figure>
 <p><del>遇事不决双下划线</del></p>
 <h2 id="正式步骤"><a href="#正式步骤" class="headerlink" title="正式步骤"></a>正式步骤</h2><h3 id="MacOS"><a href="#MacOS" class="headerlink" title="MacOS"></a>MacOS</h3><h4 id="安装sdcc"><a href="#安装sdcc" class="headerlink" title="安装sdcc"></a>安装sdcc</h4><p>MacOS下安装sdcc是非常简单的，使用brew一键安装就ok 了</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;      #安装brew</span><br><span class="line">brew install sdcc   #安装sdcc</span><br></pre></td></tr></table></figure>
@@ -401,7 +364,7 @@
 <p>这样，Windows下的开发环境便搭建好了，Enjoy！<img class="emoji aru" src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/img/aru/151.png"></p>
 <h3 id="安装PlatformIO"><a href="#安装PlatformIO" class="headerlink" title="安装PlatformIO"></a>安装PlatformIO</h3><p>是不是感觉，上面的操作过于繁琐了，那么，有没有一种一键式的安装方式呢？</p>
 <p>当然有啦。</p>
-<p>[PlatformIO]是一款可供跨平台的代码构建器、集成开发环境（IDE），兼容 Arduino，ESP8266和mbed等等等等单片机。也就是说，只要你安装了一个PlatformIO，就不用安装各种IDE了 <del>Anesome</del></p>
+<p><a href="https://platformio.org/" target="_blank" rel="noopener">PlatformIO</a>是一款可供跨平台的代码构建器、集成开发环境（IDE），兼容 Arduino，ESP8266和mbed等等等等单片机。也就是说，只要你安装了一个PlatformIO，就不用安装各种IDE了 <del>Anesome</del></p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>安装方法也很简单，下载好<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VS Code</a>之后，在扩展界面中,搜索<code>PlatformIO</code>安装即可。稍等片刻重启VS Code即可</p>
 <p><img src="https://img.vim-cn.com/9f/4becab336eee00d52b181e54b66b27444993d2.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=7db6jmvkvnpcJztYG-pQ3xmhueWjiQu0n4OYi8Z--5yL8pVgrIEhgg9viyHN_TtbOiNNGMpG_hjjUQdsI3HcZtVnr1SSuDk2bmQeWokIZNHVNtBfzu-MxdWNO7-d0WKyPGiS_Yhoif1PIWbkcpjsULFpukYBxRhF5NFrqQ&amp;file_name=/QQ20191013-135503.png"></p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>折腾了半天，终于将环境折腾好了，感觉一切都好，就是头发少   </p>
@@ -418,10 +381,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-20T11:28:49+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-24T17:32:50+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年10月20日</p>
+    <p>最后更新于 2019年12月24日</p>
   </a>
 </div>
 
@@ -697,7 +660,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 17.33px; color: #828282">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 20.67px; color: #6c6c6c">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
@@ -719,7 +682,7 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(8)</div></a></li>
+          <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(9)</div></a></li>
         
           <li><a class="flat-box" title="/categories/MCS-51/" href="/categories/MCS-51/"><div class='name'>MCS-51</div><div class='badge'>(3)</div></a></li>
         
@@ -869,7 +832,7 @@
     
     。
     <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：15.3k</span>
+    <span class="post-count">字数统计：18.1k</span>
     <br>
     <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
