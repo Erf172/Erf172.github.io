@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -25,11 +25,11 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://kod.erf172.tk/index.php?user/publicLink&fid=6f19Aus9e1CMczggTFPiuaAyekFC7zi8jyvDNtpergeMmBTHBM8zrhoRBT_5pWkGHeXKeGh4beS2kAOkwaYBazJTI3gPtw9gFhmzNZokdvVqPQphxcKRMt73J3kmgqR8J-A&file_name=/logoko.png">
+
   
 
   
@@ -67,8 +67,8 @@
 
   <div class="m_search">
     <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="" />
       <i class="icon fas fa-search fa-fw"></i>
+      <input type="text" class="input u-search-input" placeholder="Search" />
     </form>
   </div>
 
@@ -77,7 +77,18 @@
     
       
         <li>
-          <a class="nav home" href="https://github.com/Erf172"
+          <a class="nav home" style="color: "
+            href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;Blog
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" style="color: "
+            href="https://github.com/Erf172"
             
             
             id="https:github.comErf172">
@@ -86,7 +97,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://aria2.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://aria2.erf172.tk"
             
             
             id="https:aria2.erf172.tk">
@@ -95,7 +107,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://onedrive.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://onedrive.erf172.tk"
             
             
             id="https:onedrive.erf172.tk">
@@ -104,7 +117,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://kod.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://kod.erf172.tk"
             
             
             id="https:kod.erf172.tk">
@@ -118,56 +132,177 @@
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header ">
   <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
+    <div id="loading-bar"></div>
   </div>
 
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-      <a class="logo flat-box" href='/' >
+      <a class="logo flat-box" target="_self" href='/' >
         
-          某咸鱼的鱼缸
+          
+            <i class='fas fa-home'></i>
+          
+          
+            鱼缸本缸
+          
         
       </a>
 			<div class='menu navgation'>
 				<ul class='h-list'>
           
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                    target="_self"
+                  
+                  id="home">
+									<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="javascript:switchNightMode()"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="javascript:switchNightMode()">
+									<i class='fas fa-adjust fa-fw'></i>&nbsp;夜间模式
+								</a>
+							</li>
+      			
+      		
 				</ul>
 			</div>
 
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜索" />
-						<i class="icon fas fa-search fa-fw"></i>
-					</form>
-				</div>
-			
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索一下" />
+        </form>
+      </div>
+
 			<ul class='switcher h-list'>
 				
-					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
 				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
 			</ul>
 		</div>
 
 		<div class='nav-sub container container--flex'>
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
 			</ul>
 		</div>
 	</div>
 </header>
-	<aside class="menu-phone">
+	<aside class="menu-phone white-box">
     <header>
 		<nav class="menu navgation">
       <ul>
         
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                  target="_self"
+                
+                id="home">
+								<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="tags">
+								<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+       
       </ul>
 		</nav>
     </header>
@@ -182,7 +317,7 @@
       <div class='l_main'>
 	
 		
-  <section class="post-list">
+  <section class="post-list ">
     
       
         
@@ -212,7 +347,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -237,12 +372,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -251,10 +388,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-10-27</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/10/27</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>438</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>1分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -273,15 +428,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">438</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -303,21 +453,23 @@
 <p>感觉学习了51的一些基本知识后，可以考虑学习STM32了。<br>不过STM32真的比51麻烦，特开一帖，做一下学习过程的时候一些总结</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/10/27/STM32-Murmurs/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/10/27/STM32-Murmurs/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/单片机/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>单片机</a>
+          <a href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 单片机</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -326,7 +478,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -351,12 +503,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -365,10 +519,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-10-11</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/10/11</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>930</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>4分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -387,15 +559,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Server</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Blog/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Blog</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">930</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -417,23 +584,25 @@
 <p>继<a href="https://www.erf172.tk/2019/03/23/Some-Security-Settings-on-Blog/" target="_blank" rel="noopener">上次</a>之后,虽然不用过天天被炸的日子了，但是，他防呆不防傻啊<br>莫得办法,只能是再添加一些操作，防止BOOM了</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/10/12/Server-Settings-on-Blog/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/10/12/Server-Settings-on-Blog/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/Server/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Server</a>
+          <a href="/tags/Server/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Server</a>
         
-          <a href="/tags/Blog/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Blog</a>
+          <a href="/tags/Blog/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Blog</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -442,7 +611,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -467,12 +636,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -481,10 +652,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-11</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/9/11</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>948</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>5分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -503,15 +692,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/写bug/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>写bug</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">948</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -533,23 +717,25 @@
 <p>用定时器写完时钟后，开发板上的DS1302自然是不能放过，看了半天文档，差不多写出来了，特此记录一下下吧</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/09/12/SDCC-MCS51-DS1302-Clock/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/09/12/SDCC-MCS51-DS1302-Clock/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/单片机/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>单片机</a>
+          <a href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 单片机</a>
         
-          <a href="/tags/写bug/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>写bug</a>
+          <a href="/tags/写bug/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 写bug</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -558,7 +744,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -583,12 +769,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -597,10 +785,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-08-28</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/8/28</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>1.2k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>6分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -619,15 +825,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/写bug/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>写bug</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">1.2k</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -649,23 +850,25 @@
 <p>学习了一段时间的单片机，觉得自己可以写点东西了，在写了无数个bug后，差不多是可以跑起来了，记录一下下吧。。。</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/08/29/SDCC-MCS51-Timer-Clock/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/08/29/SDCC-MCS51-Timer-Clock/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/单片机/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>单片机</a>
+          <a href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 单片机</a>
         
-          <a href="/tags/写bug/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>写bug</a>
+          <a href="/tags/写bug/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 写bug</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -674,7 +877,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -699,12 +902,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -713,10 +918,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-07-25</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/7/25</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>1.1k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>4分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -735,15 +958,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">1.1k</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -765,21 +983,23 @@
 <p>学习了一段时间的单片机，虽然Keil搞单片机是最常见的方案，但总是感觉Keil用着很不习惯<br>在翻了无数次车之后，终于在跑起来了，特此记录一下下吧。。。。</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/07/25/SDCC-and-VSCode-MCS51/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/07/25/SDCC-and-VSCode-MCS51/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/单片机/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>单片机</a>
+          <a href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 单片机</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -788,7 +1008,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -813,12 +1033,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -827,10 +1049,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-05-31</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/5/31</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>2.5k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>9分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -849,15 +1089,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Server</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Router/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Router</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">2.5k</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -879,23 +1114,25 @@
 <p>夏天到了，突然发现我的小米路由器3好像慢了很多。但是我的钱包却告诉我它还很流畅<br>于是乎我看了一眼桌子上的J1900……  <del>J1900:你不要过来啊</del></p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/05/31/J1900-PVE-RouterOS-Installation/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/05/31/J1900-PVE-RouterOS-Installation/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/Server/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Server</a>
+          <a href="/tags/Server/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Server</a>
         
-          <a href="/tags/Router/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Router</a>
+          <a href="/tags/Router/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Router</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -904,7 +1141,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -929,12 +1166,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -943,10 +1182,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-04-11</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/4/11</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>1.4k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>5分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -965,15 +1222,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Server</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">1.4k</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -995,21 +1247,23 @@
 <p>在咸鱼上发现了一块只卖100元的J1900主板，在思考了一分钟后将它买了下来。<del>虽然成色有点伊拉克，但是100元要什么自行车</del><br>买回来后折腾了一段时间，算是可以勉勉强强的使用了，特此记录一下，用以怀念我失去的头发</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/04/12/J1900-Little-Server-Installation-1/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/04/12/J1900-Little-Server-Installation-1/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/Server/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Server</a>
+          <a href="/tags/Server/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Server</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -1018,7 +1272,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -1043,12 +1297,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -1057,10 +1313,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-03-22</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/3/22</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>1.5k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>5分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -1079,15 +1353,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Server</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Blog/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Blog</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">1.5k</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -1109,23 +1378,25 @@
 <p>废了九牛二虎之力将自己的小博客搭起来了，结果服务器天天被炸。。。。<br>既然这样，那就进行一些安全设置，确保不会被炸掉</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/03/23/Some-Security-Settings-on-Blog/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/03/23/Some-Security-Settings-on-Blog/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/Server/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Server</a>
+          <a href="/tags/Server/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Server</a>
         
-          <a href="/tags/Blog/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Blog</a>
+          <a href="/tags/Blog/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Blog</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -1134,7 +1405,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -1159,12 +1430,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -1173,10 +1446,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-02-17</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/2/17</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>1.9k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>8分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -1195,15 +1486,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MacOS/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>MacOS</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/系统安装/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>系统安装</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">1.9k</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -1225,23 +1511,25 @@
 <p>经过上一次的折(翻)腾(车)，系统我们已经安装好了。下面我们进行苹果系统的调试工作<br>注意，这个过程可能会多次翻车。一定要有耐心233333</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/MacOS/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>MacOS</a>
+          <a href="/tags/MacOS/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> MacOS</a>
         
-          <a href="/tags/系统安装/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>系统安装</a>
+          <a href="/tags/系统安装/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 系统安装</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -1250,7 +1538,7 @@
       
         
           <div class='post-wrapper'>
-            <article class="post reveal ">
+            <article class="post white-box card-shadow  reveal ">
   
 
 
@@ -1275,12 +1563,14 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
 
@@ -1289,10 +1579,28 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-02-12</p>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/2/12</p>
   </a>
 </div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>2.1k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>8分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -1311,15 +1619,10 @@
         
           
             
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MacOS/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>MacOS</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/系统安装/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>系统安装</p></a></div>
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">2.1k</span>
-          </p>
-        </a>
-</div>
+
           
         
           
@@ -1341,23 +1644,25 @@
 <p>在经历了让人头秃的期末考试之后，终于可以着手继续折腾黑苹果了2333333<br>经过无数次翻车与删库跑路之后，终于调整成了可以使用的样子，特此记录一下下，怀念我失去的头发。。。。</p>
 </blockquote>
       
-        <div class="readmore">
-          <a href="/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="button readmore">
+            <a href="/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              阅读全文
+            </a>
+          </div>
+        
       
     </div>
-    
+    <!-- 
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/MacOS/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>MacOS</a>
+          <a href="/tags/MacOS/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> MacOS</a>
         
-          <a href="/tags/系统安装/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>系统安装</a>
+          <a href="/tags/系统安装/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 系统安装</a>
         
       </div>
-    
+     -->
   </section>
 </article>
 
@@ -1383,10 +1688,8 @@
     
       
         
-          
-          
-            <section class='widget author'>
-  <div class='content pure'>
+          <section class='widget card-shadow  blogger'>
+  <div class='content'>
     
       <div class='avatar'>
         <img class='avatar' src='https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg'/>
@@ -1436,68 +1739,132 @@
   </div>
 </section>
 
-          
         
       
         
-          
-          
-            
-
-          
+      
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
   
 </header>
 
-  <div class='content pure'>
-    <p>不小心删库了……<br>慢慢恢复中……<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>
+  <div class='content'>
+    
+      <p>
+        <p>夜间模式终于差不多了</p>
 
+      </p>
+    
+      <p>
+        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+
+      </p>
+    
   </div>
 </section>
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
         
       
         
           
-          
-            
-  <section class='widget tagcloud'>
+  <section class='widget card-shadow  category'>
+    <header>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
     
-<header class='pure'>
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_self"
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
-    </div>
-  </section>
-
-
-          
-        
-      
-        
-          
-          
-            
-  <section class='widget category'>
-    
-<header class='pure'>
-  <div><i class="fas fa-expand-arrows-alt fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
-  
-</header>
-
-    <div class='content pure'>
+    <div class='content'>
       <ul class="entry">
         
           <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(9)</div></a></li>
@@ -1513,99 +1880,183 @@
   </section>
 
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
         
       
         
           
-          
-            
-
-
-  <section class='widget music'>
-    
-<header class='pure'>
-  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  <section class='widget card-shadow  tagcloud'>
+    <header>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
   
     <a class="rightBtn"
     
       rel="external nofollow noopener noreferrer"
     
     
-    href="https://music.163.com/#/user/home?id=547706795"
-    title="https://music.163.com/#/user/home?id=547706795">
-    <i class="far fa-heart fa-fw"></i></a>
+      target="_self"
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme="#1BCDFC"
-    
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="playlist"
-    data-id="2048970456"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
+    <div class='content'>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
   
 </header>
 
-  <div class='content pure'>
-    <p><img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280"></p>
-
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
   </div>
 </section>
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fas fa-ad fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;广而告之</div>
   
 </header>
 
-  <div class='content pure'>
-    <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+  <div class='content'>
+    
+      <p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+      </p>
+    
   </div>
 </section>
 
-          
+        
+      
+        
+      
         
       
     
-
   
 </aside>
 
-<footer id="footer" class="clearfix">
-  
+<footer class="clearfix">
+  <br><br>
   
     <div class="social-wrapper">
       
@@ -1635,12 +2086,13 @@
       
     </div>
   
+  
   <br>
   <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
-    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">material-x</a>
+    <a href="https://xaoxuu.com/wiki/volantis/" target="_blank" class="codename">Volantis</a>
     作为主题
     
       ，
@@ -1649,10 +2101,10 @@
       次
     
     。
-    <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：18.1k</span>
-    <br>
-    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  </div>
+  
+  <span class="post-count">字数统计：18.1k。  </span>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
         function createtime() { 
@@ -1664,13 +2116,11 @@
            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-           document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+           document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
        } 
      setInterval("createtime()",250);
     </script>
-    <br>
-  </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
 
@@ -1690,24 +2140,16 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 
   <script>
-    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-    var ALGOLIA_API_KEY = "";
-    var ALGOLIA_APP_ID = "";
-    var ALGOLIA_INDEX_NAME = "";
-    var AZURE_SERVICE_NAME = "";
-    var AZURE_INDEX_NAME = "";
-    var AZURE_QUERY_KEY = "";
-    var BAIDU_API_ID = "";
+    
     var SEARCH_SERVICE = "hexo" || "hexo";
-    var ROOT = "/"||"/";
-    if(!ROOT.endsWith('/'))ROOT += '/';
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
   </script>
 
-<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
 
-  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
   <script type="text/javascript">
     $(function() {
       const $reveal = $('.reveal');
@@ -1737,31 +2179,6 @@
 
 
 
-  
-  
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        if ('.cover') {
-          $('.cover').backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        } else {
-          $.backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        }
-      });
-    </script>
-  
-
 
 
 
@@ -1776,6 +2193,12 @@
 
 
   <script src="/js/search.js"></script>
+
+
+  
+    <script src="/js/commentTyping.js"></script>
+  
+
 
 
 
@@ -1892,5 +2315,6 @@
   <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script type="text/javascript" src="\js\dark.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -25,11 +25,11 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://kod.erf172.tk/index.php?user/publicLink&fid=6f19Aus9e1CMczggTFPiuaAyekFC7zi8jyvDNtpergeMmBTHBM8zrhoRBT_5pWkGHeXKeGh4beS2kAOkwaYBazJTI3gPtw9gFhmzNZokdvVqPQphxcKRMt73J3kmgqR8J-A&file_name=/logoko.png">
+
   
 
   
@@ -67,8 +67,8 @@
 
   <div class="m_search">
     <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="" />
       <i class="icon fas fa-search fa-fw"></i>
+      <input type="text" class="input u-search-input" placeholder="Search" />
     </form>
   </div>
 
@@ -77,7 +77,18 @@
     
       
         <li>
-          <a class="nav home" href="https://github.com/Erf172"
+          <a class="nav home" style="color: "
+            href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;Blog
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" style="color: "
+            href="https://github.com/Erf172"
             
             
             id="https:github.comErf172">
@@ -86,7 +97,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://aria2.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://aria2.erf172.tk"
             
             
             id="https:aria2.erf172.tk">
@@ -95,7 +107,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://onedrive.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://onedrive.erf172.tk"
             
             
             id="https:onedrive.erf172.tk">
@@ -104,7 +117,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://kod.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://kod.erf172.tk"
             
             
             id="https:kod.erf172.tk">
@@ -118,56 +132,177 @@
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header ">
   <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
+    <div id="loading-bar"></div>
   </div>
 
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-      <a class="logo flat-box" href='/' >
+      <a class="logo flat-box" target="_self" href='/' >
         
-          某咸鱼的鱼缸
+          
+            <i class='fas fa-home'></i>
+          
+          
+            鱼缸本缸
+          
         
       </a>
 			<div class='menu navgation'>
 				<ul class='h-list'>
           
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                    target="_self"
+                  
+                  id="home">
+									<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="javascript:switchNightMode()"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="javascript:switchNightMode()">
+									<i class='fas fa-adjust fa-fw'></i>&nbsp;夜间模式
+								</a>
+							</li>
+      			
+      		
 				</ul>
 			</div>
 
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜索" />
-						<i class="icon fas fa-search fa-fw"></i>
-					</form>
-				</div>
-			
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索一下" />
+        </form>
+      </div>
+
 			<ul class='switcher h-list'>
 				
-					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
 				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
 			</ul>
 		</div>
 
 		<div class='nav-sub container container--flex'>
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
 			</ul>
 		</div>
 	</div>
 </header>
-	<aside class="menu-phone">
+	<aside class="menu-phone white-box">
     <header>
 		<nav class="menu navgation">
       <ul>
         
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                  target="_self"
+                
+                id="home">
+								<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="tags">
+								<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+       
       </ul>
 		</nav>
     </header>
@@ -183,7 +318,7 @@
   
 
   
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <article id="post" class="post white-box card-shadow  article-type-post" itemscope itemprop="blogPost">
       
 
 
@@ -210,24 +345,16 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-10-27</p>
-  </a>
-</div>
 
           
         
@@ -238,6 +365,44 @@
     <a href='/categories/STM32/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>STM32</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/10/27</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-11-26T17:18:20+08:00">
+  <a class='notlink'>
+    <i class="fas fa-save" aria-hidden="true"></i>
+    <p> 2019/11/26</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>438</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>1分钟</p>
     </a>
   </div>
 
@@ -260,14 +425,6 @@
   
 
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">438</span>
-          </p>
-        </a>
-</div>
           
         
           
@@ -285,10 +442,13 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
+          
           <blockquote>
 <p>感觉学习了51的一些基本知识后，可以考虑学习STM32了。<br>不过STM32真的比51麻烦，特开一帖，做一下学习过程的时候一些总结</p>
 </blockquote>
 <a id="more"></a>
+
+
 <ol>
 <li><p>开发环境搭建</p>
 <p><a href="https://www.erf172.tk/2019/07/25/SDCC-and-VSCode-MCS51/#%E5%AE%89%E8%A3%85PlatformIO" target="_blank" rel="noopener">安装PlatformIO</a>,在<code>board</code> 中选择和STM32平台安装即可</p>
@@ -298,10 +458,12 @@
 </li>
 </ol>
    <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*  VCC连接二极管阳极，PB2口连接二极管阴极 */</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="comment">/* 启动GPIOB口时钟 */</span></span><br><span class="line">  *(<span class="keyword">unsigned</span> <span class="keyword">int</span> *)<span class="number">0X40021018</span> |= (<span class="number">1</span>&lt;&lt;<span class="number">3</span>);</span><br><span class="line">  <span class="comment">/* 配置GPIOB_2口输出模式 */</span></span><br><span class="line">  *(<span class="keyword">unsigned</span> <span class="keyword">int</span> *)<span class="number">0X40011000</span> |= ( <span class="number">1</span>&lt;&lt;(<span class="number">4</span>*<span class="number">2</span>) );</span><br><span class="line">  <span class="comment">/* 输出口清零 */</span></span><br><span class="line">  *(<span class="keyword">unsigned</span> <span class="keyword">int</span> *)<span class="number">0X4001100C</span> &amp;= ~( <span class="number">1</span>&lt;&lt;<span class="number">2</span> );</span><br><span class="line">  <span class="comment">/* 点亮二极管 */</span></span><br><span class="line">  *(<span class="keyword">unsigned</span> <span class="keyword">int</span> *)<span class="number">0X4001100C</span> |= ( <span class="number">1</span>&lt;&lt;<span class="number">2</span> );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ol start="3">
 <li><p>PlatformIO无法使用串口下载STM32解决方法</p>
 <p>修改<code>~/.platformio/platforms/ststm32/builder/main.py</code>中<code>upload_protocol == &quot;serial&quot;:</code>修改为以下内容</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">elif</span> upload_protocol == <span class="string">"serial"</span>:</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__configure_upload_port</span><span class="params">(env)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> basename(env.subst(<span class="string">"$UPLOAD_PORT"</span>))</span><br><span class="line"></span><br><span class="line">    env.Replace(</span><br><span class="line">        __configure_upload_port=__configure_upload_port,</span><br><span class="line">        UPLOADER=<span class="string">"stm32flash"</span>,</span><br><span class="line">        UPLOADERFLAGS=[</span><br><span class="line">            <span class="string">"-g"</span>, board.get(<span class="string">"upload.offset_address"</span>, <span class="string">"0x08000000"</span>),</span><br><span class="line">            <span class="string">"-b"</span>, <span class="string">"$UPLOAD_SPEED"</span>, <span class="string">"-w"</span></span><br><span class="line"></span><br><span class="line">        ],</span><br><span class="line">        UPLOADCMD=<span class="string">'$UPLOADER $UPLOADERFLAGS "$SOURCE" "$UPLOAD_PORT"'</span></span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    upload_actions = [</span><br><span class="line">        env.VerboseAction(env.AutodetectUploadPort, <span class="string">"Looking for upload port..."</span>),</span><br><span class="line">        env.VerboseAction(<span class="string">"$UPLOADCMD"</span>, <span class="string">"Uploading $SOURCE"</span>)</span><br><span class="line">    ]</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/95/6f94e4284a6699b3b06dcaeb34f2e2665f4157.png" alt="https://img.vim-cn.com/95/6f94e4284a6699b3b06dcaeb34f2e2665f4157.png"></p>
 <p><strong>注意：这样的话需要在<code>PlatformIO.ini</code>中声明<code>upload_speed</code>,即下载的波特率</strong></p>
 </li>
@@ -320,30 +482,105 @@
 </li>
 </ol>
 
+          
+            <br>
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  copyright'>
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>感谢阅读，可不可以扫码支持一下作者呢<br>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=/2019/10/27/STM32-Murmurs/>/2019/10/27/STM32-Murmurs/</a></p>
+          
+        
+      </blockquote>
+    
+  </div>
+</section>
+
+                
+              
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
+  </div>
+</section>
+
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+          
         </div>
         
+          <br>
           
 
 
   <section class='meta' id="footer-meta">
-    <hr>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-11-26T17:18:20+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年11月26日</p>
-  </a>
-</div>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div>
+
 
         
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>单片机</p></a></div>
-
 
         
       
@@ -422,7 +659,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a>
+                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 系统安装</a>
                                 </h6>
                             
                         </span>
@@ -442,7 +679,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Server</a> <a class="tag" href="/tags/Blog/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Blog</a>
+                                    <a class="tag" href="/tags/Server/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Server</a> <a class="tag" href="/tags/Blog/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Blog</a>
                                 </h6>
                             
                         </span>
@@ -459,7 +696,7 @@
 
 
 
-  <article class="post white-box comments">
+  <article class="post white-box comments card-shadow ">
     <section class="article typo">
       <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
       
@@ -500,10 +737,8 @@
     
       
         
-          
-          
-            <section class='widget author'>
-  <div class='content pure'>
+          <section class='widget card-shadow  blogger'>
+  <div class='content'>
     
       <div class='avatar'>
         <img class='avatar' src='https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg'/>
@@ -553,68 +788,115 @@
   </div>
 </section>
 
-          
         
       
         
-          
-          
-            
-
-          
+      
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
   
 </header>
 
-  <div class='content pure'>
-    <p>不小心删库了……<br>慢慢恢复中……<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>
+  <div class='content'>
+    
+      <p>
+        <p>夜间模式终于差不多了</p>
 
+      </p>
+    
+      <p>
+        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+
+      </p>
+    
   </div>
 </section>
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
         
       
         
           
-          
-            
-  <section class='widget tagcloud'>
+
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
-<header class='pure'>
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
-  
-</header>
-
-    <div class='content pure'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
-    </div>
-  </section>
-
-
-          
+      
+        
+      
         
       
         
           
-          
-            
-  <section class='widget category'>
+  <section class='widget card-shadow  category'>
+    <header>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
     
-<header class='pure'>
-  <div><i class="fas fa-expand-arrows-alt fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_self"
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ul class="entry">
         
           <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(9)</div></a></li>
@@ -630,99 +912,163 @@
   </section>
 
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
         
       
         
           
-          
-            
-
-
-  <section class='widget music'>
-    
-<header class='pure'>
-  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  <section class='widget card-shadow  tagcloud'>
+    <header>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
   
     <a class="rightBtn"
     
       rel="external nofollow noopener noreferrer"
     
     
-    href="https://music.163.com/#/user/home?id=547706795"
-    title="https://music.163.com/#/user/home?id=547706795">
-    <i class="far fa-heart fa-fw"></i></a>
+      target="_self"
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme="#1BCDFC"
-    
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="playlist"
-    data-id="2048970456"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
+    <div class='content'>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
   
 </header>
 
-  <div class='content pure'>
-    <p><img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280"></p>
-
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
   </div>
 </section>
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fas fa-ad fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;广而告之</div>
   
 </header>
 
-  <div class='content pure'>
-    <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+  <div class='content'>
+    
+      <p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+      </p>
+    
   </div>
 </section>
 
-          
+        
+      
+        
+      
         
       
     
-
   
 </aside>
 
-<footer id="footer" class="clearfix">
-  
+<footer class="clearfix">
+  <br><br>
   
     <div class="social-wrapper">
       
@@ -752,12 +1098,13 @@
       
     </div>
   
+  
   <br>
   <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
-    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">material-x</a>
+    <a href="https://xaoxuu.com/wiki/volantis/" target="_blank" class="codename">Volantis</a>
     作为主题
     
       ，
@@ -766,10 +1113,10 @@
       次
     
     。
-    <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：18.1k</span>
-    <br>
-    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  </div>
+  
+  <span class="post-count">字数统计：18.1k。  </span>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
         function createtime() { 
@@ -781,13 +1128,11 @@
            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-           document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+           document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
        } 
      setInterval("createtime()",250);
     </script>
-    <br>
-  </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
 
@@ -799,24 +1144,16 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 
   <script>
-    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-    var ALGOLIA_API_KEY = "";
-    var ALGOLIA_APP_ID = "";
-    var ALGOLIA_INDEX_NAME = "";
-    var AZURE_SERVICE_NAME = "";
-    var AZURE_INDEX_NAME = "";
-    var AZURE_QUERY_KEY = "";
-    var BAIDU_API_ID = "";
+    
     var SEARCH_SERVICE = "hexo" || "hexo";
-    var ROOT = "/"||"/";
-    if(!ROOT.endsWith('/'))ROOT += '/';
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
   </script>
 
-<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
 
-  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
   <script type="text/javascript">
     $(function() {
       const $reveal = $('.reveal');
@@ -846,31 +1183,6 @@
 
 
 
-  
-  
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        if ('.cover') {
-          $('.cover').backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        } else {
-          $.backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        }
-      });
-    </script>
-  
-
 
 
 
@@ -890,8 +1202,8 @@
   var guest_info = 'nick,mail,link'.split(',').filter(function(item){
     return GUEST_INFO.indexOf(item) > -1
   });
-  var notify = 'false' == true;
-  var verify = 'false' == true;
+  var notify = 'true' == true;
+  var verify = 'true' == true;
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
@@ -915,6 +1227,12 @@
 
 
   <script src="/js/search.js"></script>
+
+
+  
+    <script src="/js/commentTyping.js"></script>
+  
+
 
 
 
@@ -1031,5 +1349,6 @@
   <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script type="text/javascript" src="\js\dark.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

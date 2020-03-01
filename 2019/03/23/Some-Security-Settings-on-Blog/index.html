@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -25,11 +25,11 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://kod.erf172.tk/index.php?user/publicLink&fid=6f19Aus9e1CMczggTFPiuaAyekFC7zi8jyvDNtpergeMmBTHBM8zrhoRBT_5pWkGHeXKeGh4beS2kAOkwaYBazJTI3gPtw9gFhmzNZokdvVqPQphxcKRMt73J3kmgqR8J-A&file_name=/logoko.png">
+
   
 
   
@@ -67,8 +67,8 @@
 
   <div class="m_search">
     <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="" />
       <i class="icon fas fa-search fa-fw"></i>
+      <input type="text" class="input u-search-input" placeholder="Search" />
     </form>
   </div>
 
@@ -77,7 +77,18 @@
     
       
         <li>
-          <a class="nav home" href="https://github.com/Erf172"
+          <a class="nav home" style="color: "
+            href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;Blog
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" style="color: "
+            href="https://github.com/Erf172"
             
             
             id="https:github.comErf172">
@@ -86,7 +97,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://aria2.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://aria2.erf172.tk"
             
             
             id="https:aria2.erf172.tk">
@@ -95,7 +107,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://onedrive.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://onedrive.erf172.tk"
             
             
             id="https:onedrive.erf172.tk">
@@ -104,7 +117,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://kod.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://kod.erf172.tk"
             
             
             id="https:kod.erf172.tk">
@@ -118,56 +132,177 @@
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header ">
   <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
+    <div id="loading-bar"></div>
   </div>
 
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-      <a class="logo flat-box" href='/' >
+      <a class="logo flat-box" target="_self" href='/' >
         
-          某咸鱼的鱼缸
+          
+            <i class='fas fa-home'></i>
+          
+          
+            鱼缸本缸
+          
         
       </a>
 			<div class='menu navgation'>
 				<ul class='h-list'>
           
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                    target="_self"
+                  
+                  id="home">
+									<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="javascript:switchNightMode()"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="javascript:switchNightMode()">
+									<i class='fas fa-adjust fa-fw'></i>&nbsp;夜间模式
+								</a>
+							</li>
+      			
+      		
 				</ul>
 			</div>
 
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜索" />
-						<i class="icon fas fa-search fa-fw"></i>
-					</form>
-				</div>
-			
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索一下" />
+        </form>
+      </div>
+
 			<ul class='switcher h-list'>
 				
-					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
 				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
 			</ul>
 		</div>
 
 		<div class='nav-sub container container--flex'>
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
 			</ul>
 		</div>
 	</div>
 </header>
-	<aside class="menu-phone">
+	<aside class="menu-phone white-box">
     <header>
 		<nav class="menu navgation">
       <ul>
         
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                  target="_self"
+                
+                id="home">
+								<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="tags">
+								<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+       
       </ul>
 		</nav>
     </header>
@@ -183,7 +318,7 @@
   
 
   
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <article id="post" class="post white-box card-shadow  article-type-post" itemscope itemprop="blogPost">
       
 
 
@@ -210,24 +345,16 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-03-22</p>
-  </a>
-</div>
 
           
         
@@ -238,6 +365,44 @@
     <a href='/categories/Guide/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>Guide</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/3/22</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-21T11:53:12+08:00">
+  <a class='notlink'>
+    <i class="fas fa-save" aria-hidden="true"></i>
+    <p> 2019/9/21</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>1.5k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>5分钟</p>
     </a>
   </div>
 
@@ -260,14 +425,6 @@
   
 
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">1.5k</span>
-          </p>
-        </a>
-</div>
           
         
           
@@ -285,10 +442,12 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
+          
           <blockquote>
 <p>废了九牛二虎之力将自己的小博客搭起来了，结果服务器天天被炸。。。。<br>既然这样，那就进行一些安全设置，确保不会被炸掉</p>
 </blockquote>
 <a id="more"></a>
+
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前段时间发现学生主机真的好便宜，忍不住入手了一个。既然入手了，那就搭一个博客吧。废了老半天将博客搭建了起来，本以为只需要经常<del>并不是</del>写一下文章就可以了。结果ssh连上去发现ssh 22端口被炸了几千回。。。。<br>没有办法，只能采取一些措施了，防止哪天被爆破掉。。。<br>当然，用一个比较强的密码也是可以的，<del>主要是记性不好</del>再进行一下安全设置岂不是双倍的快乐？</p>
 <h3 id="主要采用的措施"><a href="#主要采用的措施" class="headerlink" title="主要采用的措施"></a>主要采用的措施</h3><blockquote>
 <ol>
@@ -304,25 +463,32 @@
 <li>ssh上远程服务器，并执行以下命令来创建账户   </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 在root账户下进行操作</span></span><br><span class="line">useradd git</span><br><span class="line">passwd git <span class="comment"># 此处创建一个git账户的密码</span></span><br><span class="line">mkdir /home/git</span><br><span class="line">chown git:git -R /home/git</span><br><span class="line">su git <span class="comment">#切换为git账户进行操作</span></span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/c8/4ad4bb335d33f54b7a0d49f315978b6a6277a4.png" alt="1">   </p>
 <ol start="2">
 <li>在git账户下创建blog.git</li>
 </ol>
 <p>执行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/blog</span><br><span class="line"><span class="built_in">cd</span> ~/blog</span><br><span class="line">git init --bare blog.git</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"git --work-tree=/home/blog/www --git-dir=/home/git/blog/blog.git checkout -f"</span> &gt; blog.git/hooks/post-receive</span><br><span class="line">chmod a+x post-receive</span><br></pre></td></tr></table></figure>
+
 <ol start="3">
 <li>修改nginx的配置文件指向/home/git/blog/www</li>
 </ol>
 <p>按下<code>Ctrl+D</code>，切换当前git账户为root账户，并修改<code>nginx.conf</code>的文件配置</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 不同的nginx安装方式可能nginx.conf的所在位置有所不同</span></span><br><span class="line">vi /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure>
-<p>找到http项，在里面添加以下内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">		server_name xxxx.com;</span><br><span class="line">		index index.html index.htm index.php default.html default.htm default.php;</span><br><span class="line">		root /home/git;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+<p>找到http项，在里面添加以下内容   </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">		server_name xxxx.com;</span><br><span class="line">		index index.html index.htm index.php default.html default.htm default.php;</span><br><span class="line">		root /home/git;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h3 id="分别为git和root账户添加不同的密钥"><a href="#分别为git和root账户添加不同的密钥" class="headerlink" title="分别为git和root账户添加不同的密钥"></a>分别为git和root账户添加不同的密钥</h3><ol>
 <li>创建git账户的密钥</li>
 </ol>
 <p>创建git账户的话可以不在秘钥中添加密码，以实现免密码同步<br>在本地计算机上打开终端，依次执行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C xx@xx.com  <span class="comment"># 你的GitHub邮箱~~也可以任意内容~~</span></span><br><span class="line"><span class="comment"># 之后连续按3次回车，保存秘钥文件,文件默认在`~/.ssh/`下</span></span><br><span class="line">chmod 700 ~/.ssh</span><br><span class="line">chmod 600 ~/.ssh/id_rsa</span><br><span class="line">scp ~/.ssh/id_rsa.pub git@xxxxx:~/.ssh  <span class="comment"># xxxxx 为你的服务器地址</span></span><br></pre></td></tr></table></figure>
+
 <p>使用root账户ssh连接到远程服务器，执行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">su git </span><br><span class="line"><span class="built_in">cd</span> ~/.ssh/</span><br><span class="line">mv id_rsa.pub authorized_keys</span><br><span class="line">chmod 600 authorized_keys</span><br><span class="line"><span class="built_in">cd</span> .. &amp;&amp; chmod 700 .ssh/</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/6f/e76a0cb132a11a6d077bbe89094c102414a305.png" alt="4"></p>
 <ol start="2">
 <li>创建root秘钥</li>
@@ -330,6 +496,9 @@
 <p>处于保险起见，我们为root账户再次创建一个秘钥，这次再秘钥中添加上密码，以保证安全</p>
 <p>将当前git账户切换为root账户，然后执行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">ssh-keygen</span><br><span class="line"><span class="comment"># 第一次回车，选定秘钥存放位置，保持默认即可</span></span><br><span class="line"><span class="comment"># 第二三次回车，设置&amp;&amp;确认创建的秘钥的密码</span></span><br><span class="line"><span class="built_in">cd</span> .ssh</span><br><span class="line">mv id_rsa.pub authorized_keys</span><br><span class="line">chmod 600 authorized_keys </span><br><span class="line"><span class="built_in">cd</span> .. &amp;&amp; chmod 700 .ssh</span><br><span class="line">cat .ssh/id_rsa</span><br></pre></td></tr></table></figure>
+
+
+
 <p><img src="https://img.vim-cn.com/e3/bb5321978441645669c36e2c9971980aeced3a.png" alt="5"></p>
 <p>将id_rsa的文件内容复制到本地，保存为key并设置权限为600</p>
 <ol start="3">
@@ -337,16 +506,19 @@
 </ol>
 <p>在root账户下执行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
+
 <p>修改 PasswordAuthentication 项为NO并去掉前方#号</p>
 <p><img src="https://img.vim-cn.com/ff/bcc687627531221b4128f306c897a04d6c706b.png" alt="22"></p>
 <p>保存并退出，重启ssh服务</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
+
 <p>此时断开连接，再次登录会发现只能使用密钥登录了</p>
 <blockquote>
 <p>注意：强烈建议<strong>先启用密钥登录，断开连接并使用密钥登录成功后再关闭密码登录</strong><del>不要问我为什么强烈建议这么干</del></p>
 </blockquote>
 <h3 id="只赋予git账户git的权限"><a href="#只赋予git账户git的权限" class="headerlink" title="只赋予git账户git的权限"></a>只赋予git账户git的权限</h3><p>使用root连接上远程服务器，修改passwd文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/passwd</span><br></pre></td></tr></table></figure>
+
 <p>将git后面的shell更改为<code>/usr/bin/git-shell</code></p>
 <p><img src="https://img.vim-cn.com/69/6e648f08abf9eff379b7c56a287ae4713f56d1.png" alt="jkl"></p>
 <p>保存并退出，此时输入切换git账户会报错并无法切换</p>
@@ -356,6 +528,7 @@
 <li>在远程服务器上修改sshd_config文件</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li>修改port为其他端口，端口号大于10000都可以</li>
 </ol>
@@ -364,6 +537,7 @@
 <li>重新启动ssh服务</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
+
 <ol start="4">
 <li>重新断开连接，会发现使用ssh无法使用22端口登录，需要改为当前设定端口<del>我号要没了</del></li>
 </ol>
@@ -372,6 +546,7 @@
 </blockquote>
 <h3 id="hexo中的配置"><a href="#hexo中的配置" class="headerlink" title="hexo中的配置"></a>hexo中的配置</h3><p>修改 _config.yml,添加以下内容</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  aaaa为你的服务器地址，bbbb为你的设置的端口号</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span>  </span><br><span class="line"><span class="attr">          server:</span> <span class="attr">ssh://git@aaaa:bbbb/home/git/blog/blog.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/94/b2b1a1fb26b319773ee29c15d47febe3e773b5.png" alt="das"></p>
 <p>这样就可以执行hexo d 将本地文件推动到远程服务器上了</p>
 <h3 id="启用https登录"><a href="#启用https登录" class="headerlink" title="启用https登录"></a>启用https登录</h3><p>HTTPS证书的话免费的有很多，在这里以使用<a href="https://letsencrypt.org" target="_blank" rel="noopener">Let’sEncrypt</a>为例</p>
@@ -387,40 +562,117 @@
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">certbot --nginx</span><br></pre></td></tr></table></figure>
+
 <p>自动安装后再次访问主页面即可发现网页已经启用https了</p>
 <ol start="4">
 <li>启动https证书的自动续期</li>
 </ol>
 <p>执行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">certbot renew --dry-run</span><br></pre></td></tr></table></figure>
+
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>折腾了一大堆，安全措施差不多就ok，当然，最保险的还是定期更换一下，以保证不会被黑掉</p>
 <p><del>折腾的过程真的掉头发，想想下面该写点什么</del></p>
 <p><del>我爱单片机，单片机使我快乐</del></p>
 
+          
+            <br>
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  copyright'>
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>感谢阅读，可不可以扫码支持一下作者呢<br>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=/2019/03/23/Some-Security-Settings-on-Blog/>/2019/03/23/Some-Security-Settings-on-Blog/</a></p>
+          
+        
+      </blockquote>
+    
+  </div>
+</section>
+
+                
+              
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
+  </div>
+</section>
+
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+          
         </div>
         
+          <br>
           
 
 
   <section class='meta' id="footer-meta">
-    <hr>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-21T11:53:12+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年9月21日</p>
-  </a>
-</div>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Server</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Blog/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Blog</p></a></div>
+
 
         
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Server</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Blog/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Blog</p></a></div>
-
 
         
       
@@ -499,7 +751,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Server</a>
+                                    <a class="tag" href="/tags/Server/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Server</a>
                                 </h6>
                             
                         </span>
@@ -519,7 +771,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a>
+                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 系统安装</a>
                                 </h6>
                             
                         </span>
@@ -536,7 +788,7 @@
 
 
 
-  <article class="post white-box comments">
+  <article class="post white-box comments card-shadow ">
     <section class="article typo">
       <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
       
@@ -577,10 +829,8 @@
     
       
         
-          
-          
-            <section class='widget author'>
-  <div class='content pure'>
+          <section class='widget card-shadow  blogger'>
+  <div class='content'>
     
       <div class='avatar'>
         <img class='avatar' src='https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg'/>
@@ -630,82 +880,128 @@
   </div>
 </section>
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <p>夜间模式终于差不多了</p>
+
+      </p>
+    
+      <p>
+        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+
+      </p>
+    
+  </div>
+</section>
+
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
         
       
         
           
-          
-            
-  <section class='widget toc-wrapper'>
-    
-<header class='pure'>
+  <section class='widget card-shadow  toc-wrapper'>
+    <header>
   <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
   
-    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主要采用的措施"><span class="toc-text">主要采用的措施</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开搞"><span class="toc-text">开搞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建git账户，只赋予git权限"><span class="toc-text">创建git账户，只赋予git权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分别为git和root账户添加不同的密钥"><span class="toc-text">分别为git和root账户添加不同的密钥</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#只赋予git账户git的权限"><span class="toc-text">只赋予git账户git的权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改ssh默认22端口为其他端口"><span class="toc-text">修改ssh默认22端口为其他端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo中的配置"><span class="toc-text">hexo中的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用https登录"><span class="toc-text">启用https登录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
-  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
-  
-</header>
-
-  <div class='content pure'>
-    <p>不小心删库了……<br>慢慢恢复中……<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>
-
-  </div>
-</section>
-
-          
+      
         
       
         
-          
-          
-            
-  <section class='widget tagcloud'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
-<header class='pure'>
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
-  
-</header>
-
-    <div class='content pure'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
-    </div>
-  </section>
-
-
-          
+      
+        
+      
         
       
         
           
-          
-            
-  <section class='widget category'>
+  <section class='widget card-shadow  category'>
+    <header>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
     
-<header class='pure'>
-  <div><i class="fas fa-expand-arrows-alt fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_self"
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ul class="entry">
         
           <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(9)</div></a></li>
@@ -721,99 +1017,163 @@
   </section>
 
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
         
       
         
           
-          
-            
-
-
-  <section class='widget music'>
-    
-<header class='pure'>
-  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  <section class='widget card-shadow  tagcloud'>
+    <header>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
   
     <a class="rightBtn"
     
       rel="external nofollow noopener noreferrer"
     
     
-    href="https://music.163.com/#/user/home?id=547706795"
-    title="https://music.163.com/#/user/home?id=547706795">
-    <i class="far fa-heart fa-fw"></i></a>
+      target="_self"
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme="#1BCDFC"
-    
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="playlist"
-    data-id="2048970456"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
+    <div class='content'>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
   
 </header>
 
-  <div class='content pure'>
-    <p><img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280"></p>
-
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
   </div>
 </section>
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fas fa-ad fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;广而告之</div>
   
 </header>
 
-  <div class='content pure'>
-    <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+  <div class='content'>
+    
+      <p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+      </p>
+    
   </div>
 </section>
 
-          
+        
+      
+        
+      
         
       
     
-
   
 </aside>
 
-<footer id="footer" class="clearfix">
-  
+<footer class="clearfix">
+  <br><br>
   
     <div class="social-wrapper">
       
@@ -843,12 +1203,13 @@
       
     </div>
   
+  
   <br>
   <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
-    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">material-x</a>
+    <a href="https://xaoxuu.com/wiki/volantis/" target="_blank" class="codename">Volantis</a>
     作为主题
     
       ，
@@ -857,10 +1218,10 @@
       次
     
     。
-    <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：18.1k</span>
-    <br>
-    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  </div>
+  
+  <span class="post-count">字数统计：18.1k。  </span>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
         function createtime() { 
@@ -872,13 +1233,11 @@
            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-           document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+           document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
        } 
      setInterval("createtime()",250);
     </script>
-    <br>
-  </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
 
@@ -890,24 +1249,16 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 
   <script>
-    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-    var ALGOLIA_API_KEY = "";
-    var ALGOLIA_APP_ID = "";
-    var ALGOLIA_INDEX_NAME = "";
-    var AZURE_SERVICE_NAME = "";
-    var AZURE_INDEX_NAME = "";
-    var AZURE_QUERY_KEY = "";
-    var BAIDU_API_ID = "";
+    
     var SEARCH_SERVICE = "hexo" || "hexo";
-    var ROOT = "/"||"/";
-    if(!ROOT.endsWith('/'))ROOT += '/';
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
   </script>
 
-<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
 
-  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
   <script type="text/javascript">
     $(function() {
       const $reveal = $('.reveal');
@@ -937,31 +1288,6 @@
 
 
 
-  
-  
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        if ('.cover') {
-          $('.cover').backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        } else {
-          $.backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        }
-      });
-    </script>
-  
-
 
 
 
@@ -981,8 +1307,8 @@
   var guest_info = 'nick,mail,link'.split(',').filter(function(item){
     return GUEST_INFO.indexOf(item) > -1
   });
-  var notify = 'false' == true;
-  var verify = 'false' == true;
+  var notify = 'true' == true;
+  var verify = 'true' == true;
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
@@ -1006,6 +1332,12 @@
 
 
   <script src="/js/search.js"></script>
+
+
+  
+    <script src="/js/commentTyping.js"></script>
+  
+
 
 
 
@@ -1122,5 +1454,6 @@
   <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script type="text/javascript" src="\js\dark.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -25,11 +25,11 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://kod.erf172.tk/index.php?user/publicLink&fid=6f19Aus9e1CMczggTFPiuaAyekFC7zi8jyvDNtpergeMmBTHBM8zrhoRBT_5pWkGHeXKeGh4beS2kAOkwaYBazJTI3gPtw9gFhmzNZokdvVqPQphxcKRMt73J3kmgqR8J-A&file_name=/logoko.png">
+
   
 
   
@@ -67,8 +67,8 @@
 
   <div class="m_search">
     <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="" />
       <i class="icon fas fa-search fa-fw"></i>
+      <input type="text" class="input u-search-input" placeholder="Search" />
     </form>
   </div>
 
@@ -77,7 +77,18 @@
     
       
         <li>
-          <a class="nav home" href="https://github.com/Erf172"
+          <a class="nav home" style="color: "
+            href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;Blog
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" style="color: "
+            href="https://github.com/Erf172"
             
             
             id="https:github.comErf172">
@@ -86,7 +97,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://aria2.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://aria2.erf172.tk"
             
             
             id="https:aria2.erf172.tk">
@@ -95,7 +107,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://onedrive.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://onedrive.erf172.tk"
             
             
             id="https:onedrive.erf172.tk">
@@ -104,7 +117,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://kod.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://kod.erf172.tk"
             
             
             id="https:kod.erf172.tk">
@@ -118,56 +132,177 @@
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header ">
   <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
+    <div id="loading-bar"></div>
   </div>
 
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-      <a class="logo flat-box" href='/' >
+      <a class="logo flat-box" target="_self" href='/' >
         
-          某咸鱼的鱼缸
+          
+            <i class='fas fa-home'></i>
+          
+          
+            鱼缸本缸
+          
         
       </a>
 			<div class='menu navgation'>
 				<ul class='h-list'>
           
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                    target="_self"
+                  
+                  id="home">
+									<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="javascript:switchNightMode()"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="javascript:switchNightMode()">
+									<i class='fas fa-adjust fa-fw'></i>&nbsp;夜间模式
+								</a>
+							</li>
+      			
+      		
 				</ul>
 			</div>
 
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜索" />
-						<i class="icon fas fa-search fa-fw"></i>
-					</form>
-				</div>
-			
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索一下" />
+        </form>
+      </div>
+
 			<ul class='switcher h-list'>
 				
-					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
 				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
 			</ul>
 		</div>
 
 		<div class='nav-sub container container--flex'>
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
 			</ul>
 		</div>
 	</div>
 </header>
-	<aside class="menu-phone">
+	<aside class="menu-phone white-box">
     <header>
 		<nav class="menu navgation">
       <ul>
         
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                  target="_self"
+                
+                id="home">
+								<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="tags">
+								<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+       
       </ul>
 		</nav>
     </header>
@@ -183,7 +318,7 @@
   
 
   
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <article id="post" class="post white-box card-shadow  article-type-post" itemscope itemprop="blogPost">
       
 
 
@@ -210,24 +345,16 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-02-12</p>
-  </a>
-</div>
 
           
         
@@ -238,6 +365,44 @@
     <a href='/categories/Guide/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>Guide</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/2/12</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-03-22T13:05:11+08:00">
+  <a class='notlink'>
+    <i class="fas fa-save" aria-hidden="true"></i>
+    <p> 2019/3/22</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>2.1k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>8分钟</p>
     </a>
   </div>
 
@@ -260,14 +425,6 @@
   
 
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">2.1k</span>
-          </p>
-        </a>
-</div>
           
         
           
@@ -285,10 +442,12 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
+          
           <blockquote>
 <p>在经历了让人头秃的期末考试之后，终于可以着手继续折腾黑苹果了2333333<br>经过无数次翻车与删库跑路之后，终于调整成了可以使用的样子，特此记录一下下，怀念我失去的头发。。。。</p>
 </blockquote>
 <a id="more"></a>
+
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="电脑配置明细"><a href="#电脑配置明细" class="headerlink" title="电脑配置明细"></a>电脑配置明细</h3><table>
 <thead>
 <tr>
@@ -296,8 +455,7 @@
 <th>信息</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>CPU</td>
 <td>Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz</td>
 </tr>
@@ -325,8 +483,7 @@
 <td>无线网卡</td>
 <td>Broadcom BCM94352z 802.11ac Wireless Network Adapter</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="系统截图"><a href="#系统截图" class="headerlink" title="系统截图"></a>系统截图</h3><p><img src="https://img.vim-cn.com/6a/9ffd8b467320a6a6d5be385263b456cafd1888.png" alt="SysScreen"><br><img src="https://img.vim-cn.com/49/5369b1e3bfd366b259dcd7aaa3d1ebdc77ade5.png" alt="SysScreen"><br><img src="https://img.vim-cn.com/ca/f827ce420e148d75a905f8fd8c293272f9688f.png" alt="SysScreen"><br><img src="https://img.vim-cn.com/0e/5ad521869b78531f3f094a10c3d8f747d4b703.png" alt="SysScreen"><br><img src="https://img.vim-cn.com/2d/52e5b23fd51d3d54d48c641c18d31aae6bb9c7.png" alt="SysScreen"></p>
 <h3 id="已知问题"><a href="#已知问题" class="headerlink" title="已知问题"></a>已知问题</h3><ol>
 <li>亮度快捷按键调节不可用     </li>
@@ -361,10 +518,11 @@
 <li>打开CMD窗口，并输入以下命令</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># Mac为你所创建的虚拟机名称</span><br><span class="line">cd &quot;C:\Program Files\Oracle\VirtualBox&quot;</span><br><span class="line"></span><br><span class="line">VBoxManage.exe modifyvm &quot;Mac&quot; --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff</span><br><span class="line"></span><br><span class="line">VBoxManage setextradata &quot;Mac&quot; &quot;VBoxInternal/Devices/efi/0/Config/DmiSystemProduct&quot; &quot;iMac11,3&quot;</span><br><span class="line"></span><br><span class="line">VBoxManage setextradata &quot;Mac&quot; &quot;VBoxInternal/Devices/efi/0/Config/DmiSystemVersion&quot; &quot;1.0&quot;</span><br><span class="line"></span><br><span class="line">VBoxManage setextradata &quot;Mac&quot; &quot;VBoxInternal/Devices/efi/0/Config/DmiBoardProduct&quot; &quot;Iloveapple&quot;</span><br><span class="line"></span><br><span class="line">VBoxManage setextradata &quot;Mac&quot; &quot;VBoxInternal/Devices/smc/0/Config/DeviceKey&quot; &quot;ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc&quot;</span><br><span class="line"></span><br><span class="line">VBoxManage setextradata &quot;Mac&quot; &quot;VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC&quot; 1</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/ad/9f27a8aab72727bff8a9185026cc736583a16d.png" alt="VBox命令"></p>
 <ol start="6">
 <li>设置完成之后启动虚拟机，在EFIshell中输入exit进入BIOS进行设置   </li>
-<li>依次选择Boot Maintenance Mamager&gt;&gt;Boot From File&gt;&gt;”\,xxxxxxxxxx(<strong>不是EFI</strong>)”&gt;&gt;System&gt;&gt;Library&gt;&gt;CoreService&gt;&gt;boot.efi稍等片刻即可进入安装界面   </li>
+<li>依次选择Boot Maintenance Mamager&gt;&gt;Boot From File&gt;&gt;”,xxxxxxxxxx(<strong>不是EFI</strong>)”&gt;&gt;System&gt;&gt;Library&gt;&gt;CoreService&gt;&gt;boot.efi稍等片刻即可进入安装界面   </li>
 </ol>
 <p><img src="https://img.vim-cn.com/00/205e458e36a04851ba9029d38f01d0d69e7490.png" alt="EFI_USB"></p>
 <h3 id="MacOS系统的安装"><a href="#MacOS系统的安装" class="headerlink" title="MacOS系统的安装"></a>MacOS系统的安装</h3><ol>
@@ -384,7 +542,7 @@
 </ol>
 <p><img src="https://img.vim-cn.com/d2/c6f93d83f5a321f633676a84bda44468432413.png" alt="OS_INSTALL_VBOX_4"> </p>
 <ol start="5">
-<li>重启后再次进入BIOS中选择Boot Maintenance Mamager&gt;&gt;Boot From File&gt;&gt;”\,xxxxxxxxxx(<strong>带有SATA字样</strong>)”&gt;&gt;MacOS Install Data&gt;&gt;Locked Files&gt;&gt;Boot Files&gt;&gt;boot.efi并耐心等待</li>
+<li>重启后再次进入BIOS中选择Boot Maintenance Mamager&gt;&gt;Boot From File&gt;&gt;”,xxxxxxxxxx(<strong>带有SATA字样</strong>)”&gt;&gt;MacOS Install Data&gt;&gt;Locked Files&gt;&gt;Boot Files&gt;&gt;boot.efi并耐心等待</li>
 </ol>
 <p><img src="https://img.vim-cn.com/64/9609d8f07477fa5b743beca62df8a6e30372d7.png" alt="EFI_INSTALL">   </p>
 <ol start="6">
@@ -399,11 +557,13 @@
 <li>打开终端并输入以下命令   </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskutil list</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/79/551cad538f4baf12fc9aa84512caccbe38dda6.png" alt="Mount_Udisk_1">   </p>
 <ol start="3">
 <li>找到你优盘的EFI分区的 IDENTIFIER ，例如，我的是disk2s1，则输入以下命令   </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount disk2s1</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/b9/848eb21a9dd36f0c4669f2a4d372b4f5825c29.png" alt="Mount_Udisk_2">   </p>
 <ol start="4">
 <li>将EFI 里的文件复制到桌面备用并删除优盘EFI分区的文件   </li>
@@ -426,6 +586,7 @@
 <li>打开终端，依次输入以下命令   </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Desktop</span><br><span class="line">mkdir project &amp;&amp; <span class="built_in">cd</span> project</span><br><span class="line">curl -O https://raw.githubusercontent.com/RehabMan/OS-X-Clover-Laptop-Config/master/config_HD615_620_630_640_650.plist</span><br><span class="line">curl -O https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/raw/10.13/CLOVER/drivers64UEFI/ApfsDriverLoader-64.efi</span><br></pre></td></tr></table></figure>
+
 <ol start="4">
 <li>打开project,复制config_HD615_620_630_640_650.plist到优盘的EFI&gt;&gt;Clover下并将其改名为config.plist   </li>
 <li>打开 Clover Configurator，选择优盘EFI目录下的config.plist文件依次进行以下的设置并保存</li>
@@ -494,30 +655,105 @@
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>至此为止，我们的安装阶段就完成了。恭喜你已经完成了一个小小的开头。因为进入系统后，你可能会发现这只是安装了系统而已，什么东西都是残的。什么功能都是不完整的。<br>你可能会怀疑人生，为什么折腾这么久才完成了一个小小的开头。不要慌张，不要心急，最麻烦的地方不在于安装系统，而是对EFI文件进行调整。在下一篇文章中，我将会告诉大家如何进行系黑苹果配置工作。让他能够更加完美。<br>为什么不分开来写呢，应为调整的过程实在是太长了，如果一篇文章写下来的话，可能我连自己写下去的耐心都不会有。<del>才不是为了凑一下文章的数目</del><br>下一篇文章我会尽快写完的<del>坚决不是flag.jpg</del></p>
 <p>传送门 ： <a href="https://www.erf172.tk/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/" target="_blank" rel="noopener">联想小新锐7000の黑苹果折腾记(二)</a></p>
 
+          
+            <br>
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  copyright'>
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>感谢阅读，可不可以扫码支持一下作者呢<br>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/>/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/</a></p>
+          
+        
+      </blockquote>
+    
+  </div>
+</section>
+
+                
+              
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
+  </div>
+</section>
+
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+          
         </div>
         
+          <br>
           
 
 
   <section class='meta' id="footer-meta">
-    <hr>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-03-22T13:05:11+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年3月22日</p>
-  </a>
-</div>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MacOS/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>MacOS</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/系统安装/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>系统安装</p></a></div>
+
 
         
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MacOS/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>MacOS</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/系统安装/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>系统安装</p></a></div>
-
 
         
       
@@ -596,7 +832,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a>
+                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 系统安装</a>
                                 </h6>
                             
                         </span>
@@ -616,7 +852,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a> <a class="tag" href="/tags/Linux/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Linux</a>
+                                    <a class="tag" href="/tags/系统安装/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 系统安装</a> <a class="tag" href="/tags/Linux/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Linux</a>
                                 </h6>
                             
                         </span>
@@ -633,7 +869,7 @@
 
 
 
-  <article class="post white-box comments">
+  <article class="post white-box comments card-shadow ">
     <section class="article typo">
       <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
       
@@ -674,10 +910,8 @@
     
       
         
-          
-          
-            <section class='widget author'>
-  <div class='content pure'>
+          <section class='widget card-shadow  blogger'>
+  <div class='content'>
     
       <div class='avatar'>
         <img class='avatar' src='https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg'/>
@@ -727,82 +961,128 @@
   </div>
 </section>
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <p>夜间模式终于差不多了</p>
+
+      </p>
+    
+      <p>
+        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+
+      </p>
+    
+  </div>
+</section>
+
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
         
       
         
           
-          
-            
-  <section class='widget toc-wrapper'>
-    
-<header class='pure'>
+  <section class='widget card-shadow  toc-wrapper'>
+    <header>
   <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
   
-    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#电脑配置明细"><span class="toc-text">电脑配置明细</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统截图"><span class="toc-text">系统截图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#已知问题"><span class="toc-text">已知问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#适用于的系统"><span class="toc-text">适用于的系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准备工具"><span class="toc-text">准备工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装前的准备工作"><span class="toc-text">安装前的准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载MacOS系统安装镜像以及启动盘的制作"><span class="toc-text">下载MacOS系统安装镜像以及启动盘的制作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows下macOS虚拟机的创建"><span class="toc-text">Windows下macOS虚拟机的创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MacOS系统的安装"><span class="toc-text">MacOS系统的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Clover-的安装"><span class="toc-text">Clover 的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#EFI文件的初步配置"><span class="toc-text">EFI文件的初步配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#压缩磁盘，分出相应的安装空间"><span class="toc-text">压缩磁盘，分出相应的安装空间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bios的相关设置"><span class="toc-text">Bios的相关设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正式的安装步骤"><span class="toc-text">正式的安装步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
-  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
-  
-</header>
-
-  <div class='content pure'>
-    <p>不小心删库了……<br>慢慢恢复中……<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>
-
-  </div>
-</section>
-
-          
+      
         
       
         
-          
-          
-            
-  <section class='widget tagcloud'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
-<header class='pure'>
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
-  
-</header>
-
-    <div class='content pure'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
-    </div>
-  </section>
-
-
-          
+      
+        
+      
         
       
         
           
-          
-            
-  <section class='widget category'>
+  <section class='widget card-shadow  category'>
+    <header>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
     
-<header class='pure'>
-  <div><i class="fas fa-expand-arrows-alt fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_self"
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ul class="entry">
         
           <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(9)</div></a></li>
@@ -818,99 +1098,163 @@
   </section>
 
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
         
       
         
           
-          
-            
-
-
-  <section class='widget music'>
-    
-<header class='pure'>
-  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  <section class='widget card-shadow  tagcloud'>
+    <header>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
   
     <a class="rightBtn"
     
       rel="external nofollow noopener noreferrer"
     
     
-    href="https://music.163.com/#/user/home?id=547706795"
-    title="https://music.163.com/#/user/home?id=547706795">
-    <i class="far fa-heart fa-fw"></i></a>
+      target="_self"
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme="#1BCDFC"
-    
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="playlist"
-    data-id="2048970456"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
+    <div class='content'>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
   
 </header>
 
-  <div class='content pure'>
-    <p><img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280"></p>
-
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
   </div>
 </section>
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fas fa-ad fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;广而告之</div>
   
 </header>
 
-  <div class='content pure'>
-    <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+  <div class='content'>
+    
+      <p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+      </p>
+    
   </div>
 </section>
 
-          
+        
+      
+        
+      
         
       
     
-
   
 </aside>
 
-<footer id="footer" class="clearfix">
-  
+<footer class="clearfix">
+  <br><br>
   
     <div class="social-wrapper">
       
@@ -940,12 +1284,13 @@
       
     </div>
   
+  
   <br>
   <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
-    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">material-x</a>
+    <a href="https://xaoxuu.com/wiki/volantis/" target="_blank" class="codename">Volantis</a>
     作为主题
     
       ，
@@ -954,10 +1299,10 @@
       次
     
     。
-    <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：18.1k</span>
-    <br>
-    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  </div>
+  
+  <span class="post-count">字数统计：18.1k。  </span>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
         function createtime() { 
@@ -969,13 +1314,11 @@
            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-           document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+           document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
        } 
      setInterval("createtime()",250);
     </script>
-    <br>
-  </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
 
@@ -987,24 +1330,16 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 
   <script>
-    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-    var ALGOLIA_API_KEY = "";
-    var ALGOLIA_APP_ID = "";
-    var ALGOLIA_INDEX_NAME = "";
-    var AZURE_SERVICE_NAME = "";
-    var AZURE_INDEX_NAME = "";
-    var AZURE_QUERY_KEY = "";
-    var BAIDU_API_ID = "";
+    
     var SEARCH_SERVICE = "hexo" || "hexo";
-    var ROOT = "/"||"/";
-    if(!ROOT.endsWith('/'))ROOT += '/';
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
   </script>
 
-<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
 
-  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
   <script type="text/javascript">
     $(function() {
       const $reveal = $('.reveal');
@@ -1034,31 +1369,6 @@
 
 
 
-  
-  
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        if ('.cover') {
-          $('.cover').backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        } else {
-          $.backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        }
-      });
-    </script>
-  
-
 
 
 
@@ -1078,8 +1388,8 @@
   var guest_info = 'nick,mail,link'.split(',').filter(function(item){
     return GUEST_INFO.indexOf(item) > -1
   });
-  var notify = 'false' == true;
-  var verify = 'false' == true;
+  var notify = 'true' == true;
+  var verify = 'true' == true;
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
@@ -1103,6 +1413,12 @@
 
 
   <script src="/js/search.js"></script>
+
+
+  
+    <script src="/js/commentTyping.js"></script>
+  
+
 
 
 
@@ -1219,5 +1535,6 @@
   <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script type="text/javascript" src="\js\dark.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

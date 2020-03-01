@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -25,11 +25,11 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://kod.erf172.tk/index.php?user/publicLink&fid=6f19Aus9e1CMczggTFPiuaAyekFC7zi8jyvDNtpergeMmBTHBM8zrhoRBT_5pWkGHeXKeGh4beS2kAOkwaYBazJTI3gPtw9gFhmzNZokdvVqPQphxcKRMt73J3kmgqR8J-A&file_name=/logoko.png">
+
   
 
   
@@ -67,8 +67,8 @@
 
   <div class="m_search">
     <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="" />
       <i class="icon fas fa-search fa-fw"></i>
+      <input type="text" class="input u-search-input" placeholder="Search" />
     </form>
   </div>
 
@@ -77,7 +77,18 @@
     
       
         <li>
-          <a class="nav home" href="https://github.com/Erf172"
+          <a class="nav home" style="color: "
+            href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;Blog
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" style="color: "
+            href="https://github.com/Erf172"
             
             
             id="https:github.comErf172">
@@ -86,7 +97,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://aria2.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://aria2.erf172.tk"
             
             
             id="https:aria2.erf172.tk">
@@ -95,7 +107,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://onedrive.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://onedrive.erf172.tk"
             
             
             id="https:onedrive.erf172.tk">
@@ -104,7 +117,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://kod.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://kod.erf172.tk"
             
             
             id="https:kod.erf172.tk">
@@ -118,56 +132,177 @@
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header ">
   <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
+    <div id="loading-bar"></div>
   </div>
 
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-      <a class="logo flat-box" href='/' >
+      <a class="logo flat-box" target="_self" href='/' >
         
-          某咸鱼的鱼缸
+          
+            <i class='fas fa-home'></i>
+          
+          
+            鱼缸本缸
+          
         
       </a>
 			<div class='menu navgation'>
 				<ul class='h-list'>
           
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                    target="_self"
+                  
+                  id="home">
+									<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="javascript:switchNightMode()"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="javascript:switchNightMode()">
+									<i class='fas fa-adjust fa-fw'></i>&nbsp;夜间模式
+								</a>
+							</li>
+      			
+      		
 				</ul>
 			</div>
 
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜索" />
-						<i class="icon fas fa-search fa-fw"></i>
-					</form>
-				</div>
-			
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索一下" />
+        </form>
+      </div>
+
 			<ul class='switcher h-list'>
 				
-					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
 				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
 			</ul>
 		</div>
 
 		<div class='nav-sub container container--flex'>
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
 			</ul>
 		</div>
 	</div>
 </header>
-	<aside class="menu-phone">
+	<aside class="menu-phone white-box">
     <header>
 		<nav class="menu navgation">
       <ul>
         
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                  target="_self"
+                
+                id="home">
+								<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="tags">
+								<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+       
       </ul>
 		</nav>
     </header>
@@ -183,7 +318,7 @@
   
 
   
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <article id="post" class="post white-box card-shadow  article-type-post" itemscope itemprop="blogPost">
       
 
 
@@ -210,24 +345,16 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-07-25</p>
-  </a>
-</div>
 
           
         
@@ -238,6 +365,44 @@
     <a href='/categories/MCS-51/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>MCS-51</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/7/25</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-24T17:32:50+08:00">
+  <a class='notlink'>
+    <i class="fas fa-save" aria-hidden="true"></i>
+    <p> 2019/12/24</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>1.1k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>4分钟</p>
     </a>
   </div>
 
@@ -260,14 +425,6 @@
   
 
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">1.1k</span>
-          </p>
-        </a>
-</div>
           
         
           
@@ -285,10 +442,13 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
+          
           <blockquote>
 <p>学习了一段时间的单片机，虽然Keil搞单片机是最常见的方案，但总是感觉Keil用着很不习惯<br>在翻了无数次车之后，终于在跑起来了，特此记录一下下吧。。。。</p>
 </blockquote>
 <a id="more"></a>
+
+
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>众所周知，Keil下搞单片机是最好的选择，但是用起来的体验么。。。。。<br>凡事就是图一个折腾。于是乎，Let’s Go！</p>
 <h4 id="要进行的工作"><a href="#要进行的工作" class="headerlink" title="要进行的工作"></a>要进行的工作</h4><ol>
 <li>安装sdcc   </li>
@@ -303,9 +463,11 @@
 <p><del>为什么不放中文，因为英语水平太差</del></p>
 <p><strong>需要注意的是，sdcc与Keil的语法是有一些不相同的地方的</strong>，下面是一些不相同的地方供以参考</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">SDCC                    Keil </span><br><span class="line"></span><br><span class="line">__sbit __at <span class="number">0x94</span> a      sbit a=P1^<span class="number">4</span></span><br><span class="line"><span class="number">0x80</span>                    P0^<span class="number">0</span></span><br><span class="line"><span class="number">0x90</span>                    P1^<span class="number">0</span></span><br><span class="line"><span class="number">0xA0</span>                    P2^<span class="number">0</span></span><br><span class="line"><span class="number">0xB0</span>                    P3^<span class="number">0</span></span><br><span class="line">P1_1                    P1^<span class="number">1</span></span><br><span class="line">__interrupt             interrupt</span><br></pre></td></tr></table></figure>
+
 <p><del>遇事不决双下划线</del></p>
 <h2 id="正式步骤"><a href="#正式步骤" class="headerlink" title="正式步骤"></a>正式步骤</h2><h3 id="MacOS"><a href="#MacOS" class="headerlink" title="MacOS"></a>MacOS</h3><h4 id="安装sdcc"><a href="#安装sdcc" class="headerlink" title="安装sdcc"></a>安装sdcc</h4><p>MacOS下安装sdcc是非常简单的，使用brew一键安装就ok 了</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;      #安装brew</span><br><span class="line">brew install sdcc   #安装sdcc</span><br></pre></td></tr></table></figure>
+
 <p>编译时，只需要使用<code>sdcc sourcefile.c</code>即可完成编译   </p>
 <h4 id="安装配置VSCode"><a href="#安装配置VSCode" class="headerlink" title="安装配置VSCode"></a>安装配置VSCode</h4><p>安装完了编译环境，自然也需要一个代码编辑器。在这里，我选用了<code>Visual Studio Code</code>来作为编辑器</p>
 <ol>
@@ -319,30 +481,34 @@
 <li>按下<code>Shift+Command+P</code>,选择<code>C/C++:编辑配置</code>,在<code>includePath</code>添加sdcc的头文件地址</li>
 </ol>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"configurations"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"name"</span>: <span class="string">"Mac"</span>,</span><br><span class="line">            <span class="attr">"includePath"</span>: [</span><br><span class="line">                <span class="string">"$&#123;workspaceFolder&#125; /**"</span>,</span><br><span class="line">                <span class="string">"$&#123;workspaceFolder&#125; /include"</span>,</span><br><span class="line">                <span class="string">"/usr/local/Cellar/sdcc/3.9.0/share/sdcc/include/mcs51"</span>,</span><br><span class="line">                <span class="string">"/usr/local/Cellar/sdcc/3.9.0/share/sdcc/include/**"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"defines"</span>: [],</span><br><span class="line">            <span class="attr">"macFrameworkPath"</span>: [</span><br><span class="line">                <span class="string">"/Users/fzx172/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"compilerPath"</span>: <span class="string">"/usr/bin/clang"</span>,</span><br><span class="line">            <span class="attr">"cStandard"</span>: <span class="string">"c11"</span>,</span><br><span class="line">            <span class="attr">"cppStandard"</span>: <span class="string">"c++17"</span>,</span><br><span class="line">            <span class="attr">"intelliSenseMode"</span>: <span class="string">"clang-x64"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"version"</span>: <span class="number">4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/35/b66435a902241a019b8e44c2a3a104ebeb26e4.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=c0874AMQVJ_io4VP-CdM9rzO6gGggUgRvzGL8oVqaEZwlN0P4ovpmPk_qxQrus0Q86dYb3SSIFTSO2bFaKvIy5lOpc7f_kH35lGJTSkNyzJ275T7wNH9aBn4oJHr-KjV8y1n7aqyqfz9ld45_M1zMJF-Ql_H&amp;file_name=/QQ20190726-081616.png"></p>
 <h4 id="安装Stcgal"><a href="#安装Stcgal" class="headerlink" title="安装Stcgal"></a>安装Stcgal</h4><p>编辑器和编译器都解决了，下面应该解决下载程序</p>
 <ol>
 <li>安装Python3   </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew insall python3</span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li>修改python3为系统默认版本</li>
 </ol>
 <p>打开<code>.bash_profile</code>，添加以下内容</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># python_switch</span></span><br><span class="line"><span class="keyword">function</span> python2_switch &#123;</span><br><span class="line">    sudo unlink /usr/bin/python</span><br><span class="line">    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python /usr/bin/python</span><br><span class="line">    chmod a+x /usr/bin/python</span><br><span class="line">    <span class="built_in">echo</span> -e <span class="string">"Python2已部署"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> python3_switch &#123;</span><br><span class="line">    sudo unlink /usr/bin/python</span><br><span class="line">    sudo ln -s /Library/Frameworks/Python.framework/Versions/3.7/bin/python3 /usr/bin/python</span><br><span class="line">    chmod a+x /usr/bin/python</span><br><span class="line">    <span class="built_in">echo</span> -e <span class="string">"Python3已部署"</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/e2/d6ec3a3259e245ddf822f0b21b623a94d03eb6.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=dee8ZMj6Uv-5k7V4TpMJLiZaMhZOk80B90ug26dzQGmcLFZnWnt03TtmdHThg3pZ7qqAyU6S_Qyg67EfiDLbHI2TLH1Wj_Jqt1my31a2u68WSO_fRWWB_I2_vHi6tvJtRtiUPEWpM2fRO_W_2PMHjsX5zRrg&amp;file_name=/QQ20190726-083455.png"></p>
 <p>保存后执行<code>source ~/.bash_profile</code>，即可快速进行python版本切换</p>
 <ol start="3">
 <li>安装stcgal</li>
 </ol>
 <p>执行<code>pip install stcgal</code>即可安装</p>
-<h4 id="安装ttl下载器的驱动"><a href="#安装ttl下载器的驱动" class="headerlink" title="安装ttl下载器的驱动"></a>安装ttl下载器的驱动</h4><p><a href="http://www.prolific.com.tw/us/showproduct.aspx?p_id=229&amp;pcid=41" target="_blank" rel="noopener">PL2303</a>   </p>
+<h4 id="安装ttl下载器的驱动"><a href="#安装ttl下载器的驱动" class="headerlink" title="安装ttl下载器的驱动"></a>安装ttl下载器的驱动</h4><p><a href="http://www.prolific.com.tw/us/showproduct.aspx?p_id=229&pcid=41" target="_blank" rel="noopener">PL2303</a>   </p>
 <p><img src="https://img.vim-cn.com/b1/02fb2f94c68a0d94f67436202f91c457bf0e5b.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=29a6Q9t1uQQlHM0ZXbDGP4qozgXPrvlP3KwTFVmUoJ-HreaYrguilkEEGEPnTBPIg1NBpdWeC2rL35vkDU1b0ZsTWpKI1IexrYs-ygdhs8Ee7Sq3zVRujF9Q2Q1UiHraV7hk0Y_1_SyM8Kaz6eiCb0wzILM6&amp;file_name=/QQ20190725-212733.png"></p>
 <p><a href="http://www.wch.cn/download/CH341SER_MAC_ZIP.html" target="_blank" rel="noopener">CH340</a></p>
 <p><img src="https://img.vim-cn.com/06/6563c65a0cc49e61d04eda6024945fb349b39f.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=08af0yXzI5J7f2Lh4h6bR6DGGBmeDZT67NJiSJFX3-848sEOK6i2jIk_1xKXRaaPM_MHfqroYM0EMUDgzZ7G9zX71rnLNmC-ltE7Md4TkuA2ioiAUmVJ2D-TzyKNJlQ1yA2jCWdVYd8QMYpG5eVWJx2JNO5t&amp;file_name=/QQ20190725-215326.png"></p>
 <h4 id="串口调试工具"><a href="#串口调试工具" class="headerlink" title="串口调试工具"></a>串口调试工具</h4><p>我使用了<a href="https://gitlab.com/cutecom/cutecom" target="_blank" rel="noopener">cutecom</a>作为串口调试的工具</p>
 <p>下载cutecom的源码并编译</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">brew install cmake qt       <span class="comment">#cutecom编译需要cmake以及qt</span></span><br><span class="line">git <span class="built_in">clone</span> https://gitlab.com/cutecom/cutecom.git</span><br><span class="line"><span class="built_in">cd</span> cutecom</span><br><span class="line">cmake .</span><br><span class="line">make -j20</span><br></pre></td></tr></table></figure>
+
 <p>稍等片刻即可编译完成</p>
 <p><img src="https://img.vim-cn.com/6e/8fffa4651fe154befc90f8d600823b5da5e9d2.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=84a07eQh1W0ER6c0M-q3483vIkvHM0N08nL0uqcHj6WX-iGB-oIhzKMqbib_YZBpN2DTc4pgnYqNbVHBnmLGSSCFR_aetOAff2XCm8WzKYnZqSZfuWXHaDcAgK8Yz4WMOggdy6wHR20neXwyYKMf8hInA0PoVHFqu-kEvQ&amp;file_name=/QQ20190926-200420.png"></p>
 <p>到此，macOS的51开发环境便搭建完毕</p>
@@ -358,6 +524,7 @@
 </ol>
 <p>按下<code>Shift+Ctrl+P</code>,选择<code>C/C++:编辑配置</code>,在<code>includePath</code>添加sdcc的头文件地址</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"configurations"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"name"</span>: <span class="string">"Win32"</span>,</span><br><span class="line">            <span class="attr">"includePath"</span>: [</span><br><span class="line">                <span class="string">"$&#123;workspaceFolder&#125;/**"</span>,</span><br><span class="line">                <span class="string">"C:/Program Files/SDCC/include"</span>,</span><br><span class="line">                <span class="string">"C:/Program Files/SDCC/include/mcs51"</span>,</span><br><span class="line">                <span class="string">"$&#123;workspaceFolder&#125;/include"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"defines"</span>: [</span><br><span class="line">                <span class="string">"_DEBUG"</span>,</span><br><span class="line">                <span class="string">"UNICODE"</span>,</span><br><span class="line">                <span class="string">"_UNICODE"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"intelliSenseMode"</span>: <span class="string">"msvc-x64"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"version"</span>: <span class="number">4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/48/b1e63d1c886bb4305df249fa90591f26c986f7.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=ba446KW22Gaq6qErA8AmpIUMZmo8WJ_iEacws9jhvPssxwECpPjTE7vpGc3FuhDDO6gZPmklLVyYlyARn1XWVDU-QZ6IUoSdgmWhRvtYmoXRw1VEqVj0JfwQ2TTVHz9zaNPriUl9G2LkaY-fVkoEILXWaYse&amp;file_name=/QQ20190814-181851.png"></p>
 <h4 id="下载烧录程序以及下载器驱动"><a href="#下载烧录程序以及下载器驱动" class="headerlink" title="下载烧录程序以及下载器驱动"></a>下载烧录程序以及下载器驱动</h4><p>windows下<a href="http://www.stcmcu.com/index.htm" target="_blank" rel="noopener">官网</a>有提供烧录工具和驱动，所以直接下载即可   </p>
 <p><img src="https://img.vim-cn.com/dc/0ab6514261e4dacfd5002445b86dfd476ee622.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=06451eJroZsL_xnd5cduDfD-60078Rh_Fe-jGSC0_2epm4sOliRMSn9MRCpLr3FSzQvTzYIB7UdqpE-8HQLTADG3-LTrKiGQOQ0hUKq1ezFtk-0IYy-s6tplrAFk-R6yrn-pEpiwhXUzNac1Q6lLYeAUlHxZzOYg0VerAPqMte3jzstGlzpNecs&amp;file_name=/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-08-14%20%E4%B8%8B%E5%8D%886.56.21.png"></p>
@@ -371,30 +538,105 @@
 <p>我爱单片机，单片机是我快乐</p>
 <p><del>可不可以的话扫一下右边的码支持一下，我会挖更多的坑的</del></p>
 
+          
+            <br>
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  copyright'>
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>感谢阅读，可不可以扫码支持一下作者呢<br>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=/2019/07/25/SDCC-and-VSCode-MCS51/>/2019/07/25/SDCC-and-VSCode-MCS51/</a></p>
+          
+        
+      </blockquote>
+    
+  </div>
+</section>
+
+                
+              
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
+  </div>
+</section>
+
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+          
         </div>
         
+          <br>
           
 
 
   <section class='meta' id="footer-meta">
-    <hr>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-24T17:32:50+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年12月24日</p>
-  </a>
-</div>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div>
+
 
         
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>单片机</p></a></div>
-
 
         
       
@@ -473,7 +715,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/单片机/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>单片机</a> <a class="tag" href="/tags/写bug/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>写bug</a>
+                                    <a class="tag" href="/tags/单片机/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a> <a class="tag" href="/tags/写bug/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 写bug</a>
                                 </h6>
                             
                         </span>
@@ -493,7 +735,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Server</a> <a class="tag" href="/tags/Router/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Router</a>
+                                    <a class="tag" href="/tags/Server/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Server</a> <a class="tag" href="/tags/Router/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Router</a>
                                 </h6>
                             
                         </span>
@@ -510,7 +752,7 @@
 
 
 
-  <article class="post white-box comments">
+  <article class="post white-box comments card-shadow ">
     <section class="article typo">
       <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
       
@@ -551,10 +793,8 @@
     
       
         
-          
-          
-            <section class='widget author'>
-  <div class='content pure'>
+          <section class='widget card-shadow  blogger'>
+  <div class='content'>
     
       <div class='avatar'>
         <img class='avatar' src='https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg'/>
@@ -604,82 +844,128 @@
   </div>
 </section>
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <p>夜间模式终于差不多了</p>
+
+      </p>
+    
+      <p>
+        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+
+      </p>
+    
+  </div>
+</section>
+
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
         
       
         
           
-          
-            
-  <section class='widget toc-wrapper'>
-    
-<header class='pure'>
+  <section class='widget card-shadow  toc-wrapper'>
+    <header>
   <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
   
-    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#要进行的工作"><span class="toc-text">要进行的工作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sdcc简介"><span class="toc-text">sdcc简介</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正式步骤"><span class="toc-text">正式步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MacOS"><span class="toc-text">MacOS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装sdcc"><span class="toc-text">安装sdcc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装配置VSCode"><span class="toc-text">安装配置VSCode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Stcgal"><span class="toc-text">安装Stcgal</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装ttl下载器的驱动"><span class="toc-text">安装ttl下载器的驱动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#串口调试工具"><span class="toc-text">串口调试工具</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows"><span class="toc-text">Windows</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装sdcc-1"><span class="toc-text">安装sdcc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装VSCode"><span class="toc-text">安装VSCode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#下载烧录程序以及下载器驱动"><span class="toc-text">下载烧录程序以及下载器驱动</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装PlatformIO"><span class="toc-text">安装PlatformIO</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
-  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
-  
-</header>
-
-  <div class='content pure'>
-    <p>不小心删库了……<br>慢慢恢复中……<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>
-
-  </div>
-</section>
-
-          
+      
         
       
         
-          
-          
-            
-  <section class='widget tagcloud'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
-<header class='pure'>
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
-  
-</header>
-
-    <div class='content pure'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
-    </div>
-  </section>
-
-
-          
+      
+        
+      
         
       
         
           
-          
-            
-  <section class='widget category'>
+  <section class='widget card-shadow  category'>
+    <header>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
     
-<header class='pure'>
-  <div><i class="fas fa-expand-arrows-alt fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_self"
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ul class="entry">
         
           <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(9)</div></a></li>
@@ -695,99 +981,163 @@
   </section>
 
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
         
       
         
           
-          
-            
-
-
-  <section class='widget music'>
-    
-<header class='pure'>
-  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  <section class='widget card-shadow  tagcloud'>
+    <header>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
   
     <a class="rightBtn"
     
       rel="external nofollow noopener noreferrer"
     
     
-    href="https://music.163.com/#/user/home?id=547706795"
-    title="https://music.163.com/#/user/home?id=547706795">
-    <i class="far fa-heart fa-fw"></i></a>
+      target="_self"
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme="#1BCDFC"
-    
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="playlist"
-    data-id="2048970456"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
+    <div class='content'>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
   
 </header>
 
-  <div class='content pure'>
-    <p><img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280"></p>
-
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
   </div>
 </section>
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fas fa-ad fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;广而告之</div>
   
 </header>
 
-  <div class='content pure'>
-    <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+  <div class='content'>
+    
+      <p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+      </p>
+    
   </div>
 </section>
 
-          
+        
+      
+        
+      
         
       
     
-
   
 </aside>
 
-<footer id="footer" class="clearfix">
-  
+<footer class="clearfix">
+  <br><br>
   
     <div class="social-wrapper">
       
@@ -817,12 +1167,13 @@
       
     </div>
   
+  
   <br>
   <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
-    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">material-x</a>
+    <a href="https://xaoxuu.com/wiki/volantis/" target="_blank" class="codename">Volantis</a>
     作为主题
     
       ，
@@ -831,10 +1182,10 @@
       次
     
     。
-    <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：18.1k</span>
-    <br>
-    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  </div>
+  
+  <span class="post-count">字数统计：18.1k。  </span>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
         function createtime() { 
@@ -846,13 +1197,11 @@
            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-           document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+           document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
        } 
      setInterval("createtime()",250);
     </script>
-    <br>
-  </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
 
@@ -864,24 +1213,16 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 
   <script>
-    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-    var ALGOLIA_API_KEY = "";
-    var ALGOLIA_APP_ID = "";
-    var ALGOLIA_INDEX_NAME = "";
-    var AZURE_SERVICE_NAME = "";
-    var AZURE_INDEX_NAME = "";
-    var AZURE_QUERY_KEY = "";
-    var BAIDU_API_ID = "";
+    
     var SEARCH_SERVICE = "hexo" || "hexo";
-    var ROOT = "/"||"/";
-    if(!ROOT.endsWith('/'))ROOT += '/';
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
   </script>
 
-<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
 
-  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
   <script type="text/javascript">
     $(function() {
       const $reveal = $('.reveal');
@@ -911,31 +1252,6 @@
 
 
 
-  
-  
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        if ('.cover') {
-          $('.cover').backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        } else {
-          $.backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        }
-      });
-    </script>
-  
-
 
 
 
@@ -955,8 +1271,8 @@
   var guest_info = 'nick,mail,link'.split(',').filter(function(item){
     return GUEST_INFO.indexOf(item) > -1
   });
-  var notify = 'false' == true;
-  var verify = 'false' == true;
+  var notify = 'true' == true;
+  var verify = 'true' == true;
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
@@ -980,6 +1296,12 @@
 
 
   <script src="/js/search.js"></script>
+
+
+  
+    <script src="/js/commentTyping.js"></script>
+  
+
 
 
 
@@ -1096,5 +1418,6 @@
   <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script type="text/javascript" src="\js\dark.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -25,11 +25,11 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://kod.erf172.tk/index.php?user/publicLink&fid=6f19Aus9e1CMczggTFPiuaAyekFC7zi8jyvDNtpergeMmBTHBM8zrhoRBT_5pWkGHeXKeGh4beS2kAOkwaYBazJTI3gPtw9gFhmzNZokdvVqPQphxcKRMt73J3kmgqR8J-A&file_name=/logoko.png">
+
   
 
   
@@ -67,8 +67,8 @@
 
   <div class="m_search">
     <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="" />
       <i class="icon fas fa-search fa-fw"></i>
+      <input type="text" class="input u-search-input" placeholder="Search" />
     </form>
   </div>
 
@@ -77,7 +77,18 @@
     
       
         <li>
-          <a class="nav home" href="https://github.com/Erf172"
+          <a class="nav home" style="color: "
+            href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;Blog
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" style="color: "
+            href="https://github.com/Erf172"
             
             
             id="https:github.comErf172">
@@ -86,7 +97,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://aria2.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://aria2.erf172.tk"
             
             
             id="https:aria2.erf172.tk">
@@ -95,7 +107,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://onedrive.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://onedrive.erf172.tk"
             
             
             id="https:onedrive.erf172.tk">
@@ -104,7 +117,8 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://kod.erf172.tk"
+          <a class="nav home" style="color: "
+            href="https://kod.erf172.tk"
             
             
             id="https:kod.erf172.tk">
@@ -118,56 +132,177 @@
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header ">
   <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
+    <div id="loading-bar"></div>
   </div>
 
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-      <a class="logo flat-box" href='/' >
+      <a class="logo flat-box" target="_self" href='/' >
         
-          某咸鱼的鱼缸
+          
+            <i class='fas fa-home'></i>
+          
+          
+            鱼缸本缸
+          
         
       </a>
 			<div class='menu navgation'>
 				<ul class='h-list'>
           
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                    target="_self"
+                  
+                  id="home">
+									<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="javascript:switchNightMode()"
+                  
+                    rel="nofollow"
+                  
+                  
+                    target="_self"
+                  
+                  id="javascript:switchNightMode()">
+									<i class='fas fa-adjust fa-fw'></i>&nbsp;夜间模式
+								</a>
+							</li>
+      			
+      		
 				</ul>
 			</div>
 
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜索" />
-						<i class="icon fas fa-search fa-fw"></i>
-					</form>
-				</div>
-			
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索一下" />
+        </form>
+      </div>
+
 			<ul class='switcher h-list'>
 				
-					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
 				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
 			</ul>
 		</div>
 
 		<div class='nav-sub container container--flex'>
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
 			</ul>
 		</div>
 	</div>
 </header>
-	<aside class="menu-phone">
+	<aside class="menu-phone white-box">
     <header>
 		<nav class="menu navgation">
       <ul>
         
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                  target="_self"
+                
+                id="home">
+								<i class='fas fa-hourglass-half fa-fw'></i>&nbsp;近期
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="tags">
+								<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                  target="_self"
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+       
       </ul>
 		</nav>
     </header>
@@ -183,7 +318,7 @@
   
 
   
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <article id="post" class="post white-box card-shadow  article-type-post" itemscope itemprop="blogPost">
       
 
 
@@ -210,24 +345,16 @@
           
             
   <div class='new-meta-item author'>
-    <a href="/" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>这不是lD</p>
-    </a>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>这不是lD</p>
+      </a>
+    
   </div>
 
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-02-17</p>
-  </a>
-</div>
 
           
         
@@ -238,6 +365,44 @@
     <a href='/categories/Guide/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>Guide</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p> 2019/2/17</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-03-21T22:08:14+08:00">
+  <a class='notlink'>
+    <i class="fas fa-save" aria-hidden="true"></i>
+    <p> 2019/3/21</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <p>1.9k</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <p>8分钟</p>
     </a>
   </div>
 
@@ -260,14 +425,6 @@
   
 
 
-<div class="new-meta-item browse wordcount">
-        <a class="notlink">
-          <i class="fas fa-chart-area" aria-hidden="true" ></i>
-          <p>
-            <span class="post-count">1.9k</span>
-          </p>
-        </a>
-</div>
           
         
           
@@ -285,10 +442,13 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
+          
           <blockquote>
 <p>经过上一次的折(翻)腾(车)，系统我们已经安装好了。下面我们进行苹果系统的调试工作<br>注意，这个过程可能会多次翻车。一定要有耐心233333</p>
 </blockquote>
 <a id="more"></a>
+
+
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>下面的修改工作可以分为以下几个部分，大家可以按需阅读233333<br>不过我还是建议通读一遍，以保证系统的稳定运行</p>
 <blockquote>
 <p>将CLOVER系统文件移动到硬盘的EFI分区中<br>屏蔽独显&amp;核显的驱动<br>正确驱动核显<br>修复亮度调节<br>正确驱动声卡<br>正确驱动网卡<br>USB端口注入<br>开启CPU变频<br>启用睡眠</p>
@@ -297,11 +457,13 @@
 <li>打开终端，输入以下命令来查看本地EFI引导的磁盘分区</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskutil list</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/9f/260bf10fa02161c9f090eed7cc3c0152969305.png" alt="DiskLisat"></p>
 <ol start="2">
 <li>确定磁盘分区之后，输入以下命令。比如，我的磁盘EFI分区是disk0s2，优盘的EFI分区是disk4s2</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount disk0s2</span><br><span class="line">sudo diskutil mount disk4s1</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/a7/20fd4142a13699e1c3e4557f936c2a02f7d361.png" alt="DiskMount"></p>
 <ol start="3">
 <li>打开访达，分别打开本地磁盘上的EFI分区以及优盘上的EFI分区</li>
@@ -344,6 +506,7 @@
 <li>打开终端，依次输入以下命令</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Desktop</span><br><span class="line">mkdir Hackintosh_Project&amp;&amp;<span class="built_in">cd</span> Hackintosh_Project</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/RehabMan/OS-X-Clover-Laptop-Config.git</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/acpica/acpica.git</span><br><span class="line"><span class="built_in">cd</span> acpica</span><br><span class="line">make -j8 </span><br><span class="line"><span class="built_in">cd</span> .. &amp;&amp; <span class="built_in">cd</span> OS-X-Clover-Laptop-Config/hotpatch</span><br><span class="line">iasl SSDT-DDGPU.dsl SSDT-PNLF.dsl SSDT-IGPU.dsl SSDT-GPRW.dsl SSDT-PTSWAK.dsl SSDT-XOSI.dsl SSDT-ALS0.dsl</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>如果提示找不到iasl的话，可以使用下列命令安装后再次进入OS-X-Clover-Laptop-Config/hotpatch进行编译<br>cd ~/Desktop/Hackintosh_project/acpia/ &amp;&amp; sudo make install<br>我的电脑都编译的话莫名其妙会报错，所以只编译了一些需要的文件<br>正常情况下直接在OS-X-Clover-Laptop-Config下执行make即可</p>
 </blockquote>
@@ -374,8 +537,7 @@
 <th>Value Type</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>disable-external-gpu</td>
 <td>01000000</td>
 <td>Data</td>
@@ -390,9 +552,17 @@
 <td>02000000</td>
 <td>Data</td>
 </tr>
-</tbody>
-</table>
-<p>剩下的#号部分可以删除<br><img src="https://img.vim-cn.com/0e/844f9190aedbf208c7a5734ee199248ace4cf1.png" alt="GPU"></p>
+<tr>
+<td>剩下的#号部分可以删除</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://img.vim-cn.com/0e/844f9190aedbf208c7a5734ee199248ace4cf1.png" alt="GPU"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 </blockquote>
 </blockquote>
 <ol start="8">
@@ -435,14 +605,12 @@
 <th>Value Type</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>layout-id</td>
 <td>1C000000</td>
 <td>DATA</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </blockquote>
 </blockquote>
 <ol start="4">
@@ -490,14 +658,12 @@
 <th>Replace</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>change _OSI to XOSI, pair with SSDT-XOSI.aml</td>
 <td>5F4F5349</td>
 <td>584F5349</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </blockquote>
 <ol start="7">
 <li>刷新缓存并重启即可</li>
@@ -506,6 +672,7 @@
 <li>打开终端，执行以下命令</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Desktop/Hackintosh_Project</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/acidanthera/CPUFriend.git</span><br><span class="line">cp /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext/Contents/Resources/Mac-B4831CEBD52A0C4C.plist  ~/Desktop/Hackintosh_Project/CPUFriend/ResouceConverter</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://img.vim-cn.com/c2/71a0aefee8ddabf9a65f8d4e5f85d26b7c28a6.png" alt="CPU_1"></p>
 <ol start="2">
 <li>打开Xcode编辑Mac-B4831CEBD52A0C4C.plist进行以下修改</li>
@@ -520,8 +687,7 @@
 <th>Value</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>power_reduced_playback</td>
 <td>Boolean</td>
 <td>Yes</td>
@@ -556,18 +722,19 @@
 <td>Boolean</td>
 <td>Yes</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>在Frequencies 中添加一行键值为3800<br>在FrequencyVectors 复制其中一行的键值，index与Frequencies中的3800相对应，并将第二组数据改成08000000<br>他们看起来是这个样子的<br><img src="https://img.vim-cn.com/bd/a561711c9641b4d70484a20889ee12407ca0ac.png" alt="CPU_2"></p>
 </blockquote>
 <ol start="3">
 <li>打开终端执行以下命令</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Desktop/Hackintosh_Project/CPUFriend/ResouceConverter</span><br><span class="line">./ResourceConverter.sh --kext Mac-B4831CEBD52A0C4C.plist</span><br><span class="line">./ResourceConverter.sh --acpi Mac-B4831CEBD52A0C4C.plist</span><br><span class="line">sudo cp Mac-B4831CEBD52A0C4C.plist /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext/Contents/Resources/Mac-B4831CEBD52A0C4C.plist</span><br></pre></td></tr></table></figure>
+
 <ol start="4">
 <li>新建终端，执行以下命令</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -o ~/ssdtPRGen.sh https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/Beta/ssdtPRGen.sh</span><br><span class="line">chmod +x ~/ssdtPRGen.sh</span><br><span class="line">sudo ~/ssdtPRGen.sh</span><br></pre></td></tr></table></figure>
+
 <ol start="5">
 <li><p>编辑生成的ssdt.dsl文件，将刚才生成的ssdt_data 中的cf-frequency-data复制到Method (_DSM, 4, NotSerialized)中，并Package（0x02）改为Package（0x04），将文件保存为aml后退出</p>
 </li>
@@ -591,8 +758,7 @@
 <th>Replace</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</td>
 <td>5F505453 01</td>
 <td>5A505453 01</td>
@@ -607,8 +773,7 @@
 <td>47505257 02</td>
 <td>58505257 02</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </blockquote>
 <ol start="3">
 <li>保存重启即可</li>
@@ -636,30 +801,105 @@
 <p>到这里黑苹果调试的差不多了，就可以使用了。当然还有很多地方没有修复，以后会慢慢修复的。。。</p>
 <p><del>一时咸鱼一时爽，一直咸鱼一直爽</del></p>
 
+          
+            <br>
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  copyright'>
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>感谢阅读，可不可以扫码支持一下作者呢<br>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/>/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/</a></p>
+          
+        
+      </blockquote>
+    
+  </div>
+</section>
+
+                
+              
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
+  </div>
+</section>
+
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+          
         </div>
         
+          <br>
           
 
 
   <section class='meta' id="footer-meta">
-    <hr>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-03-21T22:08:14+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年3月21日</p>
-  </a>
-</div>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MacOS/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>MacOS</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/系统安装/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>系统安装</p></a></div>
+
 
         
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MacOS/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>MacOS</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/系统安装/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>系统安装</p></a></div>
-
 
         
       
@@ -738,7 +978,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/Server/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Server</a> <a class="tag" href="/tags/Blog/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Blog</a>
+                                    <a class="tag" href="/tags/Server/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Server</a> <a class="tag" href="/tags/Blog/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Blog</a>
                                 </h6>
                             
                         </span>
@@ -758,7 +998,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>系统安装</a>
+                                    <a class="tag" href="/tags/MacOS/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> MacOS</a> <a class="tag" href="/tags/系统安装/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 系统安装</a>
                                 </h6>
                             
                         </span>
@@ -775,7 +1015,7 @@
 
 
 
-  <article class="post white-box comments">
+  <article class="post white-box comments card-shadow ">
     <section class="article typo">
       <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
       
@@ -816,10 +1056,8 @@
     
       
         
-          
-          
-            <section class='widget author'>
-  <div class='content pure'>
+          <section class='widget card-shadow  blogger'>
+  <div class='content'>
     
       <div class='avatar'>
         <img class='avatar' src='https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg'/>
@@ -869,82 +1107,128 @@
   </div>
 </section>
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
+  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
+  
+</header>
+
+  <div class='content'>
+    
+      <p>
+        <p>夜间模式终于差不多了</p>
+
+      </p>
+    
+      <p>
+        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+
+      </p>
+    
+  </div>
+</section>
+
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
         
       
         
           
-          
-            
-  <section class='widget toc-wrapper'>
-    
-<header class='pure'>
+  <section class='widget card-shadow  toc-wrapper'>
+    <header>
   <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
   
-    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装后的调试工作"><span class="toc-text">安装后的调试工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#将CLOVER移动至系统EFI分区中"><span class="toc-text">将CLOVER移动至系统EFI分区中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#屏蔽独显-amp-核显的驱动"><span class="toc-text">屏蔽独显&amp;核显的驱动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#亮度调节的修复"><span class="toc-text">亮度调节的修复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#声卡的驱动"><span class="toc-text">声卡的驱动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网卡的驱动"><span class="toc-text">网卡的驱动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#USB端口注入"><span class="toc-text">USB端口注入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CPU变频开启"><span class="toc-text">CPU变频开启</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用睡眠"><span class="toc-text">启用睡眠</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#显示器EDID的注入"><span class="toc-text">显示器EDID的注入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
-  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
-  
-</header>
-
-  <div class='content pure'>
-    <p>不小心删库了……<br>慢慢恢复中……<br>本站使用<b><a href="https://xaoxuu.com/wiki/material-x/">Material X</a></b> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦。</p>
-
-  </div>
-</section>
-
-          
+      
         
       
         
-          
-          
-            
-  <section class='widget tagcloud'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
-<header class='pure'>
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
-  
-</header>
-
-    <div class='content pure'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
-    </div>
-  </section>
-
-
-          
+      
+        
+      
         
       
         
           
-          
-            
-  <section class='widget category'>
+  <section class='widget card-shadow  category'>
+    <header>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
     
-<header class='pure'>
-  <div><i class="fas fa-expand-arrows-alt fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_self"
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
+    <div class='content'>
       <ul class="entry">
         
           <li><a class="flat-box" title="/categories/Guide/" href="/categories/Guide/"><div class='name'>Guide</div><div class='badge'>(9)</div></a></li>
@@ -960,99 +1244,163 @@
   </section>
 
 
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
         
       
         
           
-          
-            
-
-
-  <section class='widget music'>
-    
-<header class='pure'>
-  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  <section class='widget card-shadow  tagcloud'>
+    <header>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
   
     <a class="rightBtn"
     
       rel="external nofollow noopener noreferrer"
     
     
-    href="https://music.163.com/#/user/home?id=547706795"
-    title="https://music.163.com/#/user/home?id=547706795">
-    <i class="far fa-heart fa-fw"></i></a>
+      target="_self"
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
   
 </header>
 
-    <div class='content pure'>
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme="#1BCDFC"
-    
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="playlist"
-    data-id="2048970456"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
+    <div class='content'>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fab fa-alipay fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫码领红包</div>
   
 </header>
 
-  <div class='content pure'>
-    <p><img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280"></p>
-
+  <div class='content'>
+    
+      <p>
+        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+      </p>
+    
   </div>
 </section>
 
-          
         
       
         
-          
-          
-            <section class='widget plain'>
-  
-<header class='pure'>
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <section class='widget card-shadow  text'>
+  <header>
   <div><i class="fas fa-ad fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;广而告之</div>
   
 </header>
 
-  <div class='content pure'>
-    <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+  <div class='content'>
+    
+      <p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+      </p>
+    
   </div>
 </section>
 
-          
+        
+      
+        
+      
         
       
     
-
   
 </aside>
 
-<footer id="footer" class="clearfix">
-  
+<footer class="clearfix">
+  <br><br>
   
     <div class="social-wrapper">
       
@@ -1082,12 +1430,13 @@
       
     </div>
   
+  
   <br>
   <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
-    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">material-x</a>
+    <a href="https://xaoxuu.com/wiki/volantis/" target="_blank" class="codename">Volantis</a>
     作为主题
     
       ，
@@ -1096,10 +1445,10 @@
       次
     
     。
-    <i class="fas fa-chart-area"></i>
-    <span class="post-count">字数统计：18.1k</span>
-    <br>
-    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  </div>
+  
+  <span class="post-count">字数统计：18.1k。  </span>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
         function createtime() { 
@@ -1111,13 +1460,11 @@
            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-           document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+           document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
        } 
      setInterval("createtime()",250);
     </script>
-    <br>
-  </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
 
@@ -1129,24 +1476,16 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 
   <script>
-    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-    var ALGOLIA_API_KEY = "";
-    var ALGOLIA_APP_ID = "";
-    var ALGOLIA_INDEX_NAME = "";
-    var AZURE_SERVICE_NAME = "";
-    var AZURE_INDEX_NAME = "";
-    var AZURE_QUERY_KEY = "";
-    var BAIDU_API_ID = "";
+    
     var SEARCH_SERVICE = "hexo" || "hexo";
-    var ROOT = "/"||"/";
-    if(!ROOT.endsWith('/'))ROOT += '/';
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
   </script>
 
-<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
 
-  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
   <script type="text/javascript">
     $(function() {
       const $reveal = $('.reveal');
@@ -1176,31 +1515,6 @@
 
 
 
-  
-  
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        if ('.cover') {
-          $('.cover').backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        } else {
-          $.backstretch(
-          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        }
-      });
-    </script>
-  
-
 
 
 
@@ -1220,8 +1534,8 @@
   var guest_info = 'nick,mail,link'.split(',').filter(function(item){
     return GUEST_INFO.indexOf(item) > -1
   });
-  var notify = 'false' == true;
-  var verify = 'false' == true;
+  var notify = 'true' == true;
+  var verify = 'true' == true;
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
@@ -1245,6 +1559,12 @@
 
 
   <script src="/js/search.js"></script>
+
+
+  
+    <script src="/js/commentTyping.js"></script>
+  
+
 
 
 
@@ -1361,5 +1681,6 @@
   <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script type="text/javascript" src="\js\dark.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>
