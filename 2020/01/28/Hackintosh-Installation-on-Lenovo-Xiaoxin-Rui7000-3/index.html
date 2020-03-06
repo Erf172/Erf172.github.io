@@ -382,10 +382,10 @@
           
         
           
-            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-01-29T19:28:52+08:00">
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-06T23:27:55+08:00">
   <a class='notlink'>
     <i class="fas fa-save" aria-hidden="true"></i>
-    <p> 2020/1/29</p>
+    <p> 2020/3/6</p>
   </a>
 </div>
 
@@ -396,13 +396,13 @@
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fas fa-keyboard" aria-hidden="true"></i>
-      <p>2.8k</p>
+      <p>3.1k</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fas fa-hourglass-half" aria-hidden="true"></i>
-      <p>11分钟</p>
+      <p>12分钟</p>
     </a>
   </div>
 
@@ -468,7 +468,10 @@
 </li>
 </ol>
 <h3 id="一些软件以及工具"><a href="#一些软件以及工具" class="headerlink" title="一些软件以及工具"></a>一些软件以及工具</h3><ol>
-<li><a href="https://mackie100projects.altervista.org/opencore-configurator/" target="_blank" rel="noopener">OpenCore Configurator</a>   </li>
+<li><a href="https://mackie100projects.altervista.org/opencore-configurator/" target="_blank" rel="noopener">OpenCore Configurator</a>   <blockquote>
+<p> <strong>注意：OpenCore Configurator版本一定要和OpenCore的版本对应，(可以去关于里面查看),不然有可能导致OpenCore无法正常读取配置文件</strong>   </p>
+</blockquote>
+</li>
 <li>Xcode (用以修改文件、config.plist)    </li>
 <li><a href="https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/" target="_blank" rel="noopener">MaciASL</a></li>
 <li>优盘</li>
@@ -522,6 +525,7 @@
 <li><p><code>Patch</code>:添加一项，防止数字音频崩溃</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Comment:AppleALC Kernel Panic</span><br><span class="line">Find: 636F6D2E 6170706C 65005F5F 6B65726E 656C5F5F 00</span><br><span class="line">Replace: 6E6F742E 6170706C 65005F5F 6B65726E 656C5F5F 00</span><br></pre></td></tr></table></figure>
 
+<p> 开启<code>Disable RTC wake scheduling</code>防止睡眠唤醒</p>
 <p> 其余项保持默认</p>
 </li>
 </ol>
@@ -633,6 +637,14 @@
 <li><p>打开<code>SSDT-PTSWAK.dsl</code>,保存为aml后放到<code>EFI/OC/ACPI/</code>,并在config.plist中的<code>ACPI/ADD中</code>添加即可。</p>
 </li>
 </ol>
+<h4 id="修复RTC导致的唤醒"><a href="#修复RTC导致的唤醒" class="headerlink" title="修复RTC导致的唤醒"></a>修复RTC导致的唤醒</h4><p>经过上述操作之后，电脑就可以正常睡眠了。然而，电脑在睡眠过程中会出现莫名其妙的唤醒问题。</p>
+<p>在终端中，执行<code>log show --last 1d |grep -i &quot;Wake reason&quot;</code> ，可以看到到电脑的唤醒原因都是<code>RTC (Alarm)</code>,查阅了资料，发现可以只需要禁用RTC的唤醒功能就可以了</p>
+<p><img src="https://img.vim-cn.com/01/fe1763dbcdb97bee99c640ad1bf08c75fc24f1.png" alt="rtc alarm"></p>
+<p><strong>注意：这样修复之后，系统中电源小憩的功能就会失灵</strong></p>
+<p>在config.plist中的<code>Kernel/patch</code>中开启开启<code>Disable RTC wake scheduling</code>即可</p>
+<p>换完之后，在终端中执行<code>sudo pmset schedule cancelall</code>，这样就可以去掉电源信息中的计划任务了</p>
+<p>这样，睡眠就会正常了</p>
+<p><img src="https://img.vim-cn.com/c1/16c0d105818c3f5765549a9462a3a35573ff42.png" alt="sleep bingo"></p>
 <h3 id="系统变频"><a href="#系统变频" class="headerlink" title="系统变频"></a>系统变频</h3><h4 id="加载原生的电源管理"><a href="#加载原生的电源管理" class="headerlink" title="加载原生的电源管理"></a>加载原生的电源管理</h4><ol>
 <li><p>打开提取的DSDT，搜索 <code>Processor</code>可以看到以下字样</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">    Scope (_PR)</span><br><span class="line">&#123;</span><br><span class="line">    Processor (CPU0, 0x01, 0x00001810, 0x06)&#123;&#125;</span><br><span class="line">    Processor (CPU1, 0x02, 0x00001810, 0x06)&#123;&#125;</span><br><span class="line">    Processor (CPU2, 0x03, 0x00001810, 0x06)&#123;&#125;</span><br><span class="line">    Processor (CPU3, 0x04, 0x00001810, 0x06)&#123;&#125;</span><br><span class="line">    Processor (CPU4, 0x05, 0x00001810, 0x06)&#123;&#125;</span><br><span class="line">    Processor (CPU5, 0x06, 0x00001810, 0x06)&#123;&#125;</span><br><span class="line">    Processor (CPU6, 0x07, 0x00001810, 0x06)&#123;&#125;</span><br><span class="line">    Processor (CPU7, 0x08, 0x00001810, 0x06)&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -663,6 +675,7 @@
 <h3 id="其他注意的地方"><a href="#其他注意的地方" class="headerlink" title="其他注意的地方"></a>其他注意的地方</h3><h4 id="EC更名"><a href="#EC更名" class="headerlink" title="EC更名"></a>EC更名</h4><p>由于OpenCore的特性，因此尽量少用全局的更名补丁。在之前使用了<code>changge ec0 to ec</code>这个补丁，我们可以使用<code>SSDT-EC</code>补丁来替换</p>
 <p>打开<code>SSDT-EC.dsl</code>,保存为aml后放到<code>EFI/OC/ACPI/</code>,并在config.plist中的<code>ACPI/ADD中</code>添加，删除<code>change ec0 to ec</code>补丁即可。</p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>差不多这样应该就可以运行了。享受更加接近白果的体验吧</p>
+<p>往期传送门 ：<br>        <a href="/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/">联想小新锐7000の黑苹果折腾记(一)</a><br>        <a href="/2019/02/18/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-2/">联想小新锐7000の黑苹果折腾记(二)</a></p>
 
           
             <br>
@@ -1026,7 +1039,7 @@
 </header>
 
     <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于OpenCore"><span class="toc-text">关于OpenCore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统截图"><span class="toc-text">系统截图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本文所提及的内容"><span class="toc-text">本文所提及的内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一些软件以及工具"><span class="toc-text">一些软件以及工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考内容"><span class="toc-text">参考内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开搞"><span class="toc-text">开搞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装前的准备工作"><span class="toc-text">安装前的准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#提取本机的DSDT"><span class="toc-text">提取本机的DSDT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查看本机的分区情况-可选"><span class="toc-text">查看本机的分区情况(可选)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#提取System-UUID"><span class="toc-text">提取System UUID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#为优盘制作一个EFI分区"><span class="toc-text">为优盘制作一个EFI分区</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引导文件配置"><span class="toc-text">引导文件配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ACPI"><span class="toc-text">ACPI</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Booter"><span class="toc-text">Booter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DeviceProperties"><span class="toc-text">DeviceProperties</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Kernel"><span class="toc-text">Kernel</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Misc"><span class="toc-text">Misc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NVRAM"><span class="toc-text">NVRAM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PlatformInfo"><span class="toc-text">PlatformInfo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#UEFI"><span class="toc-text">UEFI</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#亮度以及亮度快捷键"><span class="toc-text">亮度以及亮度快捷键</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ACPI方式修复亮度"><span class="toc-text">ACPI方式修复亮度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#定制亮度补丁修复"><span class="toc-text">定制亮度补丁修复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#亮度快捷键"><span class="toc-text">亮度快捷键</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#亮度保存"><span class="toc-text">亮度保存</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统睡眠"><span class="toc-text">系统睡眠</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#修复睡眠后就被唤醒"><span class="toc-text">修复睡眠后就被唤醒</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#修复唤醒后一些问题"><span class="toc-text">修复唤醒后一些问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统变频"><span class="toc-text">系统变频</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#加载原生的电源管理"><span class="toc-text">加载原生的电源管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CPU-变频"><span class="toc-text">CPU 变频</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他注意的地方"><span class="toc-text">其他注意的地方</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#EC更名"><span class="toc-text">EC更名</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于OpenCore"><span class="toc-text">关于OpenCore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统截图"><span class="toc-text">系统截图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本文所提及的内容"><span class="toc-text">本文所提及的内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一些软件以及工具"><span class="toc-text">一些软件以及工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考内容"><span class="toc-text">参考内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开搞"><span class="toc-text">开搞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装前的准备工作"><span class="toc-text">安装前的准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#提取本机的DSDT"><span class="toc-text">提取本机的DSDT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查看本机的分区情况-可选"><span class="toc-text">查看本机的分区情况(可选)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#提取System-UUID"><span class="toc-text">提取System UUID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#为优盘制作一个EFI分区"><span class="toc-text">为优盘制作一个EFI分区</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引导文件配置"><span class="toc-text">引导文件配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ACPI"><span class="toc-text">ACPI</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Booter"><span class="toc-text">Booter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DeviceProperties"><span class="toc-text">DeviceProperties</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Kernel"><span class="toc-text">Kernel</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Misc"><span class="toc-text">Misc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NVRAM"><span class="toc-text">NVRAM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PlatformInfo"><span class="toc-text">PlatformInfo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#UEFI"><span class="toc-text">UEFI</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#亮度以及亮度快捷键"><span class="toc-text">亮度以及亮度快捷键</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ACPI方式修复亮度"><span class="toc-text">ACPI方式修复亮度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#定制亮度补丁修复"><span class="toc-text">定制亮度补丁修复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#亮度快捷键"><span class="toc-text">亮度快捷键</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#亮度保存"><span class="toc-text">亮度保存</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统睡眠"><span class="toc-text">系统睡眠</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#修复睡眠后就被唤醒"><span class="toc-text">修复睡眠后就被唤醒</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#修复唤醒后一些问题"><span class="toc-text">修复唤醒后一些问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#修复RTC导致的唤醒"><span class="toc-text">修复RTC导致的唤醒</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统变频"><span class="toc-text">系统变频</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#加载原生的电源管理"><span class="toc-text">加载原生的电源管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CPU-变频"><span class="toc-text">CPU 变频</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他注意的地方"><span class="toc-text">其他注意的地方</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#EC更名"><span class="toc-text">EC更名</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol>
     </div>
   </section>
 
@@ -1291,7 +1304,7 @@
     。
   </div>
   
-  <span class="post-count">字数统计：18.1k。  </span>
+  <span class="post-count">字数统计：18.4k。  </span>
   <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
