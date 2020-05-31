@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme='Volantis' version='1.5.2' docs='https://xaoxuu.com/wiki/volantis/'>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>一些服务器的安全设置(第二弹) | 某咸鱼的鱼缸</title>
   
@@ -14,14 +14,14 @@
   <link rel="alternate" href="/atom.xml" title="某咸鱼的鱼缸">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
   
 
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -33,7 +33,9 @@
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -54,7 +56,6 @@
   
   
 </head>
-
 
 <body>
   <script type="text/javascript" src="\js\dark.js"></script>
@@ -202,6 +203,17 @@
                   
                   id="comments">
 									<i class='fas fa-comments fa-fw'></i>&nbsp;留言板
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/shuoshuo/"
+                  
+                  
+                    target="_self"
+                  
+                  id="shuoshuo">
+									<i class='fas fa-meteor fa-fw'></i>&nbsp;碎碎念
 								</a>
 							</li>
       			
@@ -361,7 +373,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="/" rel="nofollow">
+      <a href="/www.erf172.tk" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -411,7 +423,7 @@
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fas fa-keyboard" aria-hidden="true"></i>
-      <p>930</p>
+      <p>934</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -459,7 +471,7 @@
         <div class="article-entry" itemprop="articleBody">
           
           <blockquote>
-<p>继<a href="https://www.erf172.tk/2019/03/23/Some-Security-Settings-on-Blog/" target="_blank" rel="noopener">上次</a>之后,虽然不用过天天被炸的日子了，但是，他防呆不防傻啊<br>莫得办法,只能是再添加一些操作，防止BOOM了</p>
+<p>继<a href="https://www.erf172.tk/2019/03/23/Some-Security-Settings-on-Blog/">上次</a>之后,虽然不用过天天被炸的日子了，但是，他防呆不防傻啊<br>莫得办法,只能是再添加一些操作，防止BOOM了</p>
 </blockquote>
 <a id="more"></a>
 
@@ -486,7 +498,10 @@
 <li>修改nginx.conf文件，开启反向代理</li>
 </ol>
 <p>将以下内容添加到nginx.conf中合适的server段中，我是添加到了AriaNg的Server段中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">location /yourlocal &#123;  #local可以随便写</span><br><span class="line">            proxy_pass https://127.0.0.1:yourport/jsonrpc;   #此处是Port 是RPC的监听地址</span><br><span class="line">            proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">            proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">            proxy_set_header Host $host:$server_port;</span><br><span class="line">            proxy_set_header  X-Forwarded-Server $host;</span><br><span class="line">            proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">            proxy_set_header  X-Forwarded-Proto $scheme;                      # 真实用户访问协议</span><br><span class="line">            proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">            proxy_max_temp_file_size 0;</span><br><span class="line">            client_max_body_size 10m;</span><br><span class="line">            client_body_buffer_size 128k;</span><br><span class="line">            proxy_connect_timeout 18000;</span><br><span class="line">            proxy_send_timeout 18000;</span><br><span class="line">            proxy_read_timeout 18000;</span><br><span class="line">            proxy_buffer_size 4k;</span><br><span class="line">            proxy_buffers 4 32k;</span><br><span class="line">            proxy_busy_buffers_size 64k;</span><br><span class="line">            proxy_temp_file_write_size 64k;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">location &#x2F;yourlocal &#123;  #local可以随便写</span><br><span class="line">            proxy_pass https:&#x2F;&#x2F;127.0.0.1:yourport&#x2F;jsonrpc;   #此处是Port 是RPC的监听地址</span><br><span class="line">            proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">            proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">            proxy_set_header Host $host:$server_port;</span><br><span class="line">            proxy_set_header  X-Forwarded-Server $host;</span><br><span class="line">            proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">            proxy_set_header  X-Forwarded-Proto $scheme;                      # 真实用户访问协议</span><br><span class="line">            proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">            proxy_max_temp_file_size 0;</span><br><span class="line">            client_max_body_size 10m;</span><br><span class="line">            client_body_buffer_size 128k;</span><br><span class="line">            proxy_connect_timeout 18000;</span><br><span class="line">            proxy_send_timeout 18000;</span><br><span class="line">            proxy_read_timeout 18000;</span><br><span class="line">            proxy_buffer_size 4k;</span><br><span class="line">            proxy_buffers 4 32k;</span><br><span class="line">            proxy_busy_buffers_size 64k;</span><br><span class="line">            proxy_temp_file_write_size 64k;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+
+
 
 <ol start="2">
 <li><p>执行<code>nginx -s relaod</code>后启用</p>
@@ -501,6 +516,7 @@
 <p>重新启动aria2服务</p>
 <h3 id="启用防火墙，仅开放使用端口"><a href="#启用防火墙，仅开放使用端口" class="headerlink" title="启用防火墙，仅开放使用端口"></a>启用防火墙，仅开放使用端口</h3><p>由于我的服务器使用的系统为<code>Ubuntu 16.04.6 LTS</code>,所以我使用系统自带的<code>ufw</code>来配置防火墙</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用root权限操作</span></span><br><span class="line">ufw allow 443               <span class="comment"># 开放https</span></span><br><span class="line">ufw allow 80                <span class="comment"># 开放http</span></span><br><span class="line">ufw allow 7777              <span class="comment"># 开放ssh</span></span><br><span class="line">ufw allow 51413:51999/tcp   <span class="comment"># Aria2 </span></span><br><span class="line">ufw allow 51413:51999/udp</span><br><span class="line">ufw default deny            <span class="comment"># 设置默认拒绝</span></span><br><span class="line">ufw <span class="built_in">enable</span>                  <span class="comment"># 启动ufw</span></span><br></pre></td></tr></table></figure>
+
 
 <h3 id="创建一个新的账户用于登录系统-禁止root账户ssh登录"><a href="#创建一个新的账户用于登录系统-禁止root账户ssh登录" class="headerlink" title="创建一个新的账户用于登录系统,禁止root账户ssh登录"></a>创建一个新的账户用于登录系统,禁止root账户ssh登录</h3><ol>
 <li>新建账户</li>
@@ -552,7 +568,7 @@
           
         
           
-            <p>本文永久链接是：<a href=/2019/10/12/Server-Settings-on-Blog/>/2019/10/12/Server-Settings-on-Blog/</a></p>
+            <p>本文永久链接是：<a href=www.erf172.tk/2019/10/12/Server-Settings-on-Blog/>www.erf172.tk/2019/10/12/Server-Settings-on-Blog/</a></p>
           
         
       </blockquote>
@@ -630,7 +646,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=/2019/10/12/Server-Settings-on-Blog/&title=一些服务器的安全设置(第二弹) | 某咸鱼的鱼缸&summary=
+          href="http://connect.qq.com/widget/shareqq/index.html?url=www.erf172.tk/2019/10/12/Server-Settings-on-Blog/&title=一些服务器的安全设置(第二弹) | 某咸鱼的鱼缸&summary=
 继上次之后,虽然不用过天天被炸的日子了，但是，他防呆不防傻啊莫得办法,只能是再添加一些操作，防止BOOM了
 "
           
@@ -644,7 +660,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=/2019/10/12/Server-Settings-on-Blog/&title=一些服务器的安全设置(第二弹) | 某咸鱼的鱼缸&summary=
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=www.erf172.tk/2019/10/12/Server-Settings-on-Blog/&title=一些服务器的安全设置(第二弹) | 某咸鱼的鱼缸&summary=
 继上次之后,虽然不用过天天被炸的日子了，但是，他防呆不防傻啊莫得办法,只能是再添加一些操作，防止BOOM了
 "
           
@@ -658,7 +674,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=/2019/10/12/Server-Settings-on-Blog/&title=一些服务器的安全设置(第二弹) | 某咸鱼的鱼缸&summary=
+          href="http://service.weibo.com/share/share.php?url=www.erf172.tk/2019/10/12/Server-Settings-on-Blog/&title=一些服务器的安全设置(第二弹) | 某咸鱼的鱼缸&summary=
 继上次之后,虽然不用过天天被炸的日子了，但是，他防呆不防傻啊莫得办法,只能是再添加一些操作，防止BOOM了
 "
           
@@ -697,7 +713,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/单片机/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a>
+                                    <a class="tag" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a>
                                 </h6>
                             
                         </span>
@@ -717,7 +733,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/单片机/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a> <a class="tag" href="/tags/写bug/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 写bug</a>
+                                    <a class="tag" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a> <a class="tag" href="/tags/%E5%86%99bug/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 写bug</a>
                                 </h6>
                             
                         </span>
@@ -866,12 +882,12 @@
   <div class='content'>
     
       <p>
-        <p>夜间模式终于差不多了</p>
+        <p>夜间模式应该是没问题了吧</p>
 
       </p>
     
       <p>
-        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+        <p><del>为什么本地效果正常，整到服务器上就gg、、、</del></p>
 
       </p>
     
@@ -1005,7 +1021,7 @@
 </header>
 
     <div class='content'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/%E4%BC%98%E7%9B%98/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/%E5%86%99bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/%E5%88%A0%E9%99%A4%E7%97%85%E6%AF%92/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/%E6%AC%A2%E8%BF%8E/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/%E7%BD%AE%E9%A1%B6/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
@@ -1102,7 +1118,7 @@
   <div class='content'>
     
       <p>
-        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107" target="_blank" rel="noopener"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2" target="_blank" rel="noopener"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
       </p>
     
   </div>
@@ -1151,7 +1167,7 @@
   
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
@@ -1245,7 +1261,9 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="/js/volantis.js"></script>
+      
+<script src="/js/volantis.js"></script>
+
     
   
   <script>
@@ -1262,11 +1280,11 @@
     verify: verify,
     guest_info: guest_info,
     
-    appId: "zIUVhjTMMhMS9rM7KQODSSBm-gzGzoHsz",
-    appKey: "EMTrLkd8dDSOCWjqHU68wwbu",
+    appId: "UcNIPmkQ5m5Oto7XWzB0AoQ9-MdYXbMMI",
+    appKey: "AhqrFNyMR898HCRekr404K8S",
     placeholder: "快来评论吧~",
     pageSize:'10',
-    avatar:'mp',
+    avatar:'retero',
     lang:'zh-cn',
     highlight:'true'
   })
@@ -1274,14 +1292,20 @@
 
 
 
-  <script src="/js/app.js"></script>
+  
+<script src="/js/app.js"></script>
 
-
-  <script src="/js/search.js"></script>
 
 
   
-    <script src="/js/commentTyping.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+  
+    
+<script src="/js/commentTyping.js"></script>
+
   
 
 
@@ -1397,8 +1421,8 @@
 
 
 
-  <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script>setLoadingBarProgress(100);</script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

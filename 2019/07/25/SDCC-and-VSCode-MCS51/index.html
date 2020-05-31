@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme='Volantis' version='1.5.2' docs='https://xaoxuu.com/wiki/volantis/'>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>51单片机开发环境的搭建 | 某咸鱼的鱼缸</title>
   
@@ -14,14 +14,14 @@
   <link rel="alternate" href="/atom.xml" title="某咸鱼的鱼缸">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
   
 
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -33,7 +33,9 @@
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -54,7 +56,6 @@
   
   
 </head>
-
 
 <body>
   <script type="text/javascript" src="\js\dark.js"></script>
@@ -202,6 +203,17 @@
                   
                   id="comments">
 									<i class='fas fa-comments fa-fw'></i>&nbsp;留言板
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/shuoshuo/"
+                  
+                  
+                    target="_self"
+                  
+                  id="shuoshuo">
+									<i class='fas fa-meteor fa-fw'></i>&nbsp;碎碎念
 								</a>
 							</li>
       			
@@ -361,7 +373,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="/" rel="nofollow">
+      <a href="/www.erf172.tk" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -411,13 +423,13 @@
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fas fa-keyboard" aria-hidden="true"></i>
-      <p>1.1k</p>
+      <p>1.2k</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fas fa-hourglass-half" aria-hidden="true"></i>
-      <p>4分钟</p>
+      <p>5分钟</p>
     </a>
   </div>
 
@@ -479,9 +491,10 @@
 <p><strong>需要注意的是，sdcc与Keil的语法是有一些不相同的地方的</strong>，下面是一些不相同的地方供以参考</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">SDCC                    Keil </span><br><span class="line"></span><br><span class="line">__sbit __at <span class="number">0x94</span> a      sbit a=P1^<span class="number">4</span></span><br><span class="line"><span class="number">0x80</span>                    P0^<span class="number">0</span></span><br><span class="line"><span class="number">0x90</span>                    P1^<span class="number">0</span></span><br><span class="line"><span class="number">0xA0</span>                    P2^<span class="number">0</span></span><br><span class="line"><span class="number">0xB0</span>                    P3^<span class="number">0</span></span><br><span class="line">P1_1                    P1^<span class="number">1</span></span><br><span class="line">__interrupt             interrupt</span><br></pre></td></tr></table></figure>
 
+
 <p><del>遇事不决双下划线</del></p>
 <h2 id="正式步骤"><a href="#正式步骤" class="headerlink" title="正式步骤"></a>正式步骤</h2><h3 id="MacOS"><a href="#MacOS" class="headerlink" title="MacOS"></a>MacOS</h3><h4 id="安装sdcc"><a href="#安装sdcc" class="headerlink" title="安装sdcc"></a>安装sdcc</h4><p>MacOS下安装sdcc是非常简单的，使用brew一键安装就ok 了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;      #安装brew</span><br><span class="line">brew install sdcc   #安装sdcc</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;usr&#x2F;bin&#x2F;ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;master&#x2F;install)&quot;      #安装brew</span><br><span class="line">brew install sdcc   #安装sdcc</span><br></pre></td></tr></table></figure>
 
 <p>编译时，只需要使用<code>sdcc sourcefile.c</code>即可完成编译   </p>
 <h4 id="安装配置VSCode"><a href="#安装配置VSCode" class="headerlink" title="安装配置VSCode"></a>安装配置VSCode</h4><p>安装完了编译环境，自然也需要一个代码编辑器。在这里，我选用了<code>Visual Studio Code</code>来作为编辑器</p>
@@ -510,6 +523,7 @@
 <p>打开<code>.bash_profile</code>，添加以下内容</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># python_switch</span></span><br><span class="line"><span class="keyword">function</span> python2_switch &#123;</span><br><span class="line">    sudo unlink /usr/bin/python</span><br><span class="line">    sudo ln -s /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python /usr/bin/python</span><br><span class="line">    chmod a+x /usr/bin/python</span><br><span class="line">    <span class="built_in">echo</span> -e <span class="string">"Python2已部署"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> python3_switch &#123;</span><br><span class="line">    sudo unlink /usr/bin/python</span><br><span class="line">    sudo ln -s /Library/Frameworks/Python.framework/Versions/3.7/bin/python3 /usr/bin/python</span><br><span class="line">    chmod a+x /usr/bin/python</span><br><span class="line">    <span class="built_in">echo</span> -e <span class="string">"Python3已部署"</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+
 <p><img src="https://img.vim-cn.com/e2/d6ec3a3259e245ddf822f0b21b623a94d03eb6.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=dee8ZMj6Uv-5k7V4TpMJLiZaMhZOk80B90ug26dzQGmcLFZnWnt03TtmdHThg3pZ7qqAyU6S_Qyg67EfiDLbHI2TLH1Wj_Jqt1my31a2u68WSO_fRWWB_I2_vHi6tvJtRtiUPEWpM2fRO_W_2PMHjsX5zRrg&amp;file_name=/QQ20190726-083455.png"></p>
 <p>保存后执行<code>source ~/.bash_profile</code>，即可快速进行python版本切换</p>
 <ol start="3">
@@ -523,6 +537,8 @@
 <h4 id="串口调试工具"><a href="#串口调试工具" class="headerlink" title="串口调试工具"></a>串口调试工具</h4><p>我使用了<a href="https://gitlab.com/cutecom/cutecom" target="_blank" rel="noopener">cutecom</a>作为串口调试的工具</p>
 <p>下载cutecom的源码并编译</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">brew install cmake qt       <span class="comment">#cutecom编译需要cmake以及qt</span></span><br><span class="line">git <span class="built_in">clone</span> https://gitlab.com/cutecom/cutecom.git</span><br><span class="line"><span class="built_in">cd</span> cutecom</span><br><span class="line">cmake .</span><br><span class="line">make -j20</span><br></pre></td></tr></table></figure>
+
+
 
 <p>稍等片刻即可编译完成</p>
 <p><img src="https://img.vim-cn.com/6e/8fffa4651fe154befc90f8d600823b5da5e9d2.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=84a07eQh1W0ER6c0M-q3483vIkvHM0N08nL0uqcHj6WX-iGB-oIhzKMqbib_YZBpN2DTc4pgnYqNbVHBnmLGSSCFR_aetOAff2XCm8WzKYnZqSZfuWXHaDcAgK8Yz4WMOggdy6wHR20neXwyYKMf8hInA0PoVHFqu-kEvQ&amp;file_name=/QQ20190926-200420.png"></p>
@@ -540,10 +556,11 @@
 <p>按下<code>Shift+Ctrl+P</code>,选择<code>C/C++:编辑配置</code>,在<code>includePath</code>添加sdcc的头文件地址</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"configurations"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"name"</span>: <span class="string">"Win32"</span>,</span><br><span class="line">            <span class="attr">"includePath"</span>: [</span><br><span class="line">                <span class="string">"$&#123;workspaceFolder&#125;/**"</span>,</span><br><span class="line">                <span class="string">"C:/Program Files/SDCC/include"</span>,</span><br><span class="line">                <span class="string">"C:/Program Files/SDCC/include/mcs51"</span>,</span><br><span class="line">                <span class="string">"$&#123;workspaceFolder&#125;/include"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"defines"</span>: [</span><br><span class="line">                <span class="string">"_DEBUG"</span>,</span><br><span class="line">                <span class="string">"UNICODE"</span>,</span><br><span class="line">                <span class="string">"_UNICODE"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"intelliSenseMode"</span>: <span class="string">"msvc-x64"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"version"</span>: <span class="number">4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+
 <p><img src="https://img.vim-cn.com/48/b1e63d1c886bb4305df249fa90591f26c986f7.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=ba446KW22Gaq6qErA8AmpIUMZmo8WJ_iEacws9jhvPssxwECpPjTE7vpGc3FuhDDO6gZPmklLVyYlyARn1XWVDU-QZ6IUoSdgmWhRvtYmoXRw1VEqVj0JfwQ2TTVHz9zaNPriUl9G2LkaY-fVkoEILXWaYse&amp;file_name=/QQ20190814-181851.png"></p>
 <h4 id="下载烧录程序以及下载器驱动"><a href="#下载烧录程序以及下载器驱动" class="headerlink" title="下载烧录程序以及下载器驱动"></a>下载烧录程序以及下载器驱动</h4><p>windows下<a href="http://www.stcmcu.com/index.htm" target="_blank" rel="noopener">官网</a>有提供烧录工具和驱动，所以直接下载即可   </p>
 <p><img src="https://img.vim-cn.com/dc/0ab6514261e4dacfd5002445b86dfd476ee622.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=06451eJroZsL_xnd5cduDfD-60078Rh_Fe-jGSC0_2epm4sOliRMSn9MRCpLr3FSzQvTzYIB7UdqpE-8HQLTADG3-LTrKiGQOQ0hUKq1ezFtk-0IYy-s6tplrAFk-R6yrn-pEpiwhXUzNac1Q6lLYeAUlHxZzOYg0VerAPqMte3jzstGlzpNecs&amp;file_name=/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-08-14%20%E4%B8%8B%E5%8D%886.56.21.png"></p>
-<p>这样，Windows下的开发环境便搭建好了，Enjoy！<img class="emoji aru" src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/img/aru/151.png"></p>
+<p>这样，Windows下的开发环境便搭建好了，Enjoy！<img class='emoji aru' src='https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/img/aru/151.png'></p>
 <h3 id="安装PlatformIO"><a href="#安装PlatformIO" class="headerlink" title="安装PlatformIO"></a>安装PlatformIO</h3><p>是不是感觉，上面的操作过于繁琐了，那么，有没有一种一键式的安装方式呢？</p>
 <p>当然有啦。</p>
 <p><a href="https://platformio.org/" target="_blank" rel="noopener">PlatformIO</a>是一款可供跨平台的代码构建器、集成开发环境（IDE），兼容 Arduino，ESP8266和mbed等等等等单片机。也就是说，只要你安装了一个PlatformIO，就不用安装各种IDE了 <del>Anesome</del></p>
@@ -585,7 +602,7 @@
           
         
           
-            <p>本文永久链接是：<a href=/2019/07/25/SDCC-and-VSCode-MCS51/>/2019/07/25/SDCC-and-VSCode-MCS51/</a></p>
+            <p>本文永久链接是：<a href=www.erf172.tk/2019/07/25/SDCC-and-VSCode-MCS51/>www.erf172.tk/2019/07/25/SDCC-and-VSCode-MCS51/</a></p>
           
         
       </blockquote>
@@ -645,7 +662,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div>
 
 
         
@@ -663,7 +680,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=/2019/07/25/SDCC-and-VSCode-MCS51/&title=51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
+          href="http://connect.qq.com/widget/shareqq/index.html?url=www.erf172.tk/2019/07/25/SDCC-and-VSCode-MCS51/&title=51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
 学习了一段时间的单片机，虽然Keil搞单片机是最常见的方案，但总是感觉Keil用着很不习惯在翻了无数次车之后，终于在跑起来了，特此记录一下下吧。。。。
 "
           
@@ -677,7 +694,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=/2019/07/25/SDCC-and-VSCode-MCS51/&title=51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=www.erf172.tk/2019/07/25/SDCC-and-VSCode-MCS51/&title=51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
 学习了一段时间的单片机，虽然Keil搞单片机是最常见的方案，但总是感觉Keil用着很不习惯在翻了无数次车之后，终于在跑起来了，特此记录一下下吧。。。。
 "
           
@@ -691,7 +708,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=/2019/07/25/SDCC-and-VSCode-MCS51/&title=51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
+          href="http://service.weibo.com/share/share.php?url=www.erf172.tk/2019/07/25/SDCC-and-VSCode-MCS51/&title=51单片机开发环境的搭建 | 某咸鱼的鱼缸&summary=
 学习了一段时间的单片机，虽然Keil搞单片机是最常见的方案，但总是感觉Keil用着很不习惯在翻了无数次车之后，终于在跑起来了，特此记录一下下吧。。。。
 "
           
@@ -730,7 +747,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/单片机/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a> <a class="tag" href="/tags/写bug/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 写bug</a>
+                                    <a class="tag" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a> <a class="tag" href="/tags/%E5%86%99bug/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 写bug</a>
                                 </h6>
                             
                         </span>
@@ -899,12 +916,12 @@
   <div class='content'>
     
       <p>
-        <p>夜间模式终于差不多了</p>
+        <p>夜间模式应该是没问题了吧</p>
 
       </p>
     
       <p>
-        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+        <p><del>为什么本地效果正常，整到服务器上就gg、、、</del></p>
 
       </p>
     
@@ -1038,7 +1055,7 @@
 </header>
 
     <div class='content'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/%E4%BC%98%E7%9B%98/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/%E5%86%99bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/%E5%88%A0%E9%99%A4%E7%97%85%E6%AF%92/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/%E6%AC%A2%E8%BF%8E/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/%E7%BD%AE%E9%A1%B6/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
@@ -1135,7 +1152,7 @@
   <div class='content'>
     
       <p>
-        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107" target="_blank" rel="noopener"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2" target="_blank" rel="noopener"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
       </p>
     
   </div>
@@ -1184,7 +1201,7 @@
   
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
@@ -1278,7 +1295,9 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="/js/volantis.js"></script>
+      
+<script src="/js/volantis.js"></script>
+
     
   
   <script>
@@ -1295,11 +1314,11 @@
     verify: verify,
     guest_info: guest_info,
     
-    appId: "zIUVhjTMMhMS9rM7KQODSSBm-gzGzoHsz",
-    appKey: "EMTrLkd8dDSOCWjqHU68wwbu",
+    appId: "UcNIPmkQ5m5Oto7XWzB0AoQ9-MdYXbMMI",
+    appKey: "AhqrFNyMR898HCRekr404K8S",
     placeholder: "快来评论吧~",
     pageSize:'10',
-    avatar:'mp',
+    avatar:'retero',
     lang:'zh-cn',
     highlight:'true'
   })
@@ -1307,14 +1326,20 @@
 
 
 
-  <script src="/js/app.js"></script>
+  
+<script src="/js/app.js"></script>
 
-
-  <script src="/js/search.js"></script>
 
 
   
-    <script src="/js/commentTyping.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+  
+    
+<script src="/js/commentTyping.js"></script>
+
   
 
 
@@ -1430,8 +1455,8 @@
 
 
 
-  <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script>setLoadingBarProgress(100);</script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

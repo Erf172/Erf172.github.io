@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme='Volantis' version='1.5.2' docs='https://xaoxuu.com/wiki/volantis/'>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>使用用DS1302写一个简单的时钟 | 某咸鱼的鱼缸</title>
   
@@ -14,14 +14,14 @@
   <link rel="alternate" href="/atom.xml" title="某咸鱼的鱼缸">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
   
 
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -33,7 +33,9 @@
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -54,7 +56,6 @@
   
   
 </head>
-
 
 <body>
   <script type="text/javascript" src="\js\dark.js"></script>
@@ -202,6 +203,17 @@
                   
                   id="comments">
 									<i class='fas fa-comments fa-fw'></i>&nbsp;留言板
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/shuoshuo/"
+                  
+                  
+                    target="_self"
+                  
+                  id="shuoshuo">
+									<i class='fas fa-meteor fa-fw'></i>&nbsp;碎碎念
 								</a>
 							</li>
       			
@@ -361,7 +373,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="/" rel="nofollow">
+      <a href="/www.erf172.tk" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -474,11 +486,15 @@
 
 <h4 id="ds1302-c"><a href="#ds1302-c" class="headerlink" title="ds1302.c"></a>ds1302.c</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"ds1302.h"</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">uint *TIME_P;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">uchar clock_address_w[<span class="number">7</span>]=&#123;<span class="number">0x80</span>,<span class="number">0x82</span>,<span class="number">0x84</span>,<span class="number">0x86</span>,<span class="number">0x88</span>,<span class="number">0x8a</span>,<span class="number">0x8c</span>&#125;;</span><br><span class="line">uchar clock_address_r[<span class="number">7</span>]=&#123;<span class="number">0x81</span>,<span class="number">0x83</span>,<span class="number">0x85</span>,<span class="number">0x87</span>,<span class="number">0x89</span>,<span class="number">0x8b</span>,<span class="number">0x8d</span>&#125;;</span><br><span class="line"></span><br><span class="line">uchar *clock_address_p;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Ds1302Write</span><span class="params">(uchar ds1302_addr_w, uchar ds1302_data)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   uint i=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">   _RST=<span class="number">0</span>;</span><br><span class="line">   __nop();</span><br><span class="line"></span><br><span class="line">   _SCLK=<span class="number">0</span>;</span><br><span class="line">   __nop();</span><br><span class="line">   _RST=<span class="number">1</span>;</span><br><span class="line">   __nop();</span><br><span class="line"></span><br><span class="line">   <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; <span class="number">8</span>; i++)</span><br><span class="line">   &#123;   </span><br><span class="line">       _DSIO=ds1302_addr_w&amp;<span class="number">0x01</span>;</span><br><span class="line">       ds1302_addr_w&gt;&gt;=<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">       _SCLK=<span class="number">1</span>;</span><br><span class="line">       __nop();</span><br><span class="line">       _SCLK=<span class="number">0</span>;</span><br><span class="line">       __nop();</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; <span class="number">8</span>; i++)</span><br><span class="line">   &#123;   </span><br><span class="line">       _DSIO=ds1302_data&amp;<span class="number">0x01</span>;</span><br><span class="line">       ds1302_data&gt;&gt;=<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">       _SCLK=<span class="number">1</span>;</span><br><span class="line">       __nop();</span><br><span class="line">       _SCLK=<span class="number">0</span>;</span><br><span class="line">       __nop();</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   _RST=<span class="number">0</span>;</span><br><span class="line">   __nop();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function">uchar <span class="title">Ds1302Read</span><span class="params">(uchar ds1302_addr_r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   uint i=<span class="number">0</span>,ds1302_data_r,temp;</span><br><span class="line"></span><br><span class="line">   _RST=<span class="number">0</span>;</span><br><span class="line">   __nop();</span><br><span class="line"></span><br><span class="line">   _SCLK=<span class="number">0</span>;</span><br><span class="line">   __nop();</span><br><span class="line">   _RST=<span class="number">1</span>;</span><br><span class="line">   __nop();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">8</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		_DSIO = ds1302_addr_r &amp; <span class="number">0x01</span>;</span><br><span class="line">		ds1302_addr_r &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		_SCLK = <span class="number">1</span>;</span><br><span class="line">		__nop();</span><br><span class="line">		_SCLK = <span class="number">0</span>;</span><br><span class="line">		__nop();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    __nop();</span><br><span class="line">    </span><br><span class="line">   <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; <span class="number">8</span>; i++)</span><br><span class="line">   &#123;</span><br><span class="line">       temp=_DSIO;</span><br><span class="line">       ds1302_data_r= (ds1302_data_r&gt;&gt;<span class="number">1</span>) | (temp&lt;&lt;<span class="number">7</span>);</span><br><span class="line"></span><br><span class="line">       _SCLK=<span class="number">1</span>;</span><br><span class="line">       __nop();</span><br><span class="line">       _SCLK=<span class="number">0</span>;</span><br><span class="line">       __nop();</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">    _RST=<span class="number">0</span>;</span><br><span class="line">    __nop();</span><br><span class="line">    _SCLK=<span class="number">1</span>;</span><br><span class="line">    __nop();</span><br><span class="line">    _DSIO=<span class="number">0</span>;</span><br><span class="line">    __nop();</span><br><span class="line">    _DSIO=<span class="number">1</span>;</span><br><span class="line">    __nop();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> ds1302_data_r;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Ds1302Init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    uint i=<span class="number">0</span>;</span><br><span class="line">    Ds1302Write(<span class="number">0x8e</span>,<span class="number">0</span>);</span><br><span class="line">    clock_address_p=clock_address_w;</span><br><span class="line">    <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        Ds1302Write(*(clock_address_p+i),*(TIME_P+i));</span><br><span class="line">    &#125;</span><br><span class="line">    Ds1302Write(<span class="number">0x8e</span>,<span class="number">0x80</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Ds1302ReadTime</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    uint i=<span class="number">0</span>;</span><br><span class="line">    clock_address_p=clock_address_r;</span><br><span class="line">    <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        *(TIME_P+i)=Ds1302Read(*(clock_address_p+i));</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+
 <h4 id="led-1602-h"><a href="#led-1602-h" class="headerlink" title="led_1602.h"></a>led_1602.h</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> _LED_1602_H_</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> _LED_1602_H_</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;at89x52.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> uchar</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> uchar unsigned char</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> uint </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> uint unsigned int</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">__sbit __at <span class="number">0xA6</span> _LED_RS;</span><br><span class="line">__sbit __at <span class="number">0xA5</span> _LED_RW;</span><br><span class="line">__sbit __at <span class="number">0xA7</span> _LED_E;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED_IO P0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> _1602_busy();</span><br><span class="line"><span class="keyword">void</span> _1602_init();</span><br><span class="line"><span class="keyword">void</span> _1602_command(uint com);</span><br><span class="line"><span class="keyword">void</span> _1602_data(uint data);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+
 
 <h4 id="led-1602-c"><a href="#led-1602-c" class="headerlink" title="led_1602.c"></a>led_1602.c</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"led_1602.h"</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> _1602_init()</span><br><span class="line">&#123;</span><br><span class="line">    P1=P1&amp;<span class="number">0xf0</span>;</span><br><span class="line">    _1602_command(<span class="number">0x38</span>); </span><br><span class="line">    _1602_command(<span class="number">0x0c</span>);</span><br><span class="line">    _1602_command(<span class="number">0x06</span>);</span><br><span class="line">    _1602_command(<span class="number">0x01</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> _1602_command(uint com)</span><br><span class="line">&#123;</span><br><span class="line">    _1602_busy();</span><br><span class="line">    _LED_RS=<span class="number">0</span>;</span><br><span class="line">    _LED_RW=<span class="number">0</span>;</span><br><span class="line">    LED_IO=com;</span><br><span class="line">    _LED_E=<span class="number">1</span>;</span><br><span class="line">    _LED_E=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> _1602_data(uint data)</span><br><span class="line">&#123;</span><br><span class="line">    _1602_busy();</span><br><span class="line">    _LED_RS=<span class="number">1</span>;</span><br><span class="line">    _LED_RW=<span class="number">0</span>;</span><br><span class="line">    LED_IO=data;</span><br><span class="line">    _LED_E=<span class="number">1</span>;</span><br><span class="line">    _LED_E=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> _1602_busy()    <span class="comment">//忙检测函数，判断bit7是0，允许执行；1禁止</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> sta;      <span class="comment">//</span></span><br><span class="line">    LED_IO = <span class="number">0xff</span>;</span><br><span class="line">    _LED_RS = <span class="number">0</span>;</span><br><span class="line">    _LED_RW = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">do</span></span><br><span class="line">    &#123;</span><br><span class="line">        _LED_E = <span class="number">1</span>;</span><br><span class="line">        sta = LED_IO;</span><br><span class="line">        _LED_E = <span class="number">0</span>;    <span class="comment">//使能，用完就拉低，释放总线</span></span><br><span class="line">    &#125;<span class="keyword">while</span>(sta &amp; <span class="number">0x80</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+
 <h4 id="makefile"><a href="#makefile" class="headerlink" title="makefile"></a>makefile</h4><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">src=<span class="variable">$(<span class="built_in">wildcard</span> ./*.c)</span></span><br><span class="line"></span><br><span class="line">target=project</span><br><span class="line"></span><br><span class="line">cc=sdcc</span><br><span class="line">cflags=-mmcs51 --model-large </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">main.hex:main.ihx</span></span><br><span class="line">	packihx main.ihx &gt; main.hex</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">main.ihx: main.c ds1302.rel led_1602.rel</span></span><br><span class="line">	<span class="variable">$(cc)</span>  <span class="variable">$(cflags)</span> main.c ds1302.rel led_1602.rel</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">ds1302.rel:ds1302.c</span></span><br><span class="line">	<span class="variable">$(cc)</span>  <span class="variable">$(cflags)</span> -c ds1302.c</span><br><span class="line"></span><br><span class="line"><span class="section">led_1602.rel:led_1602.c</span></span><br><span class="line">	<span class="variable">$(cc)</span>  <span class="variable">$(cflags)</span> -c led_1602.c</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta"><span class="meta-keyword">.PHONY</span>:clean</span></span><br><span class="line"><span class="section">clean:</span></span><br><span class="line">	-rm -rf  *.lk *.bin *.asm *.lst *.mem *.rst *.lnk *.rel *.sym *.ihx *.hex *.map</span><br></pre></td></tr></table></figure>
+
 
 <h3 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h3><p><img src="https://img.vim-cn.com/92/0faf85d82799be2fd52ada8b52032e49dcf796.jpg" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=2b64-1p3OoyDXWfkpHeHDgkDd4mr6K15WMiupINtI7hO3TGBVbdr0tdR3ziLEju7c64IRUEM6e0X-PrhaHzZUqtZXRk9rw0Ls70r-OGjQ8JaqChdKI2_z9TUkZqeFvUIzYPapxj5mkdXWWHpTw&amp;file_name=/ds1302.jpeg"></p>
 
@@ -514,7 +530,7 @@
           
         
           
-            <p>本文永久链接是：<a href=/2019/09/12/SDCC-MCS51-DS1302-Clock/>/2019/09/12/SDCC-MCS51-DS1302-Clock/</a></p>
+            <p>本文永久链接是：<a href=www.erf172.tk/2019/09/12/SDCC-MCS51-DS1302-Clock/>www.erf172.tk/2019/09/12/SDCC-MCS51-DS1302-Clock/</a></p>
           
         
       </blockquote>
@@ -574,7 +590,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/单片机/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/写bug/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>写bug</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>单片机</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%86%99bug/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>写bug</p></a></div>
 
 
         
@@ -592,7 +608,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=/2019/09/12/SDCC-MCS51-DS1302-Clock/&title=使用用DS1302写一个简单的时钟 | 某咸鱼的鱼缸&summary=
+          href="http://connect.qq.com/widget/shareqq/index.html?url=www.erf172.tk/2019/09/12/SDCC-MCS51-DS1302-Clock/&title=使用用DS1302写一个简单的时钟 | 某咸鱼的鱼缸&summary=
 用定时器写完时钟后，开发板上的DS1302自然是不能放过，看了半天文档，差不多写出来了，特此记录一下下吧
 "
           
@@ -606,7 +622,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=/2019/09/12/SDCC-MCS51-DS1302-Clock/&title=使用用DS1302写一个简单的时钟 | 某咸鱼的鱼缸&summary=
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=www.erf172.tk/2019/09/12/SDCC-MCS51-DS1302-Clock/&title=使用用DS1302写一个简单的时钟 | 某咸鱼的鱼缸&summary=
 用定时器写完时钟后，开发板上的DS1302自然是不能放过，看了半天文档，差不多写出来了，特此记录一下下吧
 "
           
@@ -620,7 +636,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=/2019/09/12/SDCC-MCS51-DS1302-Clock/&title=使用用DS1302写一个简单的时钟 | 某咸鱼的鱼缸&summary=
+          href="http://service.weibo.com/share/share.php?url=www.erf172.tk/2019/09/12/SDCC-MCS51-DS1302-Clock/&title=使用用DS1302写一个简单的时钟 | 某咸鱼的鱼缸&summary=
 用定时器写完时钟后，开发板上的DS1302自然是不能放过，看了半天文档，差不多写出来了，特此记录一下下吧
 "
           
@@ -679,7 +695,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/单片机/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a> <a class="tag" href="/tags/写bug/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 写bug</a>
+                                    <a class="tag" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a> <a class="tag" href="/tags/%E5%86%99bug/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 写bug</a>
                                 </h6>
                             
                         </span>
@@ -828,12 +844,12 @@
   <div class='content'>
     
       <p>
-        <p>夜间模式终于差不多了</p>
+        <p>夜间模式应该是没问题了吧</p>
 
       </p>
     
       <p>
-        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+        <p><del>为什么本地效果正常，整到服务器上就gg、、、</del></p>
 
       </p>
     
@@ -967,7 +983,7 @@
 </header>
 
     <div class='content'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/%E4%BC%98%E7%9B%98/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/%E5%86%99bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/%E5%88%A0%E9%99%A4%E7%97%85%E6%AF%92/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/%E6%AC%A2%E8%BF%8E/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/%E7%BD%AE%E9%A1%B6/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
@@ -1064,7 +1080,7 @@
   <div class='content'>
     
       <p>
-        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107" target="_blank" rel="noopener"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2" target="_blank" rel="noopener"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
       </p>
     
   </div>
@@ -1113,7 +1129,7 @@
   
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
@@ -1207,7 +1223,9 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="/js/volantis.js"></script>
+      
+<script src="/js/volantis.js"></script>
+
     
   
   <script>
@@ -1224,11 +1242,11 @@
     verify: verify,
     guest_info: guest_info,
     
-    appId: "zIUVhjTMMhMS9rM7KQODSSBm-gzGzoHsz",
-    appKey: "EMTrLkd8dDSOCWjqHU68wwbu",
+    appId: "UcNIPmkQ5m5Oto7XWzB0AoQ9-MdYXbMMI",
+    appKey: "AhqrFNyMR898HCRekr404K8S",
     placeholder: "快来评论吧~",
     pageSize:'10',
-    avatar:'mp',
+    avatar:'retero',
     lang:'zh-cn',
     highlight:'true'
   })
@@ -1236,14 +1254,20 @@
 
 
 
-  <script src="/js/app.js"></script>
+  
+<script src="/js/app.js"></script>
 
-
-  <script src="/js/search.js"></script>
 
 
   
-    <script src="/js/commentTyping.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+  
+    
+<script src="/js/commentTyping.js"></script>
+
   
 
 
@@ -1359,8 +1383,8 @@
 
 
 
-  <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script>setLoadingBarProgress(100);</script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

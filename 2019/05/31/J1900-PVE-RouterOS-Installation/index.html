@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head hexo-theme="Volantis" version="1.5.2" docs="https://xaoxuu.com/wiki/volantis/"><meta name="generator" content="Hexo 3.9.0">
+<head hexo-theme='Volantis' version='1.5.2' docs='https://xaoxuu.com/wiki/volantis/'>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>J1900软路由折腾记 | 某咸鱼的鱼缸</title>
   
@@ -14,14 +14,14 @@
   <link rel="alternate" href="/atom.xml" title="某咸鱼的鱼缸">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
   
 
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -33,7 +33,9 @@
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -54,7 +56,6 @@
   
   
 </head>
-
 
 <body>
   <script type="text/javascript" src="\js\dark.js"></script>
@@ -202,6 +203,17 @@
                   
                   id="comments">
 									<i class='fas fa-comments fa-fw'></i>&nbsp;留言板
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/shuoshuo/"
+                  
+                  
+                    target="_self"
+                  
+                  id="shuoshuo">
+									<i class='fas fa-meteor fa-fw'></i>&nbsp;碎碎念
 								</a>
 							</li>
       			
@@ -361,7 +373,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="/" rel="nofollow">
+      <a href="/www.erf172.tk" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -593,6 +605,7 @@
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp ~/Desktop/mentohust_0.3.1-1_x86_64.ipk root@192.168.32.108:/root</span><br></pre></td></tr></table></figure>
 
+
 <ol start="5">
 <li>拨号</li>
 </ol>
@@ -610,6 +623,7 @@
 <li>将mentohust文件复制到本地</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp root@192.168.32.108:/usr/sbin/mentohust ~/Desktop</span><br></pre></td></tr></table></figure>
+
 
 <ol start="2">
 <li>使用iHex打开文件，分别搜索<code>mentohust.pid</code>、<code>mentohust.conf</code>。并将其修改为<code>1entohust.pid</code>、<code>1entohust.conf</code>后保存。文件名为<code>1entohust</code></li>
@@ -647,7 +661,7 @@
 </ol>
 <p><img src="https://img.vim-cn.com/a2/d70e6af3fb0281aeb5ad7c4709f6b97de288c9.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=b723YzePoi7FVasNqhuRRWgAAXnKpA_62bJTFlNz8zuvmExjAaZ_l-QIAOdceWD7BICD9GEQS1g_SzYqFd0Vkzsy4PUVhO6XA4pMxiDzaC5TZCLe-HnZL2vLbtD5hHatoQjlnDx5PbGHIr9A_1CwrfWVhI0DcWVU7nE&amp;file_name=/QQ20190620-174141.png"></p>
 <h5 id="定时拨号"><a href="#定时拨号" class="headerlink" title="定时拨号"></a>定时拨号</h5><p> 使用网页登录路由器后台，在定时任务中输入如下内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*/5 * * * *  mentohust -u121212 -p1212121 -neth0 -d2 -a1  #每5分钟执行一次</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*&#x2F;5 * * * *  mentohust -u121212 -p1212121 -neth0 -d2 -a1  #每5分钟执行一次</span><br></pre></td></tr></table></figure>
 
 <p>如果定时任务没有启动的话，可以在终端执行<code>service cron start</code>启动定时任务功能</p>
 <p><img src="https://img.vim-cn.com/b3/54d2387bf8cb6f8885e75392afa6aa040cd2ce.png" alt="https://kod.erf172.tk/index.php?user/publicLink&amp;fid=786a53UJuIK2yxTXtIvyn8Qzq46Ei1-E1uMIDO6FkZ2kwgDz1RR46AP8WdPHqftH9n5sq465GMgfmeweiieq0_E67A6DgCWbFSZQDyppIeJyEMfeUh6AvwsnizLrI7Uv3nvadMigWIqcsJ1Dm_x_zGVAO5VKKntGyag&amp;file_name=/QQ20190620-174629.png"></p>
@@ -695,7 +709,7 @@
           
         
           
-            <p>本文永久链接是：<a href=/2019/05/31/J1900-PVE-RouterOS-Installation/>/2019/05/31/J1900-PVE-RouterOS-Installation/</a></p>
+            <p>本文永久链接是：<a href=www.erf172.tk/2019/05/31/J1900-PVE-RouterOS-Installation/>www.erf172.tk/2019/05/31/J1900-PVE-RouterOS-Installation/</a></p>
           
         
       </blockquote>
@@ -773,7 +787,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=/2019/05/31/J1900-PVE-RouterOS-Installation/&title=J1900软路由折腾记 | 某咸鱼的鱼缸&summary=
+          href="http://connect.qq.com/widget/shareqq/index.html?url=www.erf172.tk/2019/05/31/J1900-PVE-RouterOS-Installation/&title=J1900软路由折腾记 | 某咸鱼的鱼缸&summary=
 夏天到了，突然发现我的小米路由器3好像慢了很多。但是我的钱包却告诉我它还很流畅于是乎我看了一眼桌子上的J1900……  J1900:你不要过来啊
 "
           
@@ -787,7 +801,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=/2019/05/31/J1900-PVE-RouterOS-Installation/&title=J1900软路由折腾记 | 某咸鱼的鱼缸&summary=
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=www.erf172.tk/2019/05/31/J1900-PVE-RouterOS-Installation/&title=J1900软路由折腾记 | 某咸鱼的鱼缸&summary=
 夏天到了，突然发现我的小米路由器3好像慢了很多。但是我的钱包却告诉我它还很流畅于是乎我看了一眼桌子上的J1900……  J1900:你不要过来啊
 "
           
@@ -801,7 +815,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=/2019/05/31/J1900-PVE-RouterOS-Installation/&title=J1900软路由折腾记 | 某咸鱼的鱼缸&summary=
+          href="http://service.weibo.com/share/share.php?url=www.erf172.tk/2019/05/31/J1900-PVE-RouterOS-Installation/&title=J1900软路由折腾记 | 某咸鱼的鱼缸&summary=
 夏天到了，突然发现我的小米路由器3好像慢了很多。但是我的钱包却告诉我它还很流畅于是乎我看了一眼桌子上的J1900……  J1900:你不要过来啊
 "
           
@@ -840,7 +854,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/单片机/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a>
+                                    <a class="tag" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 单片机</a>
                                 </h6>
                             
                         </span>
@@ -1009,12 +1023,12 @@
   <div class='content'>
     
       <p>
-        <p>夜间模式终于差不多了</p>
+        <p>夜间模式应该是没问题了吧</p>
 
       </p>
     
       <p>
-        <p><a href="javascript:switchNightMode()"><br/><strong>点我快速切换夜间模式</strong></a></p>
+        <p><del>为什么本地效果正常，整到服务器上就gg、、、</del></p>
 
       </p>
     
@@ -1148,7 +1162,7 @@
 </header>
 
     <div class='content'>
-      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/优盘/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/写bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/删除病毒/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/单片机/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/欢迎/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/系统安装/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/置顶/" style="font-size: 14px; color: #999">置顶</a>
+      <a href="/tags/Blog/" style="font-size: 17.33px; color: #828282">Blog</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MacOS/" style="font-size: 20.67px; color: #6c6c6c">MacOS</a> <a href="/tags/Router/" style="font-size: 14px; color: #999">Router</a> <a href="/tags/Server/" style="font-size: 24px; color: #555">Server</a> <a href="/tags/%E4%BC%98%E7%9B%98/" style="font-size: 14px; color: #999">优盘</a> <a href="/tags/%E5%86%99bug/" style="font-size: 17.33px; color: #828282">写bug</a> <a href="/tags/%E5%88%A0%E9%99%A4%E7%97%85%E6%AF%92/" style="font-size: 14px; color: #999">删除病毒</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 24px; color: #555">单片机</a> <a href="/tags/%E6%AC%A2%E8%BF%8E/" style="font-size: 14px; color: #999">欢迎</a> <a href="/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" style="font-size: 24px; color: #555">系统安装</a> <a href="/tags/%E7%BD%AE%E9%A1%B6/" style="font-size: 14px; color: #999">置顶</a>
     </div>
   </section>
 
@@ -1245,7 +1259,7 @@
   <div class='content'>
     
       <p>
-        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107" target="_blank" rel="noopener"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2" target="_blank" rel="noopener"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
       </p>
     
   </div>
@@ -1294,7 +1308,7 @@
   
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
     本站使用
@@ -1388,7 +1402,9 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="/js/volantis.js"></script>
+      
+<script src="/js/volantis.js"></script>
+
     
   
   <script>
@@ -1405,11 +1421,11 @@
     verify: verify,
     guest_info: guest_info,
     
-    appId: "zIUVhjTMMhMS9rM7KQODSSBm-gzGzoHsz",
-    appKey: "EMTrLkd8dDSOCWjqHU68wwbu",
+    appId: "UcNIPmkQ5m5Oto7XWzB0AoQ9-MdYXbMMI",
+    appKey: "AhqrFNyMR898HCRekr404K8S",
     placeholder: "快来评论吧~",
     pageSize:'10',
-    avatar:'mp',
+    avatar:'retero',
     lang:'zh-cn',
     highlight:'true'
   })
@@ -1417,14 +1433,20 @@
 
 
 
-  <script src="/js/app.js"></script>
+  
+<script src="/js/app.js"></script>
 
-
-  <script src="/js/search.js"></script>
 
 
   
-    <script src="/js/commentTyping.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+  
+    
+<script src="/js/commentTyping.js"></script>
+
   
 
 
@@ -1540,8 +1562,8 @@
 
 
 
-  <script>setLoadingBarProgress(100);</script>
   <script type="text/javascript" src="/js/click_show_text.js"></script>
   <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+  <script>setLoadingBarProgress(100);</script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

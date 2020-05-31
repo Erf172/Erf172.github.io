@@ -1,25 +1,22 @@
 (function(){
-  if(document.cookie.replace(/(?:(?:^|.*;\s*)dark\s*\=\s*([^;]*).*$)|^.*$/, "$1") === ''){
-      if(new Date().getHours() > 8 || new Date().getHours() < 6){
+    console.log(localStorage.dark);
+  if(localStorage.dark == 0 ){
+      if(new Date().getHours() > 21 || new Date().getHours() < 6 || getComputedStyle(document.documentElement).getPropertyValue('content') == '"dark"' ){
           document.body.classList.add('dark');
-          document.cookie = "dark=1;path=/;domain=erf172.tk";
+          localStorage.setItem('dark','1');
           console.log('Dark mode on');
       }else{
           document.body.classList.remove('dark');
-          document.cookie = "dark=0;path=/;domain=erf172.tk";
+          localStorage.setItem('dark','0');
           console.log('Dark mode off');
       }
   }else{
-      var dark = document.cookie.replace(/(?:(?:^|.*;\s*)dark\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
-      if(dark == '0'){
-          document.body.classList.remove('dark');
-      }else if(dark == '1'){
-          document.body.classList.add('dark');
-      }
+        document.body.classList.add('dark');
   }
 })();
 
-
+// macos dark mode :"dark"
+//       light mode : "normal"
 
 
 function switchNightMode() {
