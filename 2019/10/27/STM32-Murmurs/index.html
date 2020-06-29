@@ -317,6 +317,17 @@
             </li>
           
             <li>
+							<a class="nav flat-box" href="/shuoshuo/"
+                
+                
+                  target="_self"
+                
+                id="shuoshuo">
+								<i class='fas fa-meteor fa-fw'></i>&nbsp;碎碎念
+							</a>
+            </li>
+          
+            <li>
 							<a class="nav flat-box" href="javascript:switchNightMode()"
                 
                   rel="nofollow"
@@ -409,10 +420,10 @@
           
         
           
-            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-11-26T17:18:20+08:00">
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-06-12T12:01:47+08:00">
   <a class='notlink'>
     <i class="fas fa-save" aria-hidden="true"></i>
-    <p> 2019/11/26</p>
+    <p> 2020/6/12</p>
   </a>
 </div>
 
@@ -479,7 +490,7 @@
 <ol>
 <li><p>开发环境搭建</p>
 <p><a href="https://www.erf172.tk/2019/07/25/SDCC-and-VSCode-MCS51/#%E5%AE%89%E8%A3%85PlatformIO">安装PlatformIO</a>,在<code>board</code> 中选择和STM32平台安装即可</p>
-<p><img src="https://img.vim-cn.com/81/2d1aacd5907eb21e6bd6863fdc5ab9c220d2d5.png" alt="PlatformIO_STM32_Board"></p>
+<p><img src="https://i.loli.net/2020/06/12/oC7EWPGf6dztn9p.png" alt="PlatformIO_STM32_Board"></p>
 </li>
 <li><p>点亮一个发光二极管</p>
 </li>
@@ -491,7 +502,7 @@
 <p>修改<code>~/.platformio/platforms/ststm32/builder/main.py</code>中<code>upload_protocol == &quot;serial&quot;:</code>修改为以下内容</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">elif</span> upload_protocol == <span class="string">"serial"</span>:</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__configure_upload_port</span><span class="params">(env)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> basename(env.subst(<span class="string">"$UPLOAD_PORT"</span>))</span><br><span class="line"></span><br><span class="line">    env.Replace(</span><br><span class="line">        __configure_upload_port=__configure_upload_port,</span><br><span class="line">        UPLOADER=<span class="string">"stm32flash"</span>,</span><br><span class="line">        UPLOADERFLAGS=[</span><br><span class="line">            <span class="string">"-g"</span>, board.get(<span class="string">"upload.offset_address"</span>, <span class="string">"0x08000000"</span>),</span><br><span class="line">            <span class="string">"-b"</span>, <span class="string">"$UPLOAD_SPEED"</span>, <span class="string">"-w"</span></span><br><span class="line"></span><br><span class="line">        ],</span><br><span class="line">        UPLOADCMD=<span class="string">'$UPLOADER $UPLOADERFLAGS "$SOURCE" "$UPLOAD_PORT"'</span></span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    upload_actions = [</span><br><span class="line">        env.VerboseAction(env.AutodetectUploadPort, <span class="string">"Looking for upload port..."</span>),</span><br><span class="line">        env.VerboseAction(<span class="string">"$UPLOADCMD"</span>, <span class="string">"Uploading $SOURCE"</span>)</span><br><span class="line">    ]</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.vim-cn.com/95/6f94e4284a6699b3b06dcaeb34f2e2665f4157.png" alt="https://img.vim-cn.com/95/6f94e4284a6699b3b06dcaeb34f2e2665f4157.png"></p>
+<p><img src="https://i.loli.net/2020/06/12/sJUhGwDvS7ek9dZ.png" alt="https://img.vim-cn.com/95/6f94e4284a6699b3b06dcaeb34f2e2665f4157.png"></p>
 <p><strong>注意：这样的话需要在<code>PlatformIO.ini</code>中声明<code>upload_speed</code>,即下载的波特率</strong></p>
 </li>
 </ol>
@@ -571,7 +582,7 @@
   <div class='content'>
     
       <p>
-        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+        <img src="https://i.loli.net/2020/06/29/9IMbjlpmqszOEAg.png" width="260" height="280">
       </p>
     
   </div>
@@ -768,7 +779,7 @@
   <div class='content'>
     
       <div class='avatar'>
-        <img class='avatar' src='https://img.vim-cn.com/18/6e04ae4a1566d5f968c2c553b3a3bbdb69866a.jpg'/>
+        <img class='avatar' src='https://i.loli.net/2020/06/23/u6gQtKJdEUfPjRw.jpg'/>
       </div>
     
     
@@ -860,7 +871,7 @@
       </p>
     
       <p>
-        <p><del>为什么本地效果正常，整到服务器上就gg、、、</del></p>
+        <p><del>为什么本地效果正常，整到服务器上就gg</del></p>
 
       </p>
     
@@ -1038,7 +1049,7 @@
   <div class='content'>
     
       <p>
-        <img src="https://img.vim-cn.com/54/b1745b04a220de7dcbf1783ef584b23848c692.png" width="260" height="280">
+        <img src="https://i.loli.net/2020/06/29/9IMbjlpmqszOEAg.png" width="260" height="280">
       </p>
     
   </div>
@@ -1078,7 +1089,7 @@
   <div class='content'>
     
       <p>
-        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107" target="_blank" rel="noopener"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2" target="_blank" rel="noopener"><img src="https://img.vim-cn.com/db/f823dd4a60ed4ea76eec3a8aeba82e644a6363.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
+        <p style="text-align:center;"><a href="https://www.vultr.com/?ref=7946353-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_800x418.png" width="240" height="125"><br/><strong>Vultr 东京机房可选|超低延时<br/>低至2.5$/月|支持支付宝 微信</strong></a><br><br><a href="https://billing.virmach.com/aff.php?aff=8107" target="_blank" rel="noopener"><img src="https://cdn1.virmach.com/images/logo.png" width="220" height="40" ><br/><strong>Virmach 超低价KVM服务器 <br/>低至1.25$/月|支持支付宝</strong></a> <br><br> <a href="https://m.do.co/c/bf6e1b7903f2" target="_blank" rel="noopener"><img src="https://i.loli.net/2020/06/29/WRgr7F6MCZVDONY.png" width="220" height="50" ><br/><strong>Digital Ocean 服务器|超低延迟 <br/>注册送10$用久|使用Paypal </strong></a></p>
       </p>
     
   </div>
