@@ -1,3 +1,7 @@
+
+
+// click
+
 var a_idx = 0;
 jQuery(document).ready(function($) {
     $("body").click(function(e) {
@@ -31,3 +35,27 @@ jQuery(document).ready(function($) {
 function delay() {
     $(".buryit").removeAttr("onclick");
 }
+
+// funnytitle 
+
+var OriginTitle = document.title;
+var titleTime;
+document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+        $('[rel="icon"]').attr('href', "/img/trhx2.png");
+        document.title = '新标签页';
+        clearTimeout(titleTime);
+    }
+    else {
+        $('[rel="icon"]').attr('href', "/img/trhx2.png");
+        document.title = OriginTitle;
+        titleTime = setTimeout(function () {
+            document.title = OriginTitle;
+        }, 2000);
+    }
+});
+
+
+// deep dark fantasy
+
+
